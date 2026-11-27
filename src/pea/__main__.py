@@ -66,7 +66,10 @@ def main(argv: Sequence[str] | None = None) -> int:
             raw_prompt=args.raw_prompt,
         )
         if args.workflow:
-            result = WorkflowRunner().run(request)
+            result = WorkflowRunner().run(
+                request,
+                provider=get_settings().default_provider,
+            )
         else:
             result = StructuredPromptOptimizer().optimize(request)
         print(result.model_dump_json(indent=2))

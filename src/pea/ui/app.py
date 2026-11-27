@@ -205,7 +205,7 @@ def optimization_page() -> None:
     page_header(
         "PROMPT WORKBENCH",
         "优化工作台",
-        "从原始需求到可执行 Prompt：查看诊断、策略、迭代证据和目标模型适配。默认使用本地生成与 Mock，不自动产生模型费用。",
+        "从原始需求到可执行 Prompt：查看诊断、策略、迭代证据和目标模型适配。默认使用 OpenAI 接入，未配置时可切换 Mock。",
     )
     with st.form("optimization_form"):
         user_request = st.text_area(
@@ -219,7 +219,7 @@ def optimization_page() -> None:
         exploration_label = exploration.radio("思考方式", list(EXPLORATION_OPTIONS), horizontal=True)
         max_iterations = iterations.selectbox("最大生成次数", [1, 2, 3], index=2)
         provider, dynamic = st.columns([1, 1])
-        provider_name = provider.selectbox("执行提供商", ["mock", "openai", "anthropic"])
+        provider_name = provider.selectbox("执行提供商", ["openai", "anthropic", "mock"])
         dynamic_enabled = dynamic.checkbox("启用动态原/优化对照", value=False)
         with st.expander("目标模型适配（可选）"):
             target_enabled = st.checkbox("生成目标模型适配版本")
@@ -368,7 +368,7 @@ def status_page() -> None:
         cols = st.columns(3)
         cols[0].metric("API 状态", health["status"])
         cols[1].metric("产品阶段", health["stage"])
-        cols[2].metric("默认执行", "本地 Mock")
+        cols[2].metric("默认执行", "OpenAI")
         st.write("API 地址")
         st.code(API_BASE_URL, language=None)
         st.info("真实模型调用需要管理员同时配置提供商、密钥、真实开关和成本预算。界面不接收或展示密钥。")
@@ -389,7 +389,7 @@ def main() -> None:
         unsafe_allow_html=True,
     )
     page = st.sidebar.radio("工作区", ["优化工作台", "历史与版本", "评测中心", "系统状态"])
-    st.sidebar.caption("本地产品 · 默认 Mock")
+    st.sidebar.caption("默认 OpenAI · 可选 Mock")
     if page == "优化工作台":
         optimization_page()
     elif page == "历史与版本":

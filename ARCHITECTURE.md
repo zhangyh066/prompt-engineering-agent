@@ -27,6 +27,7 @@
 - API 默认拒绝真实提供商，必须同时配置 `PEA_ENABLE_REAL_PROVIDERS=True` 和对应模型/密钥。
 - 默认绑定回环地址，无多用户认证，不应直接暴露公网。
 - 提供优化、澄清、取消、历史、版本比较和导出端点。
+- 提供 `/v1/chat/completions` OpenAI-compatible Prompt 优化接口，返回标准 chat.completion，不伪造 usage。
 - 可信 Host 可配置，声明请求体最大 64 KiB；响应使用 `no-store` 和安全响应头。
 - Docker 多目标镜像使用非 root 用户、锁定依赖、健康检查和持久化卷；当前仅有静态配置验证。
 

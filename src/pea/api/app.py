@@ -1,4 +1,6 @@
 from typing import Literal
+import time
+from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response, status
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
@@ -6,14 +8,24 @@ from fastapi.responses import JSONResponse
 from pydantic import ValidationError
 
 from pea import __version__
-from pea.api.schemas import CancelAPIResponse, OptimizeAPIRequest
+from pea.agents import StructuredPromptOptimizer
+from pea.api.schemas import (
+    CancelAPIResponse,
+    OpenAIChatRequest,
+    OptimizeAPIRequest,
+)
 from pea.api.services import ApplicationServices, RealProviderDisabledError
 from pea.config import Settings, get_settings
 from pea.exceptions import ConfigurationError
 from pea.evaluation.benchmark import BenchmarkLoader, validate_benchmark
 from pea.evaluation.external_data import load_external_cases
 from pea.evaluation.harness_audit import HarnessAuditReport, HarnessAuditor
-from pea.models import ClarificationAnswers, WorkflowResult, WorkflowStatus
+from pea.models import (
+    ClarificationAnswers,
+    PromptOptimizationRequest,
+    WorkflowResult,
+    WorkflowStatus,
+)
 from pea.models.benchmark import BenchmarkValidationReport
 from pea.models.history import RunDetail, RunSummary, VersionComparison
 from pea.storage import ResultExporter, RunNotFoundError, SQLiteResultManager
@@ -61,6 +73,44 @@ def create_app(
     @app.get("/health")
     def health() -> dict[str, str]:
         return {"status": "ok", "stage": "Beta", "version": __version__}
+
+    @app.post("/v1/chat/completions")
+    def openai_chat_completions(request: OpenAIChatRequest) -> dict:
+        if request.stream:
+            raise HTTPException(
+                status_code=400,
+                detail="streaming is not supported by the PEA OpenAI-compatible endpoint",
+            )
+        if len(request.messages) == 1:
+            optimization_request = PromptOptimizationRequest(
+                user_request=request.messages[0].content
+            )
+        else:
+            transcript = "\n".join(
+                f"{message.role}: {message.content}" for message in request.messages
+            )
+            optimization_request = PromptOptimizationRequest(
+                user_request="Optimize the supplied conversation into an effective prompt.",
+                raw_prompt=transcript,
+            )
+        result = StructuredPromptOptimizer().optimize(optimization_request)
+        return {
+            "id": f"chatcmpl-{uuid4().hex}",
+            "object": "chat.completion",
+            "created": int(time.time()),
+            "model": request.model,
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": result.generated_prompt.content,
+                    },
+                    "finish_reason": "stop",
+                }
+            ],
+            "system_fingerprint": f"pea-{__version__}",
+        }
 
     @app.post("/api/v1/optimizations", response_model=WorkflowResult)
     def optimize(request: OptimizeAPIRequest) -> WorkflowResult:

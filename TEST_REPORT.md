@@ -1,5 +1,12 @@
 # 测试报告
 
+## OpenAI 默认接入与兼容接口 — 2026-11-27
+
+- 产品默认提供商切换为OpenAI，UI、Compose、CLI工作流和配置文档同步；Mock保留为显式离线/测试选择。
+- 新增 `/v1/chat/completions`，支持标准OpenAI消息、单轮和多轮Prompt优化，返回chat.completion。
+- 不伪造Token usage；stream=true明确返回400，缺少user消息返回422。
+- 完整回归：**201 passed，1 warning，9.26s**。
+
 ## 0.2.0 产品前端与发布验收 — 2026-11-27
 
 - 新增四工作区 Streamlit：优化工作台、历史与版本、评测中心、系统状态。

@@ -52,11 +52,11 @@ PEA（Prompt Engineering Agent）是一个本地优先的 Prompt 诊断、生成
 | F10 | 历史与版本 | SQLite 保存运行、逐轮版本、diff、评分与策略变化 |
 | F11 | 评测中心 | 展示 100 条 Benchmark 状态和 80 条公共结构审计 |
 | F12 | 产品界面 | 提供工作台、历史版本、评测中心、系统状态四个工作区 |
-| F13 | 导出与 API | 支持 JSON/Markdown 导出和 OpenAPI 文档 |
+| F13 | 导出与 API | 支持 JSON/Markdown 导出、OpenAPI 和 `/v1/chat/completions` |
 
 ## 5. 非功能需求
 
-- **本地优先**：默认 Mock，无 API Key 也可运行核心流程。
+- **本地优先**：默认 OpenAI；无 API Key 时可显式选择 Mock 运行核心流程。
 - **可解释**：每个策略和 Prompt 修改都有理由。
 - **可复现**：依赖锁文件、数据哈希、固定抽样种子和结构化报告。
 - **成本可见**：记录调用、Token、成本、耗时；真实调用需要显式预算。

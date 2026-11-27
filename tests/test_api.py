@@ -5,12 +5,13 @@ from fastapi.testclient import TestClient
 
 from pea.api import create_app
 from pea.config import Settings
+from pea.models import Provider
 from pea.storage import SQLiteResultManager
 
 
 @pytest.fixture
 def client(tmp_path):
-    settings = Settings(_env_file=None, database_path=str(tmp_path / "api.db"))
+    settings = Settings(_env_file=None, database_path=str(tmp_path / "api.db"), default_provider=Provider.MOCK)
     manager = SQLiteResultManager(settings.database_path)
     with TestClient(create_app(settings, manager)) as test_client:
         yield test_client

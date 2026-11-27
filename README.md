@@ -2,7 +2,7 @@
 
 把自然语言需求或原始 Prompt 变成经过诊断、策略选择、生成、评估和有界迭代的可执行 Prompt，并保存每次修改的证据与版本。
 
-当前版本 **0.2.0 Beta**：198 项自动化测试、四个产品工作区、100 条中文 Benchmark 草稿和 80 条公共数据审计。默认本地 Mock，不需要 API Key，也不会自动产生模型费用。
+当前版本 **0.2.0 Beta**：201 项自动化测试、四个产品工作区、100 条中文 Benchmark 草稿和 80 条公共数据审计。默认提供商为 OpenAI；未配置凭证时可在界面选择 Mock 离线运行。
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue) ![LangGraph](https://img.shields.io/badge/LangGraph-1.2.24-green) ![FastAPI](https://img.shields.io/badge/FastAPI-0.165.0-teal) ![License](https://img.shields.io/badge/Code-MIT-lightgrey)
 
@@ -69,6 +69,8 @@ Prompt 优化有个常见误区：加上角色、步骤、示例和一大段“�
 - **评测中心**：100 条 Benchmark 审核状态、80 条公共 Prompt 结构审计和已知缺陷检测
 - **系统状态**：本地服务、运行边界、OpenAPI 入口和未验证事项
 
+同时提供 `/v1/chat/completions`，标准 OpenAI 客户端可以直接获取 PEA 生成的优化 Prompt；该接口与“使用 OpenAI 作为下游模型提供商”是两条独立链路。
+
 模型之外还有一层可追溯设计：每次修改有理由，每轮生成有评估，最终版本不一定是最新版本，而是评估得分更高的版本。
 
 <a id="s4"></a>
@@ -77,7 +79,7 @@ Prompt 优化有个常见误区：加上角色、步骤、示例和一大段“�
 
 | 范围 | 实际结果 | 能说明什么 |
 |---|---|---|
-| 自动化测试 | **198 passed，1 warning** | 单元、集成、异常、工作流、API、数据和部署配置回归 |
+| 自动化测试 | **201 passed，1 warning** | 单元、集成、异常、工作流、API、数据和部署配置回归 |
 | 包构建 | 0.2.0 wheel 与源码包构建通过 | 项目可以作为 Python 包安装与分发 |
 | 真实浏览器 | 偏好提交、探索模块、历史、评测与系统状态通过 | 前端不是静态截图，能实际调用 API |
 | 公共结构审计 | 80 条样例目标/上下文保留与输出结构检查 | 结构行为可复现，不等于开放任务语义质量 |
@@ -234,7 +236,7 @@ uv run pea --optimize "写一条生日祝福，输出一句话。" --workflow
 uv run pea --validate-benchmark
 ```
 
-默认 `PEA_DEFAULT_PROVIDER=mock`。真实 OpenAI-compatible 调用需要另行配置：
+默认 `PEA_DEFAULT_PROVIDER=openai`。未配置真实凭证时，可在界面选择 `mock` 离线运行。真实 OpenAI-compatible 调用需要配置：
 
 ```bash
 OPENAI_API_BASE=https://your-endpoint/v1
@@ -322,7 +324,7 @@ PEA_COST_BUDGET_USD=your-approved-budget
 | 诊断、策略、评估、适配分 Tab | 需要证据时能展开，不需要时不干扰主流程 |
 | 版本显示统一 diff 与分数变化 | 不只保存历史，还能看每轮为什么更好或更差 |
 | 评测中心显示“未验证” | 防止结构 100% 被误读为语义质量 100% |
-| 默认 Mock、页面不接收密钥 | 本地体验不需要凭证，避免在 UI 复制敏感信息 |
+| 默认 OpenAI、可切换 Mock、页面不接收密钥 | 默认使用真实产品接入方式，离线体验与凭证输入分离 |
 
 真实浏览器已验证详细+探索偏好进入 API，并实际生成“备选路径与反证”模块。
 
@@ -341,7 +343,7 @@ PEA_COST_BUDGET_USD=your-approved-budget
 │   ├── storage/          # SQLite、版本比较与导出
 │   ├── api/              # FastAPI 应用服务
 │   └── ui/               # Streamlit 四工作区
-├── tests/                # 198 项自动化测试
+├── tests/                # 201 项自动化测试
 ├── benchmarks/           # 审核规范、Promptfoo 与模拟证据
 ├── docs/                 # PRD、架构、部署与评测报告
 ├── pyproject.toml        # 包元数据与直接依赖

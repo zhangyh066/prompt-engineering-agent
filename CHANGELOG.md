@@ -9,7 +9,7 @@
 - 四工作区 Streamlit 产品前端。
 - Benchmark 状态与公共结构审计 API。
 - Promptfoo 桥接、策略搜索、基线缓存与最终测试审计。
-- OpenAI-compatible API 配置和本地格式验证。
+- OpenAI-compatible `/v1/chat/completions` 接口，OpenAI 为默认提供商。
 - PRD、路线图、贡献、安全和发布规范。
 
 ### 修复

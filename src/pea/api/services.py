@@ -28,9 +28,10 @@ class ApplicationServices:
         self._lock = Lock()
 
     def optimize(self, request: OptimizeAPIRequest) -> WorkflowResult:
-        if request.provider != Provider.MOCK and not self.settings.enable_real_providers:
-            raise RealProviderDisabledError(request.provider.value)
-        config = self.settings.provider_config(request.provider)
+        provider = request.provider or self.settings.default_provider
+        if provider != Provider.MOCK and not self.settings.enable_real_providers:
+            raise RealProviderDisabledError(provider.value)
+        config = self.settings.provider_config(provider)
         run_id = uuid4().hex
         runner = WorkflowRunner(evaluator=PromptEvaluator(self.gateway))
         with self._lock:
@@ -40,13 +41,13 @@ class ApplicationServices:
                 request.to_prompt_request(),
                 max_iterations=request.max_iterations,
                 dynamic_evaluation=request.dynamic_evaluation,
-                provider=request.provider,
+                provider=provider,
                 target_model=request.target_model,
                 thread_id=run_id,
             )
             self.manager.save_workflow_result(
                 result,
-                provider=request.provider,
+                provider=provider,
                 model=config.model,
             )
             return result

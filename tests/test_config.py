@@ -11,7 +11,7 @@ from pea.models import Provider
 def test_defaults_use_mock_and_local_cost_map() -> None:
     settings = Settings(_env_file=None)
 
-    assert settings.default_provider == Provider.MOCK
+    assert settings.default_provider == Provider.OPENAI
     assert settings.litellm_local_model_cost_map is True
     assert settings.max_retries == 2
     assert settings.max_calls == 100

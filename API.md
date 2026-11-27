@@ -15,6 +15,7 @@ uv run uvicorn pea.api.app:create_app --factory --host 127.0.0.1 --port 8000
 | 方法与路径 | 说明 |
 |---|---|
 | `GET /health` | 服务健康状态 |
+| `POST /v1/chat/completions` | OpenAI-compatible Prompt 优化接口，返回标准 chat.completion 结构 |
 | `POST /api/v1/optimizations` | 创建优化；返回 `WorkflowResult` |
 | `POST /api/v1/optimizations/{run_id}/clarifications` | 以 `{"answers":{"q1":"..."}}` 恢复澄清 |
 | `POST /api/v1/optimizations/{run_id}/cancel` | 请求取消活跃任务，返回 202 |
@@ -26,7 +27,27 @@ uv run uvicorn pea.api.app:create_app --factory --host 127.0.0.1 --port 8000
 | `GET /api/v1/history/{run_id}/export?format=json` | 下载 JSON |
 | `GET /api/v1/history/{run_id}/export?format=markdown` | 下载 Markdown |
 
-创建优化示例：
+## OpenAI-compatible 调用方式
+
+PEA 也可以作为本地 OpenAI 格式服务使用：
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="http://127.0.0.1:8000/v1",
+    api_key="local-not-used",
+)
+response = client.chat.completions.create(
+    model="pea-optimizer",
+    messages=[{"role": "user", "content": "写一封客户延期邮件，包含原因、日期和补救措施。"}],
+)
+print(response.choices[0].message.content)
+```
+
+该端点返回的是**优化后的 Prompt**，不是直接完成邮件或其他业务任务。支持 system/user/assistant 消息；多轮消息会保留为待优化上下文。当前不支持 `stream=true`，也不会伪造 Token `usage`，因此响应不包含该字段。
+
+## 创建优化示例：
 
 ```json
 {
@@ -238,6 +259,6 @@ completion_request = adapted.to_completion_request()
 
 ## 配置与限制
 
-OpenAI 需要 `OPENAI_API_KEY`、`OPENAI_MODEL`；OpenAI-compatible 服务可额外设置 `OPENAI_API_BASE`，例如 `https://host/v1`。Anthropic 需要 `ANTHROPIC_API_KEY`、`ANTHROPIC_MODEL`。默认 `PEA_DEFAULT_PROVIDER=mock`，`PEA_LITELLM_LOCAL_MODEL_COST_MAP=True`。
+OpenAI 需要 `OPENAI_API_KEY`、`OPENAI_MODEL`，默认 `PEA_DEFAULT_PROVIDER=openai`；OpenAI-compatible 服务可额外设置 `OPENAI_API_BASE`，例如 `https://host/v1`。Anthropic 需要 `ANTHROPIC_API_KEY`、`ANTHROPIC_MODEL`。默认 `PEA_LITELLM_LOCAL_MODEL_COST_MAP=True`。
 
 当前没有真实模型联调结果，规则动态评估不构成真实质量证明。Streamlit 通过上述 HTTP API 工作，数据库路径由 `PEA_DATABASE_PATH` 配置。

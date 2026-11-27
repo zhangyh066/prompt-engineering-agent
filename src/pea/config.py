@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     )
 
     default_provider: Provider = Field(
-        default=Provider.MOCK,
+        default=Provider.OPENAI,
         validation_alias="PEA_DEFAULT_PROVIDER",
     )
     openai_api_key: SecretStr | None = Field(

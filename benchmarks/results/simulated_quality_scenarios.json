@@ -1,0 +1,129 @@
+{
+  "simulation": true,
+  "simulation_id": "dev_mock_quality_pipeline_scenarios_v1",
+  "provider": "mock",
+  "model": "mock-simulated-quality",
+  "external_model_calls": 0,
+  "split": "dev",
+  "quality_claim_allowed": false,
+  "semantic_quality_measured": false,
+  "human_review_required": true,
+  "disclaimer": "These are Mock-only statistical pipeline scenarios. They are not evidence of model quality, correctness or accuracy improvement, or superiority over any competing system.",
+  "result_integrity": "Scenario statistics and averages are copied from QualityRunner reports; no wins, losses, ties, scores, means, or confidence intervals were altered.",
+  "data_source": "data/benchmark_splits/dolly_dev.jsonl",
+  "manifest": "benchmarks/results/dev_smoke_manifest.json",
+  "test_split_used": false,
+  "selection": "stratified",
+  "seed": 20261126,
+  "selected_case_order": [
+    {
+      "case_id": "dolly_13730",
+      "category": "brainstorming"
+    },
+    {
+      "case_id": "dolly_07982",
+      "category": "classification"
+    },
+    {
+      "case_id": "dolly_14085",
+      "category": "closed_qa"
+    },
+    {
+      "case_id": "dolly_11736",
+      "category": "creative_writing"
+    },
+    {
+      "case_id": "dolly_01597",
+      "category": "general_qa"
+    },
+    {
+      "case_id": "dolly_03652",
+      "category": "information_extraction"
+    },
+    {
+      "case_id": "dolly_08678",
+      "category": "open_qa"
+    },
+    {
+      "case_id": "dolly_11026",
+      "category": "summarization"
+    }
+  ],
+  "score_definition": "QualityRunner category-specific primary_score: normalized exact match for classification, token F1 for closed_qa and information_extraction, and auxiliary token F1 for the other categories. Wins/losses are from the optimized (candidate) perspective.",
+  "expected_local_mock_calls_per_scenario": 16,
+  "total_local_mock_calls": 48,
+  "scenarios": {
+    "optimized_wins": {
+      "status": "completed",
+      "cases": 8,
+      "completed_cases": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "mean_difference": 1.0,
+      "confidence": 0.95,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "original_average_score": 0.0,
+      "optimized_average_score": 1.0,
+      "call_count": 16,
+      "original_call_count": 8,
+      "optimized_call_count": 8,
+      "completed_call_count": 16,
+      "external_model_calls": 0,
+      "quality_claim_allowed": false,
+      "validation_passed": true
+    },
+    "original_wins": {
+      "status": "completed",
+      "cases": 8,
+      "completed_cases": 8,
+      "wins": 0,
+      "ties": 0,
+      "losses": 8,
+      "mean_difference": -1.0,
+      "confidence": 0.95,
+      "ci_lower": -1.0,
+      "ci_upper": -1.0,
+      "original_average_score": 1.0,
+      "optimized_average_score": 0.0,
+      "call_count": 16,
+      "original_call_count": 8,
+      "optimized_call_count": 8,
+      "completed_call_count": 16,
+      "external_model_calls": 0,
+      "quality_claim_allowed": false,
+      "validation_passed": true
+    },
+    "ties": {
+      "status": "completed",
+      "cases": 8,
+      "completed_cases": 8,
+      "wins": 0,
+      "ties": 8,
+      "losses": 0,
+      "mean_difference": 0.0,
+      "confidence": 0.95,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "original_average_score": 1.0,
+      "optimized_average_score": 1.0,
+      "call_count": 16,
+      "original_call_count": 8,
+      "optimized_call_count": 8,
+      "completed_call_count": 16,
+      "external_model_calls": 0,
+      "quality_claim_allowed": false,
+      "validation_passed": true
+    }
+  },
+  "validation": {
+    "optimized_wins_at_least_8_wins": true,
+    "original_wins_at_least_8_optimized_losses": true,
+    "ties_exactly_8": true,
+    "selection_and_outcome_alignment": true,
+    "sixteen_local_calls_per_scenario": true,
+    "forty_eight_total_local_calls": true,
+    "all_passed": true
+  }
+}

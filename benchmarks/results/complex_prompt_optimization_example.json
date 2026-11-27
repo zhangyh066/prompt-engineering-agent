@@ -1,0 +1,205 @@
+{
+  "request": {
+    "user_request": "请优化以下 Prompt，用于管理层竞品研究，保留所有约束。",
+    "raw_prompt": "调研某公司进入企业知识管理市场的竞争方案。请比较飞书、钉钉、企业微信生态中的知识管理方案及两家独立厂商，重点分析权限、部署、检索、集成和总拥有成本。输出先给结论，再给对比表和12个月进入计划；必须区分公开事实、合理推断和未知信息；引用来源及发布日期；不得编造价格或市场份额；不要给法律结论；如信息不足，列出需要补充的数据。\n\nContext:\n目标客户：200-2000人规模的制造企业；产品：支持中文检索、权限管理和私有化部署；预算：首年不超过80万元；区域：中国大陆。"
+  },
+  "result": {
+    "request": {
+      "user_request": "请优化以下 Prompt，用于管理层竞品研究，保留所有约束。",
+      "raw_prompt": "调研某公司进入企业知识管理市场的竞争方案。请比较飞书、钉钉、企业微信生态中的知识管理方案及两家独立厂商，重点分析权限、部署、检索、集成和总拥有成本。输出先给结论，再给对比表和12个月进入计划；必须区分公开事实、合理推断和未知信息；引用来源及发布日期；不得编造价格或市场份额；不要给法律结论；如信息不足，列出需要补充的数据。\n\nContext:\n目标客户：200-2000人规模的制造企业；产品：支持中文检索、权限管理和私有化部署；预算：首年不超过80万元；区域：中国大陆。"
+    },
+    "intent": {
+      "goal": "调研某公司进入企业知识管理市场的竞争方案。请比较飞书、钉钉、企业微信生态中的知识管理方案及两家独立厂商，重点分析权限、部署、检索、集成和总拥有成本。输出先给结论，再给对比表和12个月进入计划；必须区分公开事实、合理推断和未知信息；引用来源及发布日期；不得编造价格或市场份额；不要给法律结论；如信息不足，列出需要补充的数据。\n\nContext:\n目标客户：200-2000人规模的制造企业；产品：支持中文检索、权限管理和私有化部署；预算：首年不超过80万元；区域：中国大陆。",
+      "task_type": "research",
+      "complexity": "complex",
+      "output_requirements": [
+        "输出先给结论，再给对比表和12个月进入计划"
+      ],
+      "constraints": [
+        "必须区分公开事实、合理推断和未知信息",
+        "不得编造价格或市场份额",
+        "不要给法律结论"
+      ],
+      "context": [
+        "用于管理层竞品研究"
+      ],
+      "examples": [],
+      "missing_information": [],
+      "needs_clarification": false,
+      "requires_tools": true,
+      "analysis_method": "rule_based"
+    },
+    "diagnosis": {
+      "overall_score": 87.5,
+      "priority": "low",
+      "assessments": [
+        {
+          "dimension": "goal_clarity",
+          "score": 5,
+          "findings": [
+            "包含明确的任务动作"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "context_completeness",
+          "score": 5,
+          "findings": [
+            "包含背景、受众或应用场景信息"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "role_setting",
+          "score": 3,
+          "findings": [
+            "未设置角色；仅在专业视角能改善结果时需要补充"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "task_decomposition",
+          "score": 2,
+          "findings": [
+            "任务具有多个环节，但缺少明确执行顺序"
+          ],
+          "suggestions": [
+            "按输入处理、核心任务和输出检查拆分步骤"
+          ]
+        },
+        {
+          "dimension": "output_format",
+          "score": 5,
+          "findings": [
+            "包含输出形式或格式要求"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "constraints",
+          "score": 5,
+          "findings": [
+            "包含明确的约束条件"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "ambiguity_risk",
+          "score": 5,
+          "findings": [
+            "未发现常见模糊表述"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "executability",
+          "score": 5,
+          "findings": [
+            "任务动作和输出要求可直接执行"
+          ],
+          "suggestions": []
+        }
+      ],
+      "strengths": [
+        "包含明确的任务动作",
+        "包含背景、受众或应用场景信息",
+        "包含输出形式或格式要求",
+        "包含明确的约束条件",
+        "未发现常见模糊表述",
+        "任务动作和输出要求可直接执行"
+      ],
+      "issues": [
+        "任务具有多个环节，但缺少明确执行顺序"
+      ],
+      "suggestions": [
+        "按输入处理、核心任务和输出检查拆分步骤"
+      ],
+      "needs_optimization": true
+    },
+    "strategy_plan": {
+      "selected": [
+        {
+          "strategy": "zero_shot",
+          "reason": "以清晰的直接指令作为最小优化基线，不默认添加示例或角色",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "constraint_based",
+          "reason": "保留用户约束；如有冲突则明确要求指出，而不是擅自取舍",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "structured_output",
+          "reason": "将交付物、输出格式和必要内容转化为可检查要求",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "task_decomposition",
+          "reason": "任务包含多个环节，明确处理步骤以降低遗漏风险",
+          "expected_cost": "medium"
+        },
+        {
+          "strategy": "role_prompting",
+          "reason": "复杂专业任务需要与目标直接相关的分析视角",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "react",
+          "reason": "任务明确依赖最新资料或检索，只有在工具可用时才执行证据获取",
+          "expected_cost": "high"
+        }
+      ],
+      "lightweight": false,
+      "rationale": "选择 6 项策略；依据任务类型、复杂度和诊断缺陷，未机械叠加不适用策略"
+    },
+    "generated_prompt": {
+      "content": "## 专业视角\n你是一名严谨的研究分析员，重视证据质量、来源可核查性和不确定性说明。\n\n## 任务目标\n调研某公司进入企业知识管理市场的竞争方案。请比较飞书、钉钉、企业微信生态中的知识管理方案及两家独立厂商，重点分析权限、部署、检索、集成和总拥有成本。输出先给结论，再给对比表和12个月进入计划；必须区分公开事实、合理推断和未知信息；引用来源及发布日期；不得编造价格或市场份额；不要给法律结论；如信息不足，列出需要补充的数据。\n\n## 输入材料与上下文\n目标客户：200-2000人规模的制造企业；产品：支持中文检索、权限管理和私有化部署；预算：首年不超过80万元；区域：中国大陆。\n- 用于管理层竞品研究\n\n## 执行步骤\n1. 明确研究问题、比较对象、范围和所需证据，固定比较口径。\n2. 获取并评估来源，记录发布日期、适用区域和关键证据；工具不可用时明确限制。\n3. 按统一口径比较方案，区分公开事实、合理推断和未知信息。\n4. 形成建议与实施计划，逐项对照输出要求和验收标准。\n\n## 工具与证据\n仅在当前环境确实提供检索或相关工具时使用工具。先获取与问题直接相关的资料，记录可核查来源，再形成结论；工具不可用或证据不足时明确说明，不得编造检索过程、数据或来源。\n\n## 输出要求\n- 输出先给结论，再给对比表和12个月进入计划\n\n## 必须遵守的约束\n- 信息或证据不足时明确说明，不得编造数据、事实或来源\n\n## 验收标准\n- 覆盖任务目标要求的全部交付物，保留事实、日期、数字和重要限定条件\n- 关键结论具有可核查来源和日期，比较对象采用一致口径\n- 公开事实、合理推断和未知信息明确分开，建议与实施计划对应研究证据\n- 逐项满足字数、数量、语言和禁止事项；约束冲突时停止并指出\n- 输出结构可逐项核对；要求机器可读时必须能够直接解析",
+      "changes": [
+        {
+          "description": "拆分任务目标、输入材料、输出要求和验收标准",
+          "reason": "减少背景重复，使执行者知道要做什么、依据什么输入以及如何判定结果合格",
+          "strategies": [
+            "zero_shot"
+          ]
+        },
+        {
+          "description": "保留并突出用户约束和冲突处理要求",
+          "reason": "保留用户约束；如有冲突则明确要求指出，而不是擅自取舍",
+          "strategies": [
+            "constraint_based"
+          ]
+        },
+        {
+          "description": "明确输出结构、格式和必要交付物",
+          "reason": "将交付物、输出格式和必要内容转化为可检查要求",
+          "strategies": [
+            "structured_output"
+          ]
+        },
+        {
+          "description": "将多环节任务组织为明确的执行步骤",
+          "reason": "任务包含多个环节，明确处理步骤以降低遗漏风险",
+          "strategies": [
+            "task_decomposition"
+          ]
+        },
+        {
+          "description": "引入与任务直接相关的专业视角",
+          "reason": "复杂专业任务需要与目标直接相关的分析视角",
+          "strategies": [
+            "role_prompting"
+          ]
+        },
+        {
+          "description": "在具备工具时交替获取证据和处理任务",
+          "reason": "任务明确依赖最新资料或检索，只有在工具可用时才执行证据获取",
+          "strategies": [
+            "react"
+          ]
+        }
+      ],
+      "generation_method": "deterministic"
+    }
+  },
+  "execution_result_included": false
+}

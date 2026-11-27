@@ -1,0 +1,50 @@
+[project.urls]
+Repository = "https://github.com/zhangyh066/prompt-engineering-agent"
+Issues = "https://github.com/zhangyh066/prompt-engineering-agent/issues"
+
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prompt-engineering-agent"
+version = "0.2.0"
+description = "Prompt Engineering Agent with diagnosis, planning, evaluation, and iterative refinement"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "PEA Contributors" }]
+keywords = ["prompt-engineering", "llm", "langgraph", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.165.0",
+    "httpx>=0.28.0,<1.0.0",
+    "langgraph==1.2.24",
+    "litellm==1.111.0",
+    "pydantic==2.14.4",
+    "pydantic-settings>=2.12.0,<3.0.0",
+    "sqlalchemy>=2.0.46,<2.1.0",
+    "streamlit>=1.50.0,<2.0.0",
+    "uvicorn>=0.38.0,<1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.0,<10.0.0",
+    "pyyaml>=6.0,<7.0",
+]
+
+[project.scripts]
+pea = "pea.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pea"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

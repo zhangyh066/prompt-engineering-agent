@@ -1,0 +1,770 @@
+{
+  "status": "completed",
+  "provider": "mock",
+  "model": "mock-local",
+  "temperature": 0.0,
+  "limit": 8,
+  "split": "dev",
+  "selection": "stratified",
+  "seed": 20261126,
+  "allow_real_model": false,
+  "selected_case_count": 8,
+  "completed_case_count": 8,
+  "cases": [
+    {
+      "case_id": "dolly_13730",
+      "category": "brainstorming",
+      "split": "dev",
+      "original_prompt": "Give me a list of the communes in Barolo DOCG",
+      "optimized_prompt": "## 任务目标\nGive me a list of the communes in Barolo DOCG\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 2,
+          "total_tokens": 12,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000054799998906673864,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 18,
+          "completion_tokens": 2,
+          "total_tokens": 20,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000020399998902576044,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_07982",
+      "category": "classification",
+      "split": "dev",
+      "original_prompt": "Identify which instrument is string or percussion: Dabakan, Kwitra",
+      "optimized_prompt": "## 任务目标\nIdentify which instrument is string or percussion: Dabakan, Kwitra\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "exact_match",
+          "primary_score": 0.0,
+          "interpretation": "Classification accuracy uses normalized exact match"
+        },
+        "usage": {
+          "prompt_tokens": 9,
+          "completion_tokens": 2,
+          "total_tokens": 11,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.00001179999890155159,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "exact_match",
+          "primary_score": 0.0,
+          "interpretation": "Classification accuracy uses normalized exact match"
+        },
+        "usage": {
+          "prompt_tokens": 17,
+          "completion_tokens": 2,
+          "total_tokens": 19,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000011500000255182385,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_14085",
+      "category": "closed_qa",
+      "split": "dev",
+      "original_prompt": "What is an archipelago\n\nContext:\nAn archipelago (/ˌɑːrkəˈpɛləˌɡoʊ/ (listen) AR-kə-PEL-ə-goh), sometimes called an island group or island chain, is a chain, cluster, or collection of islands, or sometimes a sea containing a small number of scattered islands.\n\nExamples of archipelagos include: the Indonesian Archipelago, the Andaman and Nicobar Islands, the Lakshadweep Islands, the Galápagos Islands, the Japanese archipelago, the Philippine Archipelago, the Maldives, the Balearic Islands, The Bahamas, the Aegean Islands, the Hawaiian Islands, the Canary Islands, Malta, the Azores, the Canadian Arctic Archipelago, the British Isles, the islands of the Archipelago Sea, and Shetland. They are sometimes defined by political boundaries. For example, the Gulf archipelago off the northeastern Pacific coast forms part of a larger archipelago that geographically includes Washington state's San Juan Islands; while the Gulf archipelago and San Juan Islands are geographically related, they are not technically included in the same archipelago due to manmade geopolitical borders.",
+      "optimized_prompt": "## 任务目标\nWhat is an archipelago\n\nContext:\nAn archipelago (/ˌɑːrkəˈpɛləˌɡoʊ/ (listen) AR-kə-PEL-ə-goh), sometimes called an island group or island chain, is a chain, cluster, or collection of islands, or sometimes a sea containing a small number of scattered islands.\n\nExamples of archipelagos include: the Indonesian Archipelago, the Andaman and Nicobar Islands, the Lakshadweep Islands, the Galápagos Islands, the Japanese archipelago, the Philippine Archipelago, the Maldives, the Balearic Islands, The Bahamas, the Aegean Islands, the Hawaiian Islands, the Canary Islands, Malta, the Azores, the Canadian Arctic Archipelago, the British Isles, the islands of the Archipelago Sea, and Shetland. They are sometimes defined by political boundaries. For example, the Gulf archipelago off the northeastern Pacific coast forms part of a larger archipelago that geographically includes Washington state's San Juan Islands; while the Gulf archipelago and San Juan Islands are geographically related, they are not technically included in the same archipelago due to manmade geopolitical borders.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+        },
+        "usage": {
+          "prompt_tokens": 151,
+          "completion_tokens": 2,
+          "total_tokens": 153,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000025700002879602835,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+        },
+        "usage": {
+          "prompt_tokens": 159,
+          "completion_tokens": 2,
+          "total_tokens": 161,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000021699997887481004,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_11736",
+      "category": "creative_writing",
+      "split": "dev",
+      "original_prompt": "Why did you take so long to get home last night?",
+      "optimized_prompt": "## 任务目标\nWhy did you take so long to get home last night?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 11,
+          "completion_tokens": 2,
+          "total_tokens": 13,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 9.999999747378752e-6,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 19,
+          "completion_tokens": 2,
+          "total_tokens": 21,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000011899999663000926,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_01597",
+      "category": "general_qa",
+      "split": "dev",
+      "original_prompt": "What are good native plants to grow in Ohio?",
+      "optimized_prompt": "## 任务目标\nWhat are good native plants to grow in Ohio?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 9,
+          "completion_tokens": 2,
+          "total_tokens": 11,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.00001049999991664663,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 17,
+          "completion_tokens": 2,
+          "total_tokens": 19,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000012600001355167478,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_03652",
+      "category": "information_extraction",
+      "split": "dev",
+      "original_prompt": "Based on the following passage describe the first solid-state device and its use.\n\nContext:\nLong before any knowledge of electricity existed, people were aware of shocks from electric fish. Ancient Egyptian texts dating from 2750 BCE referred to these fish as the \"Thunderer of the Nile\", and described them as the \"protectors\" of all other fish. Electric fish were again reported millennia later by ancient Greek, Roman and Arabic naturalists and physicians. Several ancient writers, such as Pliny the Elder and Scribonius Largus, attested to the numbing effect of electric shocks delivered by electric catfish and electric rays, and knew that such shocks could travel along conducting objects. Patients with ailments such as gout or headache were directed to touch electric fish in the hope that the powerful jolt might cure them.\nAncient cultures around the Mediterranean knew that certain objects, such as rods of amber, could be rubbed with cat's fur to attract light objects like feathers. Thales of Miletus made a series of observations on static electricity around 600 BCE, from which he believed that friction rendered amber magnetic, in contrast to minerals such as magnetite, which needed no rubbing.\nThales was incorrect in believing the attraction was due to a magnetic effect, but later science would prove a link between magnetism and electricity. According to a controversial theory, the Parthians may have had knowledge of electroplating, based on the 1936 discovery of the Baghdad Battery, which resembles a galvanic cell, though it is uncertain whether the artifact was electrical in nature.\nElectricity would remain little more than an intellectual curiosity for millennia until 1600, when the English scientist William Gilbert wrote De Magnete, in which he made a careful study of electricity and magnetism, distinguishing the lodestone effect from static electricity produced by rubbing amber. He coined the New Latin word electricus (\"of amber\" or \"like amber\",, elektron, the Greek word for \"amber\") to refer to the property of attracting small objects after being rubbed. This association gave rise to the English words \"electric\" and \"electricity\", which made their first appearance in print in Thomas Browne's Pseudodoxia Epidemica of 1646.\nFurther work was conducted in the 17th and early 18th centuries by Otto von Guericke, Robert Boyle, Stephen Gray and C. F. du Fay. Later in the 18th century, Benjamin Franklin conducted extensive research in electricity, selling his possessions to fund his work. In June 1752 he is reputed to have attached a metal key to the bottom of a dampened kite string and flown the kite in a storm-threatened sky. A succession of sparks jumping from the key to the back of his hand showed that lightning was indeed electrical in nature. He also explained the apparently paradoxical behavior of the Leyden jar as a device for storing large amounts of electrical charge in terms of electricity consisting of both positive and negative charges\nIn 1775, Hugh Williamson reported a series of experiments to the Royal Society on the shocks delivered by the electric eel; that same year the surgeon and anatomist John Hunter described the structure of the fish's electric organs. In 1791, Luigi Galvani published his discovery of bioelectromagnetics, demonstrating that electricity was the medium by which neurons passed signals to the muscles. Alessandro Volta's battery, or voltaic pile, of 1800, made from alternating layers of zinc and copper, provided scientists with a more reliable source of electrical energy than the electrostatic machines previously used. The recognition of electromagnetism, the unity of electric and magnetic phenomena, is due to Hans Christian Ørsted and André-Marie Ampère in 1819–1820. Michael Faraday invented the electric motor in 1821, and Georg Ohm mathematically analysed the electrical circuit in 1827. Electricity and magnetism (and light) were definitively linked by James Clerk Maxwell, in particular in his \"On Physical Lines of Force\" in 1861 and 1862. \nWhile the early 19th century had seen rapid progress in electrical science, the late 19th century would see the greatest progress in electrical engineering. Through such people as Alexander Graham Bell, Ottó Bláthy, Thomas Edison, Galileo Ferraris, Oliver Heaviside, Ányos Jedlik, William Thomson, 1st Baron Kelvin, Charles Algernon Parsons, Werner von Siemens, Joseph Swan, Reginald Fessenden, Nikola Tesla and George Westinghouse, electricity turned from a scientific curiosity into an essential tool for modern life.\nIn 1887, Heinrich Hertz discovered that electrodes illuminated with ultraviolet light create electric sparks more easily. In 1905, Albert Einstein published a paper that explained experimental data from the photoelectric effect as being the result of light energy being carried in discrete quantized packets, energising electrons. This discovery led to the quantum revolution. Einstein was awarded the Nobel Prize in Physics in 1921 for \"his discovery of the law of the photoelectric effect\". The photoelectric effect is also employed in photocells such as can be found in solar panels.\nThe first solid-state device was the \"cat's-whisker detector\" first used in the 1900s in radio receivers. A whisker-like wire is placed lightly in contact with a solid crystal (such as a germanium crystal) to detect a radio signal by the contact junction effect. In a solid-state component, the current is confined to solid elements and compounds engineered specifically to switch and amplify it. Current flow can be understood in two forms: as negatively charged electrons, and as positively charged electron deficiencies called holes. These charges and holes are understood in terms of quantum physics. The building material is most often a crystalline semiconductor.\nSolid-state electronics came into its own with the emergence of transistor technology. The first working transistor, a germanium-based point-contact transistor, was invented by John Bardeen and Walter Houser Brattain at Bell Labs in 1947, followed by the bipolar junction transistor in 1948.",
+      "optimized_prompt": "## 专业视角\n你是一名严谨的研究分析员，重视证据质量、来源可核查性和不确定性说明。\n\n## 任务目标\nBased on the following passage describe the first solid-state device and its use.\n\nContext:\nLong before any knowledge of electricity existed, people were aware of shocks from electric fish. Ancient Egyptian texts dating from 2750 BCE referred to these fish as the \"Thunderer of the Nile\", and described them as the \"protectors\" of all other fish. Electric fish were again reported millennia later by ancient Greek, Roman and Arabic naturalists and physicians. Several ancient writers, such as Pliny the Elder and Scribonius Largus, attested to the numbing effect of electric shocks delivered by electric catfish and electric rays, and knew that such shocks could travel along conducting objects. Patients with ailments such as gout or headache were directed to touch electric fish in the hope that the powerful jolt might cure them.\nAncient cultures around the Mediterranean knew that certain objects, such as rods of amber, could be rubbed with cat's fur to attract light objects like feathers. Thales of Miletus made a series of observations on static electricity around 600 BCE, from which he believed that friction rendered amber magnetic, in contrast to minerals such as magnetite, which needed no rubbing.\nThales was incorrect in believing the attraction was due to a magnetic effect, but later science would prove a link between magnetism and electricity. According to a controversial theory, the Parthians may have had knowledge of electroplating, based on the 1936 discovery of the Baghdad Battery, which resembles a galvanic cell, though it is uncertain whether the artifact was electrical in nature.\nElectricity would remain little more than an intellectual curiosity for millennia until 1600, when the English scientist William Gilbert wrote De Magnete, in which he made a careful study of electricity and magnetism, distinguishing the lodestone effect from static electricity produced by rubbing amber. He coined the New Latin word electricus (\"of amber\" or \"like amber\",, elektron, the Greek word for \"amber\") to refer to the property of attracting small objects after being rubbed. This association gave rise to the English words \"electric\" and \"electricity\", which made their first appearance in print in Thomas Browne's Pseudodoxia Epidemica of 1646.\nFurther work was conducted in the 17th and early 18th centuries by Otto von Guericke, Robert Boyle, Stephen Gray and C. F. du Fay. Later in the 18th century, Benjamin Franklin conducted extensive research in electricity, selling his possessions to fund his work. In June 1752 he is reputed to have attached a metal key to the bottom of a dampened kite string and flown the kite in a storm-threatened sky. A succession of sparks jumping from the key to the back of his hand showed that lightning was indeed electrical in nature. He also explained the apparently paradoxical behavior of the Leyden jar as a device for storing large amounts of electrical charge in terms of electricity consisting of both positive and negative charges\nIn 1775, Hugh Williamson reported a series of experiments to the Royal Society on the shocks delivered by the electric eel; that same year the surgeon and anatomist John Hunter described the structure of the fish's electric organs. In 1791, Luigi Galvani published his discovery of bioelectromagnetics, demonstrating that electricity was the medium by which neurons passed signals to the muscles. Alessandro Volta's battery, or voltaic pile, of 1800, made from alternating layers of zinc and copper, provided scientists with a more reliable source of electrical energy than the electrostatic machines previously used. The recognition of electromagnetism, the unity of electric and magnetic phenomena, is due to Hans Christian Ørsted and André-Marie Ampère in 1819–1820. Michael Faraday invented the electric motor in 1821, and Georg Ohm mathematically analysed the electrical circuit in 1827. Electricity and magnetism (and light) were definitively linked by James Clerk Maxwell, in particular in his \"On Physical Lines of Force\" in 1861 and 1862. \nWhile the early 19th century had seen rapid progress in electrical science, the late 19th century would see the greatest progress in electrical engineering. Through such people as Alexander Graham Bell, Ottó Bláthy, Thomas Edison, Galileo Ferraris, Oliver Heaviside, Ányos Jedlik, William Thomson, 1st Baron Kelvin, Charles Algernon Parsons, Werner von Siemens, Joseph Swan, Reginald Fessenden, Nikola Tesla and George Westinghouse, electricity turned from a scientific curiosity into an essential tool for modern life.\nIn 1887, Heinrich Hertz discovered that electrodes illuminated with ultraviolet light create electric sparks more easily. In 1905, Albert Einstein published a paper that explained experimental data from the photoelectric effect as being the result of light energy being carried in discrete quantized packets, energising electrons. This discovery led to the quantum revolution. Einstein was awarded the Nobel Prize in Physics in 1921 for \"his discovery of the law of the photoelectric effect\". The photoelectric effect is also employed in photocells such as can be found in solar panels.\nThe first solid-state device was the \"cat's-whisker detector\" first used in the 1900s in radio receivers. A whisker-like wire is placed lightly in contact with a solid crystal (such as a germanium crystal) to detect a radio signal by the contact junction effect. In a solid-state component, the current is confined to solid elements and compounds engineered specifically to switch and amplify it. Current flow can be understood in two forms: as negatively charged electrons, and as positively charged electron deficiencies called holes. These charges and holes are understood in terms of quantum physics. The building material is most often a crystalline semiconductor.\nSolid-state electronics came into its own with the emergence of transistor technology. The first working transistor, a germanium-based point-contact transistor, was invented by John Bardeen and Walter Houser Brattain at Bell Labs in 1947, followed by the bipolar junction transistor in 1948.\n\n## 执行步骤\n1. 识别输入、目标受众和必要背景；信息不足时明确指出。\n2. 围绕任务目标完成核心内容，不添加无关任务。\n3. 按输出要求和约束整理结果，并检查是否遗漏用户要求。\n\n## 输出要求\n- 给出结论、支持证据、可核查来源和仍然不确定的信息\n\n## 必须遵守的约束\n- 信息或证据不足时明确说明，不得编造数据、事实或来源\n\n## 提交前检查\n检查任务目标、输出格式和全部约束是否满足；发现问题时先修正再提交。不要输出内部分析或推理过程，只提交最终结果。",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+        },
+        "usage": {
+          "prompt_tokens": 944,
+          "completion_tokens": 2,
+          "total_tokens": 946,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.00006779999966965988,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+        },
+        "usage": {
+          "prompt_tokens": 968,
+          "completion_tokens": 2,
+          "total_tokens": 970,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.00006719999873894267,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_08678",
+      "category": "open_qa",
+      "split": "dev",
+      "original_prompt": "Fissures, vents, and plugs are all associated with which geological feature?",
+      "optimized_prompt": "## 任务目标\nFissures, vents, and plugs are all associated with which geological feature?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 11,
+          "completion_tokens": 2,
+          "total_tokens": 13,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.00001089999932446517,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.0,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 19,
+          "completion_tokens": 2,
+          "total_tokens": 21,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000011299998732283711,
+        "attempts": 1,
+        "error": null
+      }
+    },
+    {
+      "case_id": "dolly_11026",
+      "category": "summarization",
+      "split": "dev",
+      "original_prompt": "What is the third limb of yoga?\n\nContext:\nsanas originated in India. In his Yoga Sutras, Patanjali (c. 2nd to 4th century CE) describes asana practice as the third of the eight limbs (Sanskrit: अष्टाङ्ग, aṣṭāṅga, from अष्ट् aṣṭ, eight, and अङ्ग aṅga, limb) of classical, or raja yoga.",
+      "optimized_prompt": "## 任务目标\nWhat is the third limb of yoga?\n\nContext:\nsanas originated in India. In his Yoga Sutras, Patanjali (c. 2nd to 4th century CE) describes asana practice as the third of the eight limbs (Sanskrit: अष्टाङ्ग, aṣṭāṅga, from अष्ट् aṣṭ, eight, and अङ्ग aṅga, limb) of classical, or raja yoga.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+      "original": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.017699115044247787,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.017699115044247787,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 49,
+          "completion_tokens": 2,
+          "total_tokens": 51,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000013299999409355223,
+        "attempts": 1,
+        "error": null
+      },
+      "optimized": {
+        "status": "completed",
+        "output": "Mock response",
+        "score": {
+          "exact_match": 0.0,
+          "token_f1": 0.017699115044247787,
+          "primary_metric": "auxiliary_token_f1",
+          "primary_score": 0.017699115044247787,
+          "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+        },
+        "usage": {
+          "prompt_tokens": 57,
+          "completion_tokens": 2,
+          "total_tokens": 59,
+          "source": "mock_estimate"
+        },
+        "cost_usd": "0",
+        "latency_seconds": 0.000014100001862971112,
+        "attempts": 1,
+        "error": null
+      }
+    }
+  ],
+  "group_summaries": {
+    "original": {
+      "group": "original",
+      "selected_cases": 8,
+      "attempted_calls": 8,
+      "completed_calls": 8,
+      "scored_calls": 8,
+      "average_exact_match": 0.0,
+      "average_token_f1": 0.0022123893805309734,
+      "average_primary_score": 0.0022123893805309734,
+      "prompt_tokens": 1194,
+      "completion_tokens": 16,
+      "total_tokens": 1210,
+      "total_cost_usd": "0",
+      "total_latency_seconds": 0.00020479999875533395,
+      "errors": []
+    },
+    "optimized": {
+      "group": "optimized",
+      "selected_cases": 8,
+      "attempted_calls": 8,
+      "completed_calls": 8,
+      "scored_calls": 8,
+      "average_exact_match": 0.0,
+      "average_token_f1": 0.0022123893805309734,
+      "average_primary_score": 0.0022123893805309734,
+      "prompt_tokens": 1274,
+      "completion_tokens": 16,
+      "total_tokens": 1290,
+      "total_cost_usd": "0",
+      "total_latency_seconds": 0.00017069999739760533,
+      "errors": []
+    }
+  },
+  "categories": {
+    "brainstorming": {
+      "category": "brainstorming",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 10,
+          "completion_tokens": 2,
+          "total_tokens": 12,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000054799998906673864,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 18,
+          "completion_tokens": 2,
+          "total_tokens": 20,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000020399998902576044,
+          "errors": []
+        }
+      }
+    },
+    "classification": {
+      "category": "classification",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 9,
+          "completion_tokens": 2,
+          "total_tokens": 11,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00001179999890155159,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 17,
+          "completion_tokens": 2,
+          "total_tokens": 19,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000011500000255182385,
+          "errors": []
+        }
+      }
+    },
+    "closed_qa": {
+      "category": "closed_qa",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 151,
+          "completion_tokens": 2,
+          "total_tokens": 153,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000025700002879602835,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 159,
+          "completion_tokens": 2,
+          "total_tokens": 161,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000021699997887481004,
+          "errors": []
+        }
+      }
+    },
+    "creative_writing": {
+      "category": "creative_writing",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 11,
+          "completion_tokens": 2,
+          "total_tokens": 13,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 9.999999747378752e-6,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 19,
+          "completion_tokens": 2,
+          "total_tokens": 21,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000011899999663000926,
+          "errors": []
+        }
+      }
+    },
+    "general_qa": {
+      "category": "general_qa",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 9,
+          "completion_tokens": 2,
+          "total_tokens": 11,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00001049999991664663,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 17,
+          "completion_tokens": 2,
+          "total_tokens": 19,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000012600001355167478,
+          "errors": []
+        }
+      }
+    },
+    "information_extraction": {
+      "category": "information_extraction",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 944,
+          "completion_tokens": 2,
+          "total_tokens": 946,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00006779999966965988,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 968,
+          "completion_tokens": 2,
+          "total_tokens": 970,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00006719999873894267,
+          "errors": []
+        }
+      }
+    },
+    "open_qa": {
+      "category": "open_qa",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 11,
+          "completion_tokens": 2,
+          "total_tokens": 13,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00001089999932446517,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 19,
+          "completion_tokens": 2,
+          "total_tokens": 21,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000011299998732283711,
+          "errors": []
+        }
+      }
+    },
+    "summarization": {
+      "category": "summarization",
+      "case_count": 1,
+      "groups": {
+        "original": {
+          "group": "original",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.017699115044247787,
+          "average_primary_score": 0.017699115044247787,
+          "prompt_tokens": 49,
+          "completion_tokens": 2,
+          "total_tokens": 51,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000013299999409355223,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 1,
+          "attempted_calls": 1,
+          "completed_calls": 1,
+          "scored_calls": 1,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.017699115044247787,
+          "average_primary_score": 0.017699115044247787,
+          "prompt_tokens": 57,
+          "completion_tokens": 2,
+          "total_tokens": 59,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.000014100001862971112,
+          "errors": []
+        }
+      }
+    }
+  },
+  "paired_comparison": {
+    "samples": 8,
+    "wins": 0,
+    "ties": 8,
+    "losses": 0,
+    "mean_difference": 0.0,
+    "confidence": 0.95,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0,
+    "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+  },
+  "prompt_tokens": 2468,
+  "completion_tokens": 32,
+  "total_tokens": 2500,
+  "total_cost_usd": "0",
+  "total_latency_seconds": 0.0003754999961529393,
+  "errors": [],
+  "warnings": [
+    "Reference overlap metrics do not measure open-ended semantic quality or establish superiority over competing systems."
+  ],
+  "human_review_required": true,
+  "quality_claim_allowed": false,
+  "semantic_quality_measured": false
+}

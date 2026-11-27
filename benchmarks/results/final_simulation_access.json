@@ -1,0 +1,45 @@
+{
+  "simulation": true,
+  "accessed_at": "2026-11-27T02:12:47.534468+00:00",
+  "test_sha256": "5e88309b1f2f9b5efd3764787d1718e7dccbec14f88eb084ea9c7e64cc5af581",
+  "selected_candidate": "pea_default",
+  "dev_selection_report_sha256": "29c81f9f50834fd7528ce1b8213e73eda7283997c0a0f373f4e0a02473612740",
+  "selection_seed": "20261127:final-simulation",
+  "cases": [
+    {
+      "case_id": "dolly_08229",
+      "category": "brainstorming"
+    },
+    {
+      "case_id": "dolly_01620",
+      "category": "classification"
+    },
+    {
+      "case_id": "dolly_04998",
+      "category": "closed_qa"
+    },
+    {
+      "case_id": "dolly_12145",
+      "category": "creative_writing"
+    },
+    {
+      "case_id": "dolly_01635",
+      "category": "general_qa"
+    },
+    {
+      "case_id": "dolly_07622",
+      "category": "information_extraction"
+    },
+    {
+      "case_id": "dolly_08388",
+      "category": "open_qa"
+    },
+    {
+      "case_id": "dolly_14862",
+      "category": "summarization"
+    }
+  ],
+  "external_api_calls": 0,
+  "further_tuning_allowed": false,
+  "quality_claim_allowed": false
+}

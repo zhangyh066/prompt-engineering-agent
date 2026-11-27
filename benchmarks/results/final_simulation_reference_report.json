@@ -1,0 +1,186 @@
+{
+  "simulation": true,
+  "split": "test",
+  "selected_candidate": "pea_default",
+  "actual_subagent_model": "unspecified",
+  "real_api_used": false,
+  "external_api_calls": 0,
+  "original_average_primary_score": 0.46899119195548566,
+  "pea_average_primary_score": 0.44574498349691627,
+  "paired_comparison": {
+    "samples": 8,
+    "wins": 5,
+    "ties": 1,
+    "losses": 2,
+    "mean_difference": -0.023246208458569444,
+    "confidence": 0.95,
+    "ci_lower": -0.1410978020841024,
+    "ci_upper": 0.04857778958974274,
+    "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+  },
+  "cases": [
+    {
+      "case_id": "dolly_01620",
+      "category": "classification",
+      "original_output": "Doordash: Food delivery\nLyft: Ridesharing\nWolt: Food delivery\nDeliveroo: Food delivery\nBolt: Ridesharing\nDidi: Ridesharing\nRappi: Food delivery",
+      "pea_output": "- DoorDash: Food delivery\n- Lyft: Ridesharing\n- Wolt: Food delivery\n- Deliveroo: Food delivery\n- Bolt: Ridesharing\n- Didi: Ridesharing\n- Rappi: Food delivery",
+      "original_score": {
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "primary_metric": "exact_match",
+        "primary_score": 1.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      },
+      "pea_score": {
+        "exact_match": 1.0,
+        "token_f1": 1.0,
+        "primary_metric": "exact_match",
+        "primary_score": 1.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      }
+    },
+    {
+      "case_id": "dolly_01635",
+      "category": "general_qa",
+      "original_output": "- Carrot\n- Broccoli\n- Spinach\n- Potato\n- Cauliflower",
+      "pea_output": "- Carrots\n- Broccoli\n- Spinach\n- Bell peppers\n- Zucchini",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.6,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.6,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.1818181818181818,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.1818181818181818,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_04998",
+      "category": "closed_qa",
+      "original_output": "After his promotion to Commander, Caldwell commanded the ironclad Essex, the Glaucus, and the R. R. Cuyler.",
+      "pea_output": "After his promotion to Commander, he commanded the Essex, the Glaucus, and the R. R. Cuyler.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.5263157894736842,
+        "primary_metric": "token_f1",
+        "primary_score": 0.5263157894736842,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.5555555555555556,
+        "primary_metric": "token_f1",
+        "primary_score": 0.5555555555555556,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    },
+    {
+      "case_id": "dolly_07622",
+      "category": "information_extraction",
+      "original_output": "The area around Austin lies within the Texas Hill Country and features numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis.",
+      "pea_output": "The Austin area is distinguished by its location in the Texas Hill Country, with numerous lakes, rivers, and waterways, including Lady Bird Lake, Lake Travis, Barton Springs, and McKinney Falls.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.5901639344262295,
+        "primary_metric": "token_f1",
+        "primary_score": 0.5901639344262295,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.6567164179104477,
+        "primary_metric": "token_f1",
+        "primary_score": 0.6567164179104477,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    },
+    {
+      "case_id": "dolly_08229",
+      "category": "brainstorming",
+      "original_output": "I love working hard because it gives me a sense of purpose, helps me grow, and turns challenging goals into meaningful accomplishments. Seeing my progress and making a positive impact keeps me motivated.",
+      "pea_output": "I love working hard because it gives me a sense of purpose, helps me grow, and allows me to achieve results I can be proud of. It also builds discipline, creates new opportunities, and lets me make a meaningful contribution.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.08888888888888889,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.08888888888888889,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.15384615384615385,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.15384615384615385,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_08388",
+      "category": "open_qa",
+      "original_output": "Having children can bring love, joy, and a strong sense of purpose, but it also involves sleep deprivation, financial pressure, less personal time, and years of responsibility. The experience varies greatly depending on your children, support network, and circumstances.\n\nThere is no universally right number to have. Consider your desire to parent, health, finances, time, relationship, and available support. Choosing not to have children is also valid. Decide based on the life you want and the number of children you can lovingly care for, rather than outside pressure.",
+      "pea_output": "Having children can be deeply joyful and meaningful, but it also brings exhaustion, financial pressure, and major changes to your time, relationships, and priorities. There is no universally right number to have. Consider your health, finances, support network, partnership, lifestyle, and how much time and energy you can offer each child; for some people that means none, for others one, two, or more. Choose what supports a loving, stable family life rather than following outside expectations.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.2736842105263158,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.2736842105263158,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.26519337016574585,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.26519337016574585,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_12145",
+      "category": "creative_writing",
+      "original_output": "I was very disappointed with my child's recent visit. The waiting room was dirty, with dusty chairs, crumbs on the floor, and an overflowing trash bin. A dental office should provide a clean, hygienic environment, especially for children. The conditions made us uncomfortable and left me concerned about the practice's overall standards. I hope the office addresses this promptly, but I would hesitate to return.",
+      "pea_output": "I took my children to this dentist’s office and was appalled by the waiting room. The floors were grimy, the chairs had visible stains, and there was dust and trash around the room. A healthcare facility should feel clean and safe, especially for children. The dirty environment made our visit uncomfortable and left me unwilling to return.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.23287671232876714,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.23287671232876714,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.3,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.3,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_14862",
+      "category": "summarization",
+      "original_output": "The Premier League is the highest level of English football, contested by 20 clubs. Each team plays 38 matches per season, typically from August to May, facing every other team home and away. The league operates on a system of promotion and relegation with the English Football League.",
+      "pea_output": "The Premier League is the highest level of English football, contested by 20 clubs with promotion and relegation to and from the English Football League. Its season usually runs from August to May, with each team playing 38 matches—home and away against every other team—and most games taking place on weekend afternoons.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.44,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.44,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "pea_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.45283018867924524,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.45283018867924524,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    }
+  ],
+  "quality_claim_allowed": false,
+  "human_review_required": true,
+  "further_tuning_allowed": false
+}

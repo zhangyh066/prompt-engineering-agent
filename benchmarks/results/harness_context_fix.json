@@ -1,0 +1,25 @@
+{
+  "public_cases": 80,
+  "goal_preservation_rate": 1.0,
+  "output_structure_rate": 1.0,
+  "mean_prompt_expansion_ratio": 1.4060568330806367,
+  "median_prompt_expansion_ratio": 1.234400434074878,
+  "lightweight_plan_rate": 0.0,
+  "few_shot_without_example_rate": 0.0,
+  "role_on_simple_rate": 0.0,
+  "mutation_detection": {
+    "missing_output": 1.0,
+    "english_ambiguity": 1.0,
+    "english_length_conflict": 1.0,
+    "english_vague_clarification": 1.0
+  },
+  "source_categories": {
+    "brainstorming": 15,
+    "classification": 10,
+    "closed_qa": 10,
+    "creative_writing": 20,
+    "information_extraction": 10,
+    "summarization": 15
+  },
+  "semantic_quality_measured": false
+}

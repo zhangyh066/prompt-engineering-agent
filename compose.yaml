@@ -1,0 +1,40 @@
+name: pea
+
+services:
+  api:
+    build:
+      context: .
+      target: api
+    init: true
+    restart: unless-stopped
+    environment:
+      PEA_DATABASE_PATH: /data/pea.db
+      PEA_ENABLE_REAL_PROVIDERS: ${PEA_ENABLE_REAL_PROVIDERS:-False}
+      PEA_TRUSTED_HOSTS: 127.0.0.1,localhost,testserver,api
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-}
+      OPENAI_API_BASE: ${OPENAI_API_BASE:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
+      PEA_LITELLM_LOCAL_MODEL_COST_MAP: "True"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - pea-data:/data
+
+  ui:
+    build:
+      context: .
+      target: ui
+    init: true
+    restart: unless-stopped
+    environment:
+      PEA_API_BASE_URL: http://api:8000
+    ports:
+      - "127.0.0.1:8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pea-data:

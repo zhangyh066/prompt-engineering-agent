@@ -1,0 +1,193 @@
+{
+  "simulation": true,
+  "mode": "fresh_optimized_llm_subagent_after_context_fix",
+  "harness_change": "Directive analysis separated from embedded reference context",
+  "actual_subagent_model": "unspecified",
+  "actual_subagent_strength": "unspecified",
+  "real_openai_compatible_api_used": false,
+  "external_api_calls": 0,
+  "split": "dev",
+  "test_split_used": false,
+  "original_outputs_reused": true,
+  "fresh_optimized_subagent_used": true,
+  "agent_variability_confounds_comparison": true,
+  "cases": [
+    {
+      "case_id": "dolly_01597",
+      "category": "general_qa",
+      "original_output": "Good native plants for Ohio include purple coneflower, black-eyed Susan, butterfly milkweed, wild bergamot, wild columbine, cardinal flower, Ohio spiderwort, little bluestem, serviceberry, and eastern redbud. Choose species suited to your site's sunlight, soil, and moisture conditions.",
+      "optimized_output": "Good native plants to grow in Ohio include:\n- Purple coneflower\n- Black-eyed Susan\n- Wild bergamot\n- Butterfly milkweed\n- Ohio spiderwort\n- Wild columbine\n- Cardinal flower\n- Little bluestem\n- Serviceberry\n- Eastern redbud\n- Ohio buckeye\n- Witch hazel",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.2631578947368421,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.2631578947368421,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.2285714285714286,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.2285714285714286,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_03652",
+      "category": "information_extraction",
+      "original_output": "The first solid-state device was the cat's-whisker detector, first used in radio receivers in the 1900s. It detected radio signals by placing a whisker-like wire lightly in contact with a solid crystal, such as germanium, creating a contact junction.",
+      "optimized_output": "The first solid-state device was the cat’s-whisker detector, first used in radio receivers in the 1900s. It detected radio signals through the contact junction effect created by lightly touching a whisker-like wire to a solid crystal, such as a germanium crystal.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.823529411764706,
+        "primary_metric": "token_f1",
+        "primary_score": 0.823529411764706,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.782608695652174,
+        "primary_metric": "token_f1",
+        "primary_score": 0.782608695652174,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    },
+    {
+      "case_id": "dolly_07982",
+      "category": "classification",
+      "original_output": "Dabakan: percussion\nKwitra: string",
+      "optimized_output": "Dabakan: percussion\nKwitra: string",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8,
+        "primary_metric": "exact_match",
+        "primary_score": 0.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8,
+        "primary_metric": "exact_match",
+        "primary_score": 0.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      }
+    },
+    {
+      "case_id": "dolly_08678",
+      "category": "open_qa",
+      "original_output": "Volcanoes.",
+      "optimized_output": "Volcanoes.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.0,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.0,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_11026",
+      "category": "summarization",
+      "original_output": "The third limb of yoga is asana, the practice of physical postures.",
+      "optimized_output": "The third limb of yoga is asana, the practice of physical postures. Patanjali’s Yoga Sutras describe it as the third of the eight limbs of classical, or raja, yoga.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.1652892561983471,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.1652892561983471,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.22058823529411764,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.22058823529411764,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_11736",
+      "category": "creative_writing",
+      "original_output": "I'm sorry. I missed my usual train, and my phone had died, so I couldn't let you know. I took the next one and came straight home.",
+      "optimized_output": "I’m sorry I took so long. I missed my usual train and had to wait for the next one, which was delayed. My phone had also died, so I couldn’t call to let you know. I should have found another way to contact you instead of leaving you worried.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.11999999999999998,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.11999999999999998,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.17117117117117117,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.17117117117117117,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_13730",
+      "category": "brainstorming",
+      "original_output": "The communes in Barolo DOCG are:\n- Barolo\n- Castiglione Falletto\n- Cherasco\n- Diano d'Alba\n- Grinzane Cavour\n- La Morra\n- Monforte d'Alba\n- Novello\n- Roddi\n- Serralunga d'Alba\n- Verduno",
+      "optimized_output": "- Barolo\n- Castiglione Falletto\n- Serralunga d’Alba\n- La Morra\n- Monforte d’Alba\n- Novello\n- Verduno\n- Grinzane Cavour\n- Diano d’Alba\n- Cherasco\n- Roddi",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8717948717948718,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.8717948717948718,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8235294117647058,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.8235294117647058,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_14085",
+      "category": "closed_qa",
+      "original_output": "An archipelago is a chain, cluster, or collection of islands. The term can also refer to a sea containing a small number of scattered islands.",
+      "optimized_output": "An archipelago, sometimes called an island group or island chain, is a chain, cluster, or collection of islands. It can also refer to a sea containing a small number of scattered islands.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.37037037037037035,
+        "primary_metric": "token_f1",
+        "primary_score": 0.37037037037037035,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.2941176470588235,
+        "primary_metric": "token_f1",
+        "primary_score": 0.2941176470588235,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    }
+  ],
+  "original_average_primary_score": 0.32676772560814216,
+  "optimized_average_primary_score": 0.3150733236890526,
+  "previous_optimized_average_primary_score": 0.24778474507041112,
+  "paired_comparison": {
+    "samples": 8,
+    "wins": 2,
+    "ties": 2,
+    "losses": 4,
+    "mean_difference": -0.011694401919089577,
+    "confidence": 0.95,
+    "ci_lower": -0.04048053498036064,
+    "ci_upper": 0.018367254035121967,
+    "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+  },
+  "quality_claim_allowed": false,
+  "human_review_required": true,
+  "interpretation": "LLM-subagent simulation only. Fresh-agent variability and reference-overlap limits prevent correctness or superiority claims."
+}

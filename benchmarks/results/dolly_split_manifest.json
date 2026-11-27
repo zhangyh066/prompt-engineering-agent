@@ -1,0 +1,66 @@
+{
+  "source": "databricks-dolly-15k",
+  "source_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl",
+  "license": "CC-BY-SA-3.0",
+  "raw_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "raw_rows": 15011,
+  "seed": 20261126,
+  "ratios": {
+    "train": 0.7,
+    "dev": 0.15,
+    "test": 0.15
+  },
+  "deduplication": "Whitespace-normalized lowercase instruction+context",
+  "duplicates_removed": 198,
+  "legacy_development_cases_excluded": 80,
+  "legacy_overlap_removed": 5,
+  "legacy_development_note": "The earlier 80 public cases were used for bug fixing and cannot be final test data",
+  "counts": {
+    "train": {
+      "total": 10306,
+      "categories": {
+        "brainstorming": 1219,
+        "classification": 1485,
+        "closed_qa": 1224,
+        "creative_writing": 472,
+        "general_qa": 1466,
+        "information_extraction": 1043,
+        "open_qa": 2578,
+        "summarization": 819
+      }
+    },
+    "dev": {
+      "total": 2208,
+      "categories": {
+        "brainstorming": 261,
+        "classification": 318,
+        "closed_qa": 262,
+        "creative_writing": 101,
+        "general_qa": 314,
+        "information_extraction": 224,
+        "open_qa": 552,
+        "summarization": 176
+      }
+    },
+    "test": {
+      "total": 2214,
+      "categories": {
+        "brainstorming": 262,
+        "classification": 319,
+        "closed_qa": 263,
+        "creative_writing": 102,
+        "general_qa": 315,
+        "information_extraction": 224,
+        "open_qa": 553,
+        "summarization": 176
+      }
+    }
+  },
+  "split_sha256": {
+    "train": "9618f964edd7449694c48ec10ef12ca47580e767088630b83818b54bd368855a",
+    "dev": "46bdb452d9fb86c3585f700ae87d0f02c16ecf590144fb9b4d28a44cc2c4d940",
+    "test": "5e88309b1f2f9b5efd3764787d1718e7dccbec14f88eb084ea9c7e64cc5af581"
+  },
+  "test_locked": true,
+  "test_usage": "Final evaluation only; never strategy search, prompt authoring, or model selection"
+}

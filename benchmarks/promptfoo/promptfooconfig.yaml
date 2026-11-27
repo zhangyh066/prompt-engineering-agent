@@ -1,0 +1,1317 @@
+{
+  "description": "PEA harness independent structural assertions",
+  "prompts": [
+    "{{prompt}}"
+  ],
+  "providers": [
+    {
+      "id": "file://pea_provider.py"
+    }
+  ],
+  "tests": [
+    {
+      "description": "dolly_00136 public prompt preservation",
+      "vars": {
+        "prompt": "What should I do on a free afternoon in San Francisco?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What should I do on a free afternoon in San Francisco?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_00268 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a list of popular current artists in the EDM category."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a list of popular current artists in the EDM category."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_00338 public prompt preservation",
+      "vars": {
+        "prompt": "Why should we ban artificial sweeteners like aspartame?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Why should we ban artificial sweeteners like aspartame?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_00538 public prompt preservation",
+      "vars": {
+        "prompt": "Tell me if these drinks are alcoholic or not: Coca-Cola, Mountain Dew, Budweiser, Rum, Vodka, Tomato Juice, Orange Juice, Sprite, Tequila, Margarita"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Tell me if these drinks are alcoholic or not: Coca-Cola, Mountain Dew, Budweiser, Rum, Vodka, Tomato Juice, Orange Juice, Sprite, Tequila, Margarita"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_00676 public prompt preservation",
+      "vars": {
+        "prompt": "Which is the best work from Goethe?\n\nContext:\nThe most important of Goethe's works produced before he went to Weimar were Götz von Berlichingen (1773), a tragedy that was the first work to bring him recognition, and the novel The Sorrows of Young Werther (German: Die Leiden des jungen Werthers) (1774), which gained him enormous fame as a writer in the Sturm und Drang period which marked the early phase of Romanticism. Indeed, Werther is often considered to be the \"spark\" which ignited the movement, and can arguably be called the world's first \"best-seller\". During the years at Weimar before he met Schiller in 1794, he began Wilhelm Meister's Apprenticeship and wrote the dramas Iphigenie auf Tauris (Iphigenia in Tauris), Egmont, and Torquato Tasso and the fable Reineke Fuchs.To the period of his friendship with Schiller belong the conception of Wilhelm Meister's Journeyman Years (the continuation of Wilhelm Meister's Apprenticeship), the idyll of Hermann and Dorothea, the Roman Elegies and the verse drama The Natural Daughter. In the last period, between Schiller's death, in 1805, and his own, appeared Faust Part One (1808), Elective Affinities (1809), the West-Eastern Diwan (an 1819 collection of poems in the Persian style, influenced by the work of Hafez), his autobiographical Aus meinem Leben: Dichtung und Wahrheit (From My Life: Poetry and Truth, published between 1811 and 1833) which covers his early life and ends with his departure for Weimar, his Italian Journey (1816–17), and a series of treatises on art. Faust, Part Two was completed before his 1832 death and published posthumously later that year. His writings were immediately influential in literary and artistic circles."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Which is the best work from Goethe?\n\nContext:\nThe most important of Goethe's works produced before he went to Weimar were Götz von Berlichingen (1773), a tragedy that was the first work to bring him recognition, and the novel The Sorrows of Young Werther (German: Die Leiden des jungen Werthers) (1774), which gained him enormous fame as a writer in the Sturm und Drang period which marked the early phase of Romanticism. Indeed, Werther is often considered to be the \"spark\" which ignited the movement, and can arguably be called the world's first \"best-seller\". During the years at Weimar before he met Schiller in 1794, he began Wilhelm Meister's Apprenticeship and wrote the dramas Iphigenie auf Tauris (Iphigenia in Tauris), Egmont, and Torquato Tasso and the fable Reineke Fuchs.To the period of his friendship with Schiller belong the conception of Wilhelm Meister's Journeyman Years (the continuation of Wilhelm Meister's Apprenticeship), the idyll of Hermann and Dorothea, the Roman Elegies and the verse drama The Natural Daughter. In the last period, between Schiller's death, in 1805, and his own, appeared Faust Part One (1808), Elective Affinities (1809), the West-Eastern Diwan (an 1819 collection of poems in the Persian style, influenced by the work of Hafez), his autobiographical Aus meinem Leben: Dichtung und Wahrheit (From My Life: Poetry and Truth, published between 1811 and 1833) which covers his early life and ends with his departure for Weimar, his Italian Journey (1816–17), and a series of treatises on art. Faust, Part Two was completed before his 1832 death and published posthumously later that year. His writings were immediately influential in literary and artistic circles."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_00742 public prompt preservation",
+      "vars": {
+        "prompt": "What are some fun ways that you could spend time with your family?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are some fun ways that you could spend time with your family?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_01291 public prompt preservation",
+      "vars": {
+        "prompt": "Who are the Wagner group\n\nContext:\nThe Wagner Group (Russian: Группа Вагнера, tr. Gruppa Vagnera), also known as PMC Wagner (Russian: ЧВК «Вагнер», tr. ChVK «Vagner»; lit. 'Wagner Private Military Company'), is a Russian paramilitary organization. It is variously described as a private military company (PMC), a network of mercenaries, or a de facto private army of Russian President Vladimir Putin. The group operates beyond the law in Russia, where private military contractors are officially forbidden"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Who are the Wagner group\n\nContext:\nThe Wagner Group (Russian: Группа Вагнера, tr. Gruppa Vagnera), also known as PMC Wagner (Russian: ЧВК «Вагнер», tr. ChVK «Vagner»; lit. 'Wagner Private Military Company'), is a Russian paramilitary organization. It is variously described as a private military company (PMC), a network of mercenaries, or a de facto private army of Russian President Vladimir Putin. The group operates beyond the law in Russia, where private military contractors are officially forbidden"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_01433 public prompt preservation",
+      "vars": {
+        "prompt": "Write a monologue describing a young woman’s journey to self-actualization in America."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Write a monologue describing a young woman’s journey to self-actualization in America."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_01539 public prompt preservation",
+      "vars": {
+        "prompt": "Extract from the following passage two key uses of electricity in modern technology.\n\nContext:\nElectricity is the set of physical phenomena associated with the presence and motion of matter that has a property of electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Various common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others.\nThe presence of either a positive or negative electric charge produces an electric field. The movement of electric charges is an electric current and produces a magnetic field. In most applications, a force acts on a charge with a magnitude given by Coulomb's law. Electric potential is typically measured in volts.\nElectricity is at the heart of many modern technologies, being used for:\na. Electric power where electric current is used to energise equipment;\nb. Electronics which deals with electrical circuits that involve active electrical components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies.\nElectrical phenomena have been studied since antiquity, though progress in theoretical understanding remained slow until the 17th and 18th centuries. The theory of electromagnetism was developed in the 19th century, and by the end of that century electricity was being put to industrial and residential use by electrical engineers. The rapid expansion in electrical technology at this time transformed industry and society, becoming a driving force for the Second Industrial Revolution. Electricity's extraordinary versatility means it can be put to an almost limitless set of applications which include transport, heating, lighting, communications, and computation. Electrical power is now the backbone of modern industrial society."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Extract from the following passage two key uses of electricity in modern technology.\n\nContext:\nElectricity is the set of physical phenomena associated with the presence and motion of matter that has a property of electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Various common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others.\nThe presence of either a positive or negative electric charge produces an electric field. The movement of electric charges is an electric current and produces a magnetic field. In most applications, a force acts on a charge with a magnitude given by Coulomb's law. Electric potential is typically measured in volts.\nElectricity is at the heart of many modern technologies, being used for:\na. Electric power where electric current is used to energise equipment;\nb. Electronics which deals with electrical circuits that involve active electrical components such as vacuum tubes, transistors, diodes and integrated circuits, and associated passive interconnection technologies.\nElectrical phenomena have been studied since antiquity, though progress in theoretical understanding remained slow until the 17th and 18th centuries. The theory of electromagnetism was developed in the 19th century, and by the end of that century electricity was being put to industrial and residential use by electrical engineers. The rapid expansion in electrical technology at this time transformed industry and society, becoming a driving force for the Second Industrial Revolution. Electricity's extraordinary versatility means it can be put to an almost limitless set of applications which include transport, heating, lighting, communications, and computation. Electrical power is now the backbone of modern industrial society."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_02041 public prompt preservation",
+      "vars": {
+        "prompt": "What is the meaning of life?\n\nContext:\nThe meaning of life, or the answer to the question: \"What is the meaning of life?\", pertains to the significance of living or existence in general. Many other related questions include: \"Why are we here?\", \"What is life all about?\", or \"What is the purpose of existence?\" There have been many proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.\n\nThe meaning of life can be derived from philosophical and religious contemplation of, and scientific inquiries about existence, social ties, consciousness, and happiness. Many other issues are also involved, such as symbolic meaning, ontology, value, purpose, ethics, good and evil, free will, the existence of one or multiple gods, conceptions of God, the soul, and the afterlife. Scientific contributions focus primarily on describing related empirical facts about the universe, exploring the context and parameters concerning the \"how\" of life. Science also studies and can provide recommendations for the pursuit of well-being and a related conception of morality. An alternative, humanistic approach poses the question, \"What is the meaning of my life?\""
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the meaning of life?\n\nContext:\nThe meaning of life, or the answer to the question: \"What is the meaning of life?\", pertains to the significance of living or existence in general. Many other related questions include: \"Why are we here?\", \"What is life all about?\", or \"What is the purpose of existence?\" There have been many proposed answers to these questions from many different cultural and ideological backgrounds. The search for life's meaning has produced much philosophical, scientific, theological, and metaphysical speculation throughout history. Different people and cultures believe different things for the answer to this question.\n\nThe meaning of life can be derived from philosophical and religious contemplation of, and scientific inquiries about existence, social ties, consciousness, and happiness. Many other issues are also involved, such as symbolic meaning, ontology, value, purpose, ethics, good and evil, free will, the existence of one or multiple gods, conceptions of God, the soul, and the afterlife. Scientific contributions focus primarily on describing related empirical facts about the universe, exploring the context and parameters concerning the \"how\" of life. Science also studies and can provide recommendations for the pursuit of well-being and a related conception of morality. An alternative, humanistic approach poses the question, \"What is the meaning of my life?\""
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_02771 public prompt preservation",
+      "vars": {
+        "prompt": "Tell me whether these are names of automobile or motorcycle companies: Ford, Triumph, Indian, Harley Davidson, Rolls Royce, Mercedes, Toyota."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Tell me whether these are names of automobile or motorcycle companies: Ford, Triumph, Indian, Harley Davidson, Rolls Royce, Mercedes, Toyota."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_02776 public prompt preservation",
+      "vars": {
+        "prompt": "Write a poem or journal entry about numbers that have special meaning to you."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Write a poem or journal entry about numbers that have special meaning to you."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_02804 public prompt preservation",
+      "vars": {
+        "prompt": "Describe the perfect weekend trip to Boston, Massachusetts."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Describe the perfect weekend trip to Boston, Massachusetts."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_02848 public prompt preservation",
+      "vars": {
+        "prompt": "Is Gloomhaven on Steam worth buying?\n\nContext:\nGloomhaven is a cooperative board game for one to four players designed by Isaac Childres and published by Cephalofair Games in 2017. It is a campaign-based dungeon crawl game including a narrative campaign, 95 unique playable scenarios, and 17 playable classes. Since its introduction the game has been acclaimed by reviewers, and has been described as one of the best board games ever made."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Is Gloomhaven on Steam worth buying?\n\nContext:\nGloomhaven is a cooperative board game for one to four players designed by Isaac Childres and published by Cephalofair Games in 2017. It is a campaign-based dungeon crawl game including a narrative campaign, 95 unique playable scenarios, and 17 playable classes. Since its introduction the game has been acclaimed by reviewers, and has been described as one of the best board games ever made."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_03805 public prompt preservation",
+      "vars": {
+        "prompt": "Is euthanasia ethical?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Is euthanasia ethical?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_03809 public prompt preservation",
+      "vars": {
+        "prompt": "From the passage provided, which runways are used in the West Plan?\n\nContext:\nDuring normal operations (approximately 81% of the time), domestic departures use Runways 1L and 1R for departure while overseas international departures and all arrivals use Runways 28L and 28R, taking advantage of the prevailing west-northwesterly wind coming through the San Bruno Gap. During periods of heavy winds or if operations at Oakland International Airport conflict with SFO departures (approximately 15% of the time), Runways 1L and 1R cannot be used, and so all departures and all arrivals use Runways 28L and 28R. These configurations are known collectively as the West Plan, and accommodate arrivals at a rate of up to 60 aircraft per hour. Under visual flight rules, aircraft may safely land side-by-side essentially simultaneously on 28L and 28R while maintaining visual separation."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "From the passage provided, which runways are used in the West Plan?\n\nContext:\nDuring normal operations (approximately 81% of the time), domestic departures use Runways 1L and 1R for departure while overseas international departures and all arrivals use Runways 28L and 28R, taking advantage of the prevailing west-northwesterly wind coming through the San Bruno Gap. During periods of heavy winds or if operations at Oakland International Airport conflict with SFO departures (approximately 15% of the time), Runways 1L and 1R cannot be used, and so all departures and all arrivals use Runways 28L and 28R. These configurations are known collectively as the West Plan, and accommodate arrivals at a rate of up to 60 aircraft per hour. Under visual flight rules, aircraft may safely land side-by-side essentially simultaneously on 28L and 28R while maintaining visual separation."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_03860 public prompt preservation",
+      "vars": {
+        "prompt": "What is the total number of geographical entities (states, territories, regions) in Africa?\n\nContext:\nThis is a list of sovereign states and dependent territories in Africa. It includes both fully recognised states, states with limited or zero recognition, and dependent territories of both African and non-African states. It lists 56 sovereign states (54 of which are member states of the United Nations), two non-sovereign (dependent) territories of non-African sovereign states, and ten sub-national regions of non-African sovereign states. Malta and parts of France, Italy, Portugal, and Spain are located on the African continental plate, some considerably closer to the African mainland than the European mainland but, politically, are generally considered to be European by convention. Egypt, although extending into Asia through the Sinai Peninsula, is considered an African state."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the total number of geographical entities (states, territories, regions) in Africa?\n\nContext:\nThis is a list of sovereign states and dependent territories in Africa. It includes both fully recognised states, states with limited or zero recognition, and dependent territories of both African and non-African states. It lists 56 sovereign states (54 of which are member states of the United Nations), two non-sovereign (dependent) territories of non-African sovereign states, and ten sub-national regions of non-African sovereign states. Malta and parts of France, Italy, Portugal, and Spain are located on the African continental plate, some considerably closer to the African mainland than the European mainland but, politically, are generally considered to be European by convention. Egypt, although extending into Asia through the Sinai Peninsula, is considered an African state."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_03970 public prompt preservation",
+      "vars": {
+        "prompt": "Provide a brief summary of how the ISO 27001 standard works\n\nContext:\nMost organizations have a number of information security controls. However, without an information security management system (ISMS), controls tend to be somewhat disorganized and disjointed, having been implemented often as point solutions to specific situations or simply as a matter of convention. Security controls in operation typically address certain aspects of information technology (IT) or data security specifically; leaving non-IT information assets (such as paperwork and proprietary knowledge) less protected on the whole. Moreover, business continuity planning and physical security may be managed quite independently of IT or information security while Human Resources practices may make little reference to the need to define and assign information security roles and responsibilities throughout the organization.\n\nISO/IEC 27001 requires that management:\n\nSystematically examine the organization's information security risks, taking account of the threats, vulnerabilities, and impacts;\nDesign and implement a coherent and comprehensive suite of information security controls and/or other forms of risk treatment (such as risk avoidance or risk transfer) to address those risks that are deemed unacceptable; and\nAdopt an overarching management process to ensure that the information security controls continue to meet the organization's information security needs on an ongoing basis.\nWhat controls will be tested as part of certification to ISO/IEC 27001 is dependent on the certification auditor. This can include any controls that the organisation has deemed to be within the scope of the ISMS and this testing can be to any depth or extent as assessed by the auditor as needed to test that the control has been implemented and is operating effectively.\n\nManagement determines the scope of the ISMS for certification purposes and may limit it to, say, a single business unit or location. The ISO/IEC 27001 certificate does not necessarily mean the remainder of the organization, outside the scoped area, has an adequate approach to information security management.\n\nOther standards in the ISO/IEC 27000 family of standards provide additional guidance on certain aspects of designing, implementing and operating an ISMS, for example on information security risk management (ISO/IEC 27005)."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Provide a brief summary of how the ISO 27001 standard works\n\nContext:\nMost organizations have a number of information security controls. However, without an information security management system (ISMS), controls tend to be somewhat disorganized and disjointed, having been implemented often as point solutions to specific situations or simply as a matter of convention. Security controls in operation typically address certain aspects of information technology (IT) or data security specifically; leaving non-IT information assets (such as paperwork and proprietary knowledge) less protected on the whole. Moreover, business continuity planning and physical security may be managed quite independently of IT or information security while Human Resources practices may make little reference to the need to define and assign information security roles and responsibilities throughout the organization.\n\nISO/IEC 27001 requires that management:\n\nSystematically examine the organization's information security risks, taking account of the threats, vulnerabilities, and impacts;\nDesign and implement a coherent and comprehensive suite of information security controls and/or other forms of risk treatment (such as risk avoidance or risk transfer) to address those risks that are deemed unacceptable; and\nAdopt an overarching management process to ensure that the information security controls continue to meet the organization's information security needs on an ongoing basis.\nWhat controls will be tested as part of certification to ISO/IEC 27001 is dependent on the certification auditor. This can include any controls that the organisation has deemed to be within the scope of the ISMS and this testing can be to any depth or extent as assessed by the auditor as needed to test that the control has been implemented and is operating effectively.\n\nManagement determines the scope of the ISMS for certification purposes and may limit it to, say, a single business unit or location. The ISO/IEC 27001 certificate does not necessarily mean the remainder of the organization, outside the scoped area, has an adequate approach to information security management.\n\nOther standards in the ISO/IEC 27000 family of standards provide additional guidance on certain aspects of designing, implementing and operating an ISMS, for example on information security risk management (ISO/IEC 27005)."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_04006 public prompt preservation",
+      "vars": {
+        "prompt": "What happened in Woodstock\n\nContext:\nWoodstock Music and Art Fair, commonly referred to as Woodstock, was a music festival held during August 15–18, 1969, on Max Yasgur's dairy farm in Bethel, New York, United States, 40 miles (65 km) southwest of the town of Woodstock. Billed as \"an Aquarian Exposition: 3 Days of Peace & Music\" and alternatively referred to as the Woodstock Rock Festival, it attracted an audience of more than 400,000 attendees. Thirty-two acts performed outdoors despite sporadic rain. It was one of the largest music festivals held in history.\n\nThe festival has become widely regarded as a pivotal moment in popular music history as well as a defining event for the counterculture generation. The event's significance was reinforced by a 1970 documentary film, an accompanying soundtrack album, and a song written by Joni Mitchell that became a major hit for both Crosby, Stills, Nash & Young and Matthews Southern Comfort. Musical events bearing the Woodstock name were planned for anniversaries, which included the tenth, twentieth, twenty-fifth, thirtieth, fortieth, and fiftieth. In 2004, Rolling Stone magazine listed it as number 19 of the 50 Moments That Changed the History of Rock and Roll. In 2017, the festival site became listed on the National Register of Historic Places."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What happened in Woodstock\n\nContext:\nWoodstock Music and Art Fair, commonly referred to as Woodstock, was a music festival held during August 15–18, 1969, on Max Yasgur's dairy farm in Bethel, New York, United States, 40 miles (65 km) southwest of the town of Woodstock. Billed as \"an Aquarian Exposition: 3 Days of Peace & Music\" and alternatively referred to as the Woodstock Rock Festival, it attracted an audience of more than 400,000 attendees. Thirty-two acts performed outdoors despite sporadic rain. It was one of the largest music festivals held in history.\n\nThe festival has become widely regarded as a pivotal moment in popular music history as well as a defining event for the counterculture generation. The event's significance was reinforced by a 1970 documentary film, an accompanying soundtrack album, and a song written by Joni Mitchell that became a major hit for both Crosby, Stills, Nash & Young and Matthews Southern Comfort. Musical events bearing the Woodstock name were planned for anniversaries, which included the tenth, twentieth, twenty-fifth, thirtieth, fortieth, and fiftieth. In 2004, Rolling Stone magazine listed it as number 19 of the 50 Moments That Changed the History of Rock and Roll. In 2017, the festival site became listed on the National Register of Historic Places."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_04047 public prompt preservation",
+      "vars": {
+        "prompt": "Explain the expression \"the days are long, and the years are short\" as it relates to raising children."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Explain the expression \"the days are long, and the years are short\" as it relates to raising children."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_04184 public prompt preservation",
+      "vars": {
+        "prompt": "How many national championships has Nick Saban won at Alabama?\n\nContext:\nThe Alabama Crimson Tide football program represents the University of Alabama (variously Alabama, UA, or Bama) in the sport of American football. The team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the Western Division of the Southeastern Conference (SEC). The team's head coach is Nick Saban, who has led the Tide to six national championships over his tenure. The Crimson Tide is among the most storied and decorated football programs in NCAA history. Since beginning play in 1892, the program claims 18 national championships, including 13 wire-service (AP or Coaches') national titles in the poll-era, and five other titles before the poll-era. From 1958 to 1982, the team was led by Hall of Fame coach Paul \"Bear\" Bryant, who won six national titles with the program. Despite numerous national and conference championships, it was not until 2009 that an Alabama player received a Heisman Trophy, when running back Mark Ingram II became the university's first winner. In 2015, Derrick Henry became the university's second Heisman winner. The Crimson Tide won back to back Heisman trophies in 2020 and 2021, with DeVonta Smith and Bryce Young."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "How many national championships has Nick Saban won at Alabama?\n\nContext:\nThe Alabama Crimson Tide football program represents the University of Alabama (variously Alabama, UA, or Bama) in the sport of American football. The team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the Western Division of the Southeastern Conference (SEC). The team's head coach is Nick Saban, who has led the Tide to six national championships over his tenure. The Crimson Tide is among the most storied and decorated football programs in NCAA history. Since beginning play in 1892, the program claims 18 national championships, including 13 wire-service (AP or Coaches') national titles in the poll-era, and five other titles before the poll-era. From 1958 to 1982, the team was led by Hall of Fame coach Paul \"Bear\" Bryant, who won six national titles with the program. Despite numerous national and conference championships, it was not until 2009 that an Alabama player received a Heisman Trophy, when running back Mark Ingram II became the university's first winner. In 2015, Derrick Henry became the university's second Heisman winner. The Crimson Tide won back to back Heisman trophies in 2020 and 2021, with DeVonta Smith and Bryce Young."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_04584 public prompt preservation",
+      "vars": {
+        "prompt": "How did Constantine die?\n\nContext:\nConstantine (Greek: Κωνσταντῖνος, 820s or 830s – before 836) was an infant prince of the Amorian dynasty who briefly ruled as co-emperor of the Byzantine Empire sometime in the 830s, alongside his father Theophilos. Most information about Constantine's short life and titular reign is unclear, although it is known that he was born sometime in the 820s or 830s and was installed as co-emperor soon after his birth. He died sometime before 836, possibly after falling into a palace cistern."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "How did Constantine die?\n\nContext:\nConstantine (Greek: Κωνσταντῖνος, 820s or 830s – before 836) was an infant prince of the Amorian dynasty who briefly ruled as co-emperor of the Byzantine Empire sometime in the 830s, alongside his father Theophilos. Most information about Constantine's short life and titular reign is unclear, although it is known that he was born sometime in the 820s or 830s and was installed as co-emperor soon after his birth. He died sometime before 836, possibly after falling into a palace cistern."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_04953 public prompt preservation",
+      "vars": {
+        "prompt": "From the following list, categorize the what country these dishes originate from: Tamales, Butter Chicken, Mac and Cheese, Pizza, Pozole, Nicoise Salad, Ramen, Trifle, Empanadas, Ceviche, Feijoda, Burrito, Jollaf Rice, Tagine, Couscous"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "From the following list, categorize the what country these dishes originate from: Tamales, Butter Chicken, Mac and Cheese, Pizza, Pozole, Nicoise Salad, Ramen, Trifle, Empanadas, Ceviche, Feijoda, Burrito, Jollaf Rice, Tagine, Couscous"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05021 public prompt preservation",
+      "vars": {
+        "prompt": "Create a dialogue between two characters discussing the impact of social media on their lives. Your dialogue should explore both the positive and negative effects of social media on society."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Create a dialogue between two characters discussing the impact of social media on their lives. Your dialogue should explore both the positive and negative effects of social media on society."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05163 public prompt preservation",
+      "vars": {
+        "prompt": "Identify which instrument is string or percussion: Karyenda, Charango"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Identify which instrument is string or percussion: Karyenda, Charango"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05392 public prompt preservation",
+      "vars": {
+        "prompt": "What is Uście Gorlickie?\n\nContext:\nUście Gorlickie [ˈuɕt͡ɕɛ ɡɔrˈlʲit͡skʲɛ] (Ukrainian: Устя Руське, Ustia Rus’ke) is a village in Gorlice County, Lesser Poland Voivodeship, in southern Poland, close to the border with Slovakia. It is the seat of the gmina (administrative district) called Gmina Uście Gorlickie. It lies approximately 15 kilometres (9 mi) south of Gorlice and 106 km (66 mi) south-east of the regional capital Kraków.\n\nThe village has a population of 1,100."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is Uście Gorlickie?\n\nContext:\nUście Gorlickie [ˈuɕt͡ɕɛ ɡɔrˈlʲit͡skʲɛ] (Ukrainian: Устя Руське, Ustia Rus’ke) is a village in Gorlice County, Lesser Poland Voivodeship, in southern Poland, close to the border with Slovakia. It is the seat of the gmina (administrative district) called Gmina Uście Gorlickie. It lies approximately 15 kilometres (9 mi) south of Gorlice and 106 km (66 mi) south-east of the regional capital Kraków.\n\nThe village has a population of 1,100."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05393 public prompt preservation",
+      "vars": {
+        "prompt": "Who is Gavin Newsom?\n\nContext:\nGavin Christopher Newsom (born October 10, 1967) is an American politician and businessman who has been the 40th governor of California since 2019. A member of the Democratic Party, he served as the 49th lieutenant governor of California from 2011 to 2019 and the 42nd mayor of San Francisco from 2004 to 2011."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Who is Gavin Newsom?\n\nContext:\nGavin Christopher Newsom (born October 10, 1967) is an American politician and businessman who has been the 40th governor of California since 2019. A member of the Democratic Party, he served as the 49th lieutenant governor of California from 2011 to 2019 and the 42nd mayor of San Francisco from 2004 to 2011."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05394 public prompt preservation",
+      "vars": {
+        "prompt": "Imagine you're seeing colors for the first time. Explain what you see and how you feel."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Imagine you're seeing colors for the first time. Explain what you see and how you feel."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_05648 public prompt preservation",
+      "vars": {
+        "prompt": "Who are some of the most famous weird fiction authors, who wrote in the early 20th century, aside from H. P. Lovecraft? And what is a good short story from each that I might like, if I like H. P. Lovecraft?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Who are some of the most famous weird fiction authors, who wrote in the early 20th century, aside from H. P. Lovecraft? And what is a good short story from each that I might like, if I like H. P. Lovecraft?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06116 public prompt preservation",
+      "vars": {
+        "prompt": "What’s a good way to lose weight"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What’s a good way to lose weight"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06117 public prompt preservation",
+      "vars": {
+        "prompt": "What do Logan, Ororo, Charles, Jean, and Scott have in common?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What do Logan, Ororo, Charles, Jean, and Scott have in common?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06286 public prompt preservation",
+      "vars": {
+        "prompt": "What is Women's freestyle 48 kg competition featured in 2017 World Wrestling Championships?\n\nContext:\nThe women's freestyle 48 kilograms is a competition featured at the 2017 World Wrestling Championships, and was held in Paris, France on 24 August 2017."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is Women's freestyle 48 kg competition featured in 2017 World Wrestling Championships?\n\nContext:\nThe women's freestyle 48 kilograms is a competition featured at the 2017 World Wrestling Championships, and was held in Paris, France on 24 August 2017."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06411 public prompt preservation",
+      "vars": {
+        "prompt": "Identify which animal species is alive or extinct: Thylacoleo, Skipjack Tuna"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Identify which animal species is alive or extinct: Thylacoleo, Skipjack Tuna"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06893 public prompt preservation",
+      "vars": {
+        "prompt": "Give me the recipe for the traditional crepe"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me the recipe for the traditional crepe"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_06927 public prompt preservation",
+      "vars": {
+        "prompt": "From the following passage, extract the device used to shoot this film.\n\nContext:\nHigh Flying Bird is a 2019 American sports drama film directed by Steven Soderbergh, from a story suggested by André Holland, with the screenplay by Tarell Alvin McCraney. The film stars Holland, Zazie Beetz, Melvin Gregg, Sonja Sohn, Zachary Quinto, Glenn Fleshler, Jeryl Prescott, Justin Hurtt-Dunkley, Caleb McLaughlin, Bobbi Bordley, Kyle MacLachlan and Bill Duke, with additional appearances of basketball players Reggie Jackson, Karl-Anthony Towns and Donovan Mitchell. The film follows a sports agent who must pull off a plan in 72 hours, pitching a controversial opportunity to his client, a rookie basketball player during the company’s lockout. The film was shot entirely on the iPhone 8, becoming Soderbergh's second film to be shot on an iPhone, after Unsane."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "From the following passage, extract the device used to shoot this film.\n\nContext:\nHigh Flying Bird is a 2019 American sports drama film directed by Steven Soderbergh, from a story suggested by André Holland, with the screenplay by Tarell Alvin McCraney. The film stars Holland, Zazie Beetz, Melvin Gregg, Sonja Sohn, Zachary Quinto, Glenn Fleshler, Jeryl Prescott, Justin Hurtt-Dunkley, Caleb McLaughlin, Bobbi Bordley, Kyle MacLachlan and Bill Duke, with additional appearances of basketball players Reggie Jackson, Karl-Anthony Towns and Donovan Mitchell. The film follows a sports agent who must pull off a plan in 72 hours, pitching a controversial opportunity to his client, a rookie basketball player during the company’s lockout. The film was shot entirely on the iPhone 8, becoming Soderbergh's second film to be shot on an iPhone, after Unsane."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_07541 public prompt preservation",
+      "vars": {
+        "prompt": "How to survive the zombie apocalypse ?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "How to survive the zombie apocalypse ?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_07554 public prompt preservation",
+      "vars": {
+        "prompt": "Tell me whether these are names of basketball teams or baseball teams: Los Angeles Lakers, Los Angeles Angels, Los Angeles Dodgers, Los Angeles Clippers, San Diego Padres, New York Yankees, Miami Heat, Boston Celtics"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Tell me whether these are names of basketball teams or baseball teams: Los Angeles Lakers, Los Angeles Angels, Los Angeles Dodgers, Los Angeles Clippers, San Diego Padres, New York Yankees, Miami Heat, Boston Celtics"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_07604 public prompt preservation",
+      "vars": {
+        "prompt": "What are some cardio machines at the gym?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are some cardio machines at the gym?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_07699 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a list of the only two American cyclists to win the Tour de France general classification."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a list of the only two American cyclists to win the Tour de France general classification."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_07745 public prompt preservation",
+      "vars": {
+        "prompt": "If the Curated Golden Square was built as planned, what would the average cost (rounded to the nearest dollar) per square foot have been?\n\nContext:\nIn 2019, Singh had stated his next venture, set to open October 2019, was Curated Golden Square, described as a \"$100 million, 30,000 square foot apartment hotel\". In a 2021 follow up interview with Vanity Fair, Singh claimed that the COVID-19 pandemic was the reason the venture did not move forward. The site in question, 37 Golden Square, is a collection of 23 apartments developed by Halamar in 2019."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "If the Curated Golden Square was built as planned, what would the average cost (rounded to the nearest dollar) per square foot have been?\n\nContext:\nIn 2019, Singh had stated his next venture, set to open October 2019, was Curated Golden Square, described as a \"$100 million, 30,000 square foot apartment hotel\". In a 2021 follow up interview with Vanity Fair, Singh claimed that the COVID-19 pandemic was the reason the venture did not move forward. The site in question, 37 Golden Square, is a collection of 23 apartments developed by Halamar in 2019."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08263 public prompt preservation",
+      "vars": {
+        "prompt": "Evaluate the below poem \"since feeling is first\" by ee cummings and provide a summary of its meaning.\n\nContext:\nsince feeling is first\nwho pays any attention\nto the syntax of things\nwill never wholly kiss you;\n\nwholly to be a fool\nwhile Spring is in the world\n\nmy blood approves,\nand kisses are a better fate\nthan wisdom\nlady i swear by all flowers. Don’t cry\n– the best gesture of my brain is less than\nyour eyelids’ flutter which says\n\nwe are for each other; then\nlaugh, leaning back in my arms\nfor life’s not a paragraph\n\nAnd death i think is no parenthesis"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Evaluate the below poem \"since feeling is first\" by ee cummings and provide a summary of its meaning.\n\nContext:\nsince feeling is first\nwho pays any attention\nto the syntax of things\nwill never wholly kiss you;\n\nwholly to be a fool\nwhile Spring is in the world\n\nmy blood approves,\nand kisses are a better fate\nthan wisdom\nlady i swear by all flowers. Don’t cry\n– the best gesture of my brain is less than\nyour eyelids’ flutter which says\n\nwe are for each other; then\nlaugh, leaning back in my arms\nfor life’s not a paragraph\n\nAnd death i think is no parenthesis"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08339 public prompt preservation",
+      "vars": {
+        "prompt": "I am about to have my third child under the age of 4.  What car should I get that would fit my family of 5, 3 kids in car seats, a dog and the possibility of adding another child in a few years?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "I am about to have my third child under the age of 4.  What car should I get that would fit my family of 5, 3 kids in car seats, a dog and the possibility of adding another child in a few years?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08422 public prompt preservation",
+      "vars": {
+        "prompt": "What are some interesting facts about Nelson Mandel Boulevard described on this paragraph?\n\nContext:\nNelson Mandela Boulevard (Persian: بلوار نلسون ماندلا) (old name: Jordan Street and Africa Boulevard) still known as Jordan is an affluent and upper-class district in northern Tehran, and some people draw similarities between Jordan District as being much alike Kensington District in London, UK as the area is a mixture of residential and commercial locale, filled with the homes and businesses of many politicians, diplomats, expatriates, and artists. Before the Iranian Revolution in 1979 it was called Jordan street, named after the American presbyterian missionary Samuel M. Jordan and used to be one of the most popular avenue in Tehran, Iran. Renamed Nelson Mandela Boulevard in recent years, it is amongst the most famous streets in north Tehran after Valiasr Street which is the longest conventional street in the Middle East, spanning a south–north axis. It is also famous for being one of the liveliest streets of Tehran, experiencing regular traffic jams even at 2:00A.M during Summer."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are some interesting facts about Nelson Mandel Boulevard described on this paragraph?\n\nContext:\nNelson Mandela Boulevard (Persian: بلوار نلسون ماندلا) (old name: Jordan Street and Africa Boulevard) still known as Jordan is an affluent and upper-class district in northern Tehran, and some people draw similarities between Jordan District as being much alike Kensington District in London, UK as the area is a mixture of residential and commercial locale, filled with the homes and businesses of many politicians, diplomats, expatriates, and artists. Before the Iranian Revolution in 1979 it was called Jordan street, named after the American presbyterian missionary Samuel M. Jordan and used to be one of the most popular avenue in Tehran, Iran. Renamed Nelson Mandela Boulevard in recent years, it is amongst the most famous streets in north Tehran after Valiasr Street which is the longest conventional street in the Middle East, spanning a south–north axis. It is also famous for being one of the liveliest streets of Tehran, experiencing regular traffic jams even at 2:00A.M during Summer."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08554 public prompt preservation",
+      "vars": {
+        "prompt": "What are the benefits of a data warehouse?\n\nContext:\nA data warehouse maintains a copy of information from the source transaction systems. This architectural complexity provides the opportunity to:\n\nIntegrate data from multiple sources into a single database and data model. More congregation of data to single database so a single query engine can be used to present data in an ODS.\nMitigate the problem of database isolation level lock contention in transaction processing systems caused by attempts to run large, long-running analysis queries in transaction processing databases.\nMaintain data history, even if the source transaction systems do not.\nIntegrate data from multiple source systems, enabling a central view across the enterprise. This benefit is always valuable, but particularly so when the organization has grown by merger.\nImprove data quality, by providing consistent codes and descriptions, flagging or even fixing bad data.\nPresent the organization's information consistently.\nProvide a single common data model for all data of interest regardless of the data's source.\nRestructure the data so that it makes sense to the business users.\nRestructure the data so that it delivers excellent query performance, even for complex analytic queries, without impacting the operational systems.\nAdd value to operational business applications, notably customer relationship management (CRM) systems.\nMake decision–support queries easier to write.\nOrganize and disambiguate repetitive data."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are the benefits of a data warehouse?\n\nContext:\nA data warehouse maintains a copy of information from the source transaction systems. This architectural complexity provides the opportunity to:\n\nIntegrate data from multiple sources into a single database and data model. More congregation of data to single database so a single query engine can be used to present data in an ODS.\nMitigate the problem of database isolation level lock contention in transaction processing systems caused by attempts to run large, long-running analysis queries in transaction processing databases.\nMaintain data history, even if the source transaction systems do not.\nIntegrate data from multiple source systems, enabling a central view across the enterprise. This benefit is always valuable, but particularly so when the organization has grown by merger.\nImprove data quality, by providing consistent codes and descriptions, flagging or even fixing bad data.\nPresent the organization's information consistently.\nProvide a single common data model for all data of interest regardless of the data's source.\nRestructure the data so that it makes sense to the business users.\nRestructure the data so that it delivers excellent query performance, even for complex analytic queries, without impacting the operational systems.\nAdd value to operational business applications, notably customer relationship management (CRM) systems.\nMake decision–support queries easier to write.\nOrganize and disambiguate repetitive data."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08723 public prompt preservation",
+      "vars": {
+        "prompt": "Why is wine country in Northern California a great place to travel?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Why is wine country in Northern California a great place to travel?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_08797 public prompt preservation",
+      "vars": {
+        "prompt": "Where is the Kilo railway station\n\nContext:\nKilo is a station on the VR commuter rail network on the Rantarata line located in Kilo, a district of the city of Espoo in Finland. It is situated between Leppävaara railway station and Kera railway station, approximately 13 kilometres (8.1 mi) northwest/west of Helsinki Central railway station."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Where is the Kilo railway station\n\nContext:\nKilo is a station on the VR commuter rail network on the Rantarata line located in Kilo, a district of the city of Espoo in Finland. It is situated between Leppävaara railway station and Kera railway station, approximately 13 kilometres (8.1 mi) northwest/west of Helsinki Central railway station."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09085 public prompt preservation",
+      "vars": {
+        "prompt": "What is alternative rock?\n\nContext:\nAlternative rock (also known as alternative music, alt-rock, or simply alternative) is a category of rock music that emerged from the independent music underground of the 1970s and became widely popular in the 1990s. \"Alternative\" refers to the genre's distinction from mainstream or commercial rock or pop music. The term's original meaning was broader, referring to musicians influenced by the musical style or independent, DIY ethos of late-1970s punk rock.Traditionally, alternative rock varied in terms of its sound, social context, and regional roots. Throughout the 1980s, magazines and zines, college radio airplay, and word of mouth had increased the prominence and highlighted the diversity of alternative rock's distinct styles (and music scenes), such as noise pop, indie rock, grunge, and shoegaze. In September 1988, Billboard introduced \"alternative\" into their charting system to reflect the rise of the format across radio stations in the United States by stations like KROQ-FM in Los Angeles and WDRE-FM in New York, which were playing music from more underground, independent, and non-commercial rock artists."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is alternative rock?\n\nContext:\nAlternative rock (also known as alternative music, alt-rock, or simply alternative) is a category of rock music that emerged from the independent music underground of the 1970s and became widely popular in the 1990s. \"Alternative\" refers to the genre's distinction from mainstream or commercial rock or pop music. The term's original meaning was broader, referring to musicians influenced by the musical style or independent, DIY ethos of late-1970s punk rock.Traditionally, alternative rock varied in terms of its sound, social context, and regional roots. Throughout the 1980s, magazines and zines, college radio airplay, and word of mouth had increased the prominence and highlighted the diversity of alternative rock's distinct styles (and music scenes), such as noise pop, indie rock, grunge, and shoegaze. In September 1988, Billboard introduced \"alternative\" into their charting system to reflect the rise of the format across radio stations in the United States by stations like KROQ-FM in Los Angeles and WDRE-FM in New York, which were playing music from more underground, independent, and non-commercial rock artists."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09283 public prompt preservation",
+      "vars": {
+        "prompt": "Landlord can I get a dog."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Landlord can I get a dog."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09288 public prompt preservation",
+      "vars": {
+        "prompt": "What is the definition of Vegetarian?\n\nContext:\n\"Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, insects, and the flesh of any other animal). It may also include abstaining from eating all by-products of animal slaughter.\n\nVegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for sentient animal life. Such ethical motivations have been codified under various religious beliefs as well as animal rights advocacy. Other motivations for vegetarianism are health-related, political, environmental, cultural, economic, taste-related, or relate to other personal preferences.\""
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the definition of Vegetarian?\n\nContext:\n\"Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, insects, and the flesh of any other animal). It may also include abstaining from eating all by-products of animal slaughter.\n\nVegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for sentient animal life. Such ethical motivations have been codified under various religious beliefs as well as animal rights advocacy. Other motivations for vegetarianism are health-related, political, environmental, cultural, economic, taste-related, or relate to other personal preferences.\""
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09298 public prompt preservation",
+      "vars": {
+        "prompt": "Identify which instrument is string or woodwind: Koto, Soprillo"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Identify which instrument is string or woodwind: Koto, Soprillo"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09515 public prompt preservation",
+      "vars": {
+        "prompt": "Who is the director of \"Who Killed Hanna Jane?\"\n\nContext:\nWho Killed Hannah Jane? is a 1984 Australian television film about the murder conviction of Arthur Peden directed by Peter Fisk and starring Graham Rouse, June Salter, Judi Farr, Edward Howell, and Barry Otto. It was the third of four telemovies called Verdict produced by the ABC dramatising real cases (the others being The Dean Case, The Amorous Dentist, and The Schippan Mystery)"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Who is the director of \"Who Killed Hanna Jane?\"\n\nContext:\nWho Killed Hannah Jane? is a 1984 Australian television film about the murder conviction of Arthur Peden directed by Peter Fisk and starring Graham Rouse, June Salter, Judi Farr, Edward Howell, and Barry Otto. It was the third of four telemovies called Verdict produced by the ABC dramatising real cases (the others being The Dean Case, The Amorous Dentist, and The Schippan Mystery)"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_09520 public prompt preservation",
+      "vars": {
+        "prompt": "write a story a bout a man walking a dog by the river"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "write a story a bout a man walking a dog by the river"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_10158 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a simple summary of idempotency\n\nContext:\nIdempotence (UK: /ˌɪdɛmˈpoʊtəns/, US: /ˈaɪdəm-/) is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. The concept of idempotence arises in a number of places in abstract algebra (in particular, in the theory of projectors and closure operators) and functional programming (in which it is connected to the property of referential transparency).\n\nThe term was introduced by American mathematician Benjamin Peirce in 1870 in the context of elements of algebras that remain invariant when raised to a positive integer power, and literally means \"(the quality of having) the same power\", from idem + potence (same + power)."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a simple summary of idempotency\n\nContext:\nIdempotence (UK: /ˌɪdɛmˈpoʊtəns/, US: /ˈaɪdəm-/) is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. The concept of idempotence arises in a number of places in abstract algebra (in particular, in the theory of projectors and closure operators) and functional programming (in which it is connected to the property of referential transparency).\n\nThe term was introduced by American mathematician Benjamin Peirce in 1870 in the context of elements of algebras that remain invariant when raised to a positive integer power, and literally means \"(the quality of having) the same power\", from idem + potence (same + power)."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_10347 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a list of the best romantic comedies"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a list of the best romantic comedies"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11120 public prompt preservation",
+      "vars": {
+        "prompt": "Categorize these car models as either 'fully electric', 'hybrid', 'plug-in', 'gasoline': Toyota Camry 2017 SE, Tesla Model 3, Toyota Prius, 2022 Ford Escape Plug-In Hybrid, Rivian"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Categorize these car models as either 'fully electric', 'hybrid', 'plug-in', 'gasoline': Toyota Camry 2017 SE, Tesla Model 3, Toyota Prius, 2022 Ford Escape Plug-In Hybrid, Rivian"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11142 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a list of the most interesting moons in our solar system"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a list of the most interesting moons in our solar system"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11151 public prompt preservation",
+      "vars": {
+        "prompt": "Based on this paragraph from Wikipedia, what's the origin of the word Kubernetes?\n\nContext:\nKubernetes (/ˌk(j)uːbərˈnɛtɪs, -ˈneɪtɪs, -ˈneɪtiːz, -ˈnɛtiːz/, commonly abbreviated K8s) is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation.\n\nThe name Kubernetes originates from Greek, meaning 'helmsman' or 'pilot'. Kubernetes is often abbreviated as K8s, counting the eight letters between the K and the s (a numeronym).\n\nKubernetes works with containerd and CRI-O. Its suitability for running and managing large cloud-native workloads has led to widespread adoption of it in the data center. There are multiple distributions of this platform – from ISVs as well as hosted-on cloud offerings from all the major public cloud vendors."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Based on this paragraph from Wikipedia, what's the origin of the word Kubernetes?\n\nContext:\nKubernetes (/ˌk(j)uːbərˈnɛtɪs, -ˈneɪtɪs, -ˈneɪtiːz, -ˈnɛtiːz/, commonly abbreviated K8s) is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation.\n\nThe name Kubernetes originates from Greek, meaning 'helmsman' or 'pilot'. Kubernetes is often abbreviated as K8s, counting the eight letters between the K and the s (a numeronym).\n\nKubernetes works with containerd and CRI-O. Its suitability for running and managing large cloud-native workloads has led to widespread adoption of it in the data center. There are multiple distributions of this platform – from ISVs as well as hosted-on cloud offerings from all the major public cloud vendors."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11154 public prompt preservation",
+      "vars": {
+        "prompt": "Can you summarize Catharine of Bourbon’s marriage-related history?\n\nContext:\nBoth before and after his accession to the throne Catharine of Bourbon was on several occasions proposed as a bride for Edward IV of England. The marriage negotiations came to nothing, and Edward went on to astonish his own people, and the Courts of Europe, by marrying for love Elizabeth Woodville, the daughter of an obscure knight.\n\nOn 28 December 1463 in Bruges, she married Adolf II, Duke of Guelders, who succeeded his father Arnold as Duke of Guelders in 1465. Catharine and Adolf had twin children"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Can you summarize Catharine of Bourbon’s marriage-related history?\n\nContext:\nBoth before and after his accession to the throne Catharine of Bourbon was on several occasions proposed as a bride for Edward IV of England. The marriage negotiations came to nothing, and Edward went on to astonish his own people, and the Courts of Europe, by marrying for love Elizabeth Woodville, the daughter of an obscure knight.\n\nOn 28 December 1463 in Bruges, she married Adolf II, Duke of Guelders, who succeeded his father Arnold as Duke of Guelders in 1465. Catharine and Adolf had twin children"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11181 public prompt preservation",
+      "vars": {
+        "prompt": "What is the EU compensation regulation EU261 for cancelled flights?\n\nContext:\nThe Flight Compensation Regulation 2004 (EC) No 261/2004 is a regulation in EU law establishing common rules on compensation and assistance to passengers in the event of denied boarding, flight cancellations, or long delays of flights. It requires compensation of €250 to €600 depending on the flight distance for delays over of at least three hours, cancellations, or being denied boarding from overbooking. Delays shorter than three hours means no entitlement to any compensation of any kind even if the delay was classified as non-extraordinary. Airlines must provide refreshments and accommodation where appropriate. The Court of Justice of the European Union has interpreted passenger rights strictly, so that there are virtually no exceptions for airlines to evade their obligations for breach of contract. It repealed Regulation (EEC) No 295/91, and went into effect on 17 February 2005."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the EU compensation regulation EU261 for cancelled flights?\n\nContext:\nThe Flight Compensation Regulation 2004 (EC) No 261/2004 is a regulation in EU law establishing common rules on compensation and assistance to passengers in the event of denied boarding, flight cancellations, or long delays of flights. It requires compensation of €250 to €600 depending on the flight distance for delays over of at least three hours, cancellations, or being denied boarding from overbooking. Delays shorter than three hours means no entitlement to any compensation of any kind even if the delay was classified as non-extraordinary. Airlines must provide refreshments and accommodation where appropriate. The Court of Justice of the European Union has interpreted passenger rights strictly, so that there are virtually no exceptions for airlines to evade their obligations for breach of contract. It repealed Regulation (EEC) No 295/91, and went into effect on 17 February 2005."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11358 public prompt preservation",
+      "vars": {
+        "prompt": "Write a self introduction for a person named Cassie when speaking to a recruiter."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Write a self introduction for a person named Cassie when speaking to a recruiter."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11492 public prompt preservation",
+      "vars": {
+        "prompt": "Brainstorm a list of five different animals that you could find on a farm"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Brainstorm a list of five different animals that you could find on a farm"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11527 public prompt preservation",
+      "vars": {
+        "prompt": "What is the Masters Tournament?\n\nContext:\nThe Masters Tournament (usually referred to as simply The Masters, or the U.S. Masters outside North America) is one of the four major championships in professional golf. Scheduled for the first full week of April, the Masters is the first major of the year, and unlike the others, it is always held at the same location, Augusta National Golf Club, a private course in the city of Augusta, Georgia, in the southeastern United States.\n\nThe Masters was started by amateur champion Bobby Jones and investment banker Clifford Roberts. After his grand slam in 1930, Jones acquired the former plant nursery and co-designed Augusta National with course architect Alister MacKenzie. First played 89 years ago in 1934, the tournament is an official money event on the PGA Tour, the European Tour, and the Japan Golf Tour. The field of players is smaller than those of the other major championships because it is an invitational event, held by the Augusta National Golf Club.\n\nThe tournament has a number of traditions. Since 1949, a green jacket has been awarded to the champion, who must return it to the clubhouse one year after his victory, although it remains his personal property and is stored with other champions' jackets in a specially designated cloakroom. In most instances, only a first-time and currently reigning champion may remove his jacket from the club grounds. A golfer who wins the event multiple times uses the same green jacket awarded upon his initial win (unless they need to be re-fitted with a new jacket). The Champions Dinner, inaugurated by Ben Hogan in 1952, is held on the Tuesday before each tournament, and is open only to past champions and certain board members of the Augusta National Golf Club. Beginning in 1963, legendary golfers, usually past champions, have hit an honorary tee shot on the morning of the first round to commence play. These have included Fred McLeod, Jock Hutchinson, Gene Sarazen, Sam Snead, Byron Nelson, Arnold Palmer, Jack Nicklaus, Gary Player, Lee Elder, and Tom Watson. Since 1960, a semi-social contest at the par-3 course has been played on Wednesday, the day before the first round."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the Masters Tournament?\n\nContext:\nThe Masters Tournament (usually referred to as simply The Masters, or the U.S. Masters outside North America) is one of the four major championships in professional golf. Scheduled for the first full week of April, the Masters is the first major of the year, and unlike the others, it is always held at the same location, Augusta National Golf Club, a private course in the city of Augusta, Georgia, in the southeastern United States.\n\nThe Masters was started by amateur champion Bobby Jones and investment banker Clifford Roberts. After his grand slam in 1930, Jones acquired the former plant nursery and co-designed Augusta National with course architect Alister MacKenzie. First played 89 years ago in 1934, the tournament is an official money event on the PGA Tour, the European Tour, and the Japan Golf Tour. The field of players is smaller than those of the other major championships because it is an invitational event, held by the Augusta National Golf Club.\n\nThe tournament has a number of traditions. Since 1949, a green jacket has been awarded to the champion, who must return it to the clubhouse one year after his victory, although it remains his personal property and is stored with other champions' jackets in a specially designated cloakroom. In most instances, only a first-time and currently reigning champion may remove his jacket from the club grounds. A golfer who wins the event multiple times uses the same green jacket awarded upon his initial win (unless they need to be re-fitted with a new jacket). The Champions Dinner, inaugurated by Ben Hogan in 1952, is held on the Tuesday before each tournament, and is open only to past champions and certain board members of the Augusta National Golf Club. Beginning in 1963, legendary golfers, usually past champions, have hit an honorary tee shot on the morning of the first round to commence play. These have included Fred McLeod, Jock Hutchinson, Gene Sarazen, Sam Snead, Byron Nelson, Arnold Palmer, Jack Nicklaus, Gary Player, Lee Elder, and Tom Watson. Since 1960, a semi-social contest at the par-3 course has been played on Wednesday, the day before the first round."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11545 public prompt preservation",
+      "vars": {
+        "prompt": "What are four different recipes that you can make with Brussels Sprouts?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are four different recipes that you can make with Brussels Sprouts?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_11840 public prompt preservation",
+      "vars": {
+        "prompt": "What color of light does the Haugsholmen Lighthouse emit?\n\nContext:\nHaugsholmen Lighthouse (Norwegian: Haugsholmen fyr) is a coastal lighthouse located in the municipality of Sande in Møre og Romsdal county, Norway. It is located on the tiny island of Vestre Frekøy, in the mouth of the Vanylvsfjorden, about 2.5 kilometres (1.6 mi) southwest of the island of Kvamsøya. It was established in 1876 and automated in 1979.\n\nThe 10-metre (33 ft) tall tower sits at an elevation of 19.7 metres (65 ft) above sea level. The light emits white, red or green light, depending on direction, occulting twice every 10 seconds. The red cylindrical tower with lantern and gallery is attached to one corner of a 2+1⁄2-story white keeper's house."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What color of light does the Haugsholmen Lighthouse emit?\n\nContext:\nHaugsholmen Lighthouse (Norwegian: Haugsholmen fyr) is a coastal lighthouse located in the municipality of Sande in Møre og Romsdal county, Norway. It is located on the tiny island of Vestre Frekøy, in the mouth of the Vanylvsfjorden, about 2.5 kilometres (1.6 mi) southwest of the island of Kvamsøya. It was established in 1876 and automated in 1979.\n\nThe 10-metre (33 ft) tall tower sits at an elevation of 19.7 metres (65 ft) above sea level. The light emits white, red or green light, depending on direction, occulting twice every 10 seconds. The red cylindrical tower with lantern and gallery is attached to one corner of a 2+1⁄2-story white keeper's house."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12135 public prompt preservation",
+      "vars": {
+        "prompt": "Identify which instrument is string or percussion: Dhimay, Swarabat"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Identify which instrument is string or percussion: Dhimay, Swarabat"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12169 public prompt preservation",
+      "vars": {
+        "prompt": "Does spark provide date & time when a particular event is received in the structured streaming?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Does spark provide date & time when a particular event is received in the structured streaming?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12766 public prompt preservation",
+      "vars": {
+        "prompt": "Write an email to the condo HOA as why including a flat rate of water bill into monthly HOA fee is a bad idea"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Write an email to the condo HOA as why including a flat rate of water bill into monthly HOA fee is a bad idea"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12865 public prompt preservation",
+      "vars": {
+        "prompt": "Give me a list of horror/thriller books to read"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Give me a list of horror/thriller books to read"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12878 public prompt preservation",
+      "vars": {
+        "prompt": "You were abducted by aliens and experimented on, you were sent back to earth with the knowledge and ability to solve any problem on earth"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "You were abducted by aliens and experimented on, you were sent back to earth with the knowledge and ability to solve any problem on earth"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_12908 public prompt preservation",
+      "vars": {
+        "prompt": "Imagine you are the last person on Earth. Write a diary entry describing your thoughts and feelings."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Imagine you are the last person on Earth. Write a diary entry describing your thoughts and feelings."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_13179 public prompt preservation",
+      "vars": {
+        "prompt": "Given this paragraph, what method of scientific study did Edmund Selous champion?\n\nContext:\nEdmund Selous started as a conventional naturalist, but developed a hatred of the killing of animals for scientific study and was a pioneer of bird-watching as a method of scientific study. He was a strong proponent of non-destructive bird-study as opposed to the collection of skins and eggs."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Given this paragraph, what method of scientific study did Edmund Selous champion?\n\nContext:\nEdmund Selous started as a conventional naturalist, but developed a hatred of the killing of animals for scientific study and was a pioneer of bird-watching as a method of scientific study. He was a strong proponent of non-destructive bird-study as opposed to the collection of skins and eggs."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_13275 public prompt preservation",
+      "vars": {
+        "prompt": "What is the oldest part of Boston to live in, based on the historic neighborhood?\n\nContext:\nCharlestown is the oldest neighborhood in Boston, Massachusetts, in the United States. Originally called Mishawum by the Massachusett tribe, it is located on a peninsula north of the Charles River, across from downtown Boston, and also adjoins the Mystic River and Boston Harbor waterways. Charlestown was laid out in 1629 by engineer Thomas Graves, one of its earliest settlers, during the reign of Charles I of England. It was originally a separate town and the first capital of the Massachusetts Bay Colony.\n\nCharlestown became a city in 1848 and was annexed by Boston on January 5, 1874. With that, it also switched from Middlesex County, to which it had belonged since 1643, to Suffolk County. It has had a substantial Irish-American population since the migration of Irish people during the Great Irish Famine of the 1840s. Since the late 1980s, the neighborhood has changed dramatically because of its proximity to downtown and its colonial architecture. A mix of yuppie and upper-middle-class gentrification has influenced much of the area, as it has in many of Boston's neighborhoods, but Charlestown still maintains a strong Irish-American population.\n\nIn the 21st century, Charlestown's diversity has expanded dramatically, along with growing rates of the very poor and very wealthy. Today Charlestown is a largely residential neighborhood, with much housing near the waterfront, overlooking the Boston skyline. Charlestown is home to many historic sites, hospitals and organizations, with access from the Orange Line Sullivan Square or Community College stops or the I-93 expressway."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What is the oldest part of Boston to live in, based on the historic neighborhood?\n\nContext:\nCharlestown is the oldest neighborhood in Boston, Massachusetts, in the United States. Originally called Mishawum by the Massachusett tribe, it is located on a peninsula north of the Charles River, across from downtown Boston, and also adjoins the Mystic River and Boston Harbor waterways. Charlestown was laid out in 1629 by engineer Thomas Graves, one of its earliest settlers, during the reign of Charles I of England. It was originally a separate town and the first capital of the Massachusetts Bay Colony.\n\nCharlestown became a city in 1848 and was annexed by Boston on January 5, 1874. With that, it also switched from Middlesex County, to which it had belonged since 1643, to Suffolk County. It has had a substantial Irish-American population since the migration of Irish people during the Great Irish Famine of the 1840s. Since the late 1980s, the neighborhood has changed dramatically because of its proximity to downtown and its colonial architecture. A mix of yuppie and upper-middle-class gentrification has influenced much of the area, as it has in many of Boston's neighborhoods, but Charlestown still maintains a strong Irish-American population.\n\nIn the 21st century, Charlestown's diversity has expanded dramatically, along with growing rates of the very poor and very wealthy. Today Charlestown is a largely residential neighborhood, with much housing near the waterfront, overlooking the Boston skyline. Charlestown is home to many historic sites, hospitals and organizations, with access from the Orange Line Sullivan Square or Community College stops or the I-93 expressway."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_13506 public prompt preservation",
+      "vars": {
+        "prompt": "In which years did the Women's Australian cricket team win the world cup"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "In which years did the Women's Australian cricket team win the world cup"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_13581 public prompt preservation",
+      "vars": {
+        "prompt": "What are five things I could do with a broken surfboard?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What are five things I could do with a broken surfboard?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14238 public prompt preservation",
+      "vars": {
+        "prompt": "Write me a cover letter for an application for a role I'm applying for. The role is with a technology company that sells software that helps consumers find the perfect hat based on the size and shape of their head. My name is Roger, I am passionate about hats and have a background in niche technology sales. The hiring manager's name is Jamiroquai. The companies name is Hats4U"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Write me a cover letter for an application for a role I'm applying for. The role is with a technology company that sells software that helps consumers find the perfect hat based on the size and shape of their head. My name is Roger, I am passionate about hats and have a background in niche technology sales. The hiring manager's name is Jamiroquai. The companies name is Hats4U"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14244 public prompt preservation",
+      "vars": {
+        "prompt": "From the passage provided, extract the winter months in Andhra Pradesh. Separate them with a comma.\n\nContext:\nThe climate of Andhra Pradesh varies considerably, depending on the geographical region. Summers last from March to June. In the coastal plain, the summer temperatures are generally higher than the rest of the state, with temperature ranging between 20 and 41 °C (68 and 106 °F). July to September is the season for tropical rains. About one-third of the total rainfall is brought by the northeast monsoon. October and November see low-pressure systems and tropical cyclones form in the Bay of Bengal which, along with the northeast monsoon, bring rains to the southern and coastal regions of the state.\n\nNovember, December, January, and February are the winter months in Andhra Pradesh. Since the state has a long coastal belt the winters are not very cold. The range of winter temperature is generally 12 to 30 °C (54 to 86 °F). Lambasingi in Visakhapatnam district is also nicknamed as the \"Kashmir of Andhra Pradesh\" due to its relatively cool climate as compared to others and the temperature ranges from 0 to 10 °C (32 to 50 °F)."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "From the passage provided, extract the winter months in Andhra Pradesh. Separate them with a comma.\n\nContext:\nThe climate of Andhra Pradesh varies considerably, depending on the geographical region. Summers last from March to June. In the coastal plain, the summer temperatures are generally higher than the rest of the state, with temperature ranging between 20 and 41 °C (68 and 106 °F). July to September is the season for tropical rains. About one-third of the total rainfall is brought by the northeast monsoon. October and November see low-pressure systems and tropical cyclones form in the Bay of Bengal which, along with the northeast monsoon, bring rains to the southern and coastal regions of the state.\n\nNovember, December, January, and February are the winter months in Andhra Pradesh. Since the state has a long coastal belt the winters are not very cold. The range of winter temperature is generally 12 to 30 °C (54 to 86 °F). Lambasingi in Visakhapatnam district is also nicknamed as the \"Kashmir of Andhra Pradesh\" due to its relatively cool climate as compared to others and the temperature ranges from 0 to 10 °C (32 to 50 °F)."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14613 public prompt preservation",
+      "vars": {
+        "prompt": "Given a reference text about the Anglo-Spanish War, tell me what treaty marked the end of the war.\n\nContext:\nThe Anglo-Spanish War (1585–1604) was an intermittent conflict between the Habsburg Kingdom of Spain and the Kingdom of England. It was never formally declared. The war included much English privateering against Spanish ships, and several widely separated battles. It began with England's military expedition in 1585 to what was then the Spanish Netherlands under the command of the Earl of Leicester, in support of the Dutch rebellion against Spanish Habsburg rule.\n\nThe English enjoyed a victory at Cádiz in 1587, and repelled the Spanish Armada in 1588, but then suffered heavy setbacks: the English Armada (1589), the Drake–Hawkins expedition (1595), and the Essex–Raleigh expedition (1597). Three further Spanish armadas were sent against England and Ireland in 1596, 1597, and 1601, but these likewise ended in failure for Spain, mainly because of adverse weather.\n\nThe war became deadlocked around the turn of the 17th century during campaigns in the Netherlands, France, and Ireland. It was brought to an end with the Treaty of London (1604), negotiated between Philip III of Spain and the new king of England, James I. In the treaty, England and Spain agreed to cease their military interventions in the Spanish Netherlands and Ireland, respectively, and the English ended their high seas privateering."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Given a reference text about the Anglo-Spanish War, tell me what treaty marked the end of the war.\n\nContext:\nThe Anglo-Spanish War (1585–1604) was an intermittent conflict between the Habsburg Kingdom of Spain and the Kingdom of England. It was never formally declared. The war included much English privateering against Spanish ships, and several widely separated battles. It began with England's military expedition in 1585 to what was then the Spanish Netherlands under the command of the Earl of Leicester, in support of the Dutch rebellion against Spanish Habsburg rule.\n\nThe English enjoyed a victory at Cádiz in 1587, and repelled the Spanish Armada in 1588, but then suffered heavy setbacks: the English Armada (1589), the Drake–Hawkins expedition (1595), and the Essex–Raleigh expedition (1597). Three further Spanish armadas were sent against England and Ireland in 1596, 1597, and 1601, but these likewise ended in failure for Spain, mainly because of adverse weather.\n\nThe war became deadlocked around the turn of the 17th century during campaigns in the Netherlands, France, and Ireland. It was brought to an end with the Treaty of London (1604), negotiated between Philip III of Spain and the new king of England, James I. In the treaty, England and Spain agreed to cease their military interventions in the Spanish Netherlands and Ireland, respectively, and the English ended their high seas privateering."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14770 public prompt preservation",
+      "vars": {
+        "prompt": "What happened to Bosch's mom?\n\nContext:\nBosch's mother was a prostitute in Hollywood who was murdered on October 28, 1961, when Bosch was 11 years old. His father, who he met later in life, was Mickey Haller Sr., a prominent defense attorney known for representing mobster Mickey Cohen, among other clients."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What happened to Bosch's mom?\n\nContext:\nBosch's mother was a prostitute in Hollywood who was murdered on October 28, 1961, when Bosch was 11 years old. His father, who he met later in life, was Mickey Haller Sr., a prominent defense attorney known for representing mobster Mickey Cohen, among other clients."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14928 public prompt preservation",
+      "vars": {
+        "prompt": "Extract the names of all schools in the text\n\nContext:\nTodd, third son of Ira and Sally (Hmman) Todd, was born in Hartwick, New York., March 4, 1813. He had spent one year at Amherst College, before entering as Sophomore at Yale College, where he graduated in 1836. He taught a high school in Canaan, Conn., until the spring of 1837, when he began law studies with Judge Arphaxad Loomis, of Little Falls, New York. Upon his admission to the bar in 1839, he decided to emigrate to the West. He selected St. Louis and arrived there in November, 1839, beginning practice in March, 1840. He gave special attention to questions affecting real property, and achieved distinguished success in litigated cases of this nature. Through apprehensions with regard to his health, he retired in 1860, at a comparatively early age, from active practice, confining himself thereafter to office consultations. He declined all political nominations until 1854, when he was elected to the Missouri House of Representatives. In 1860 he was an unsuccessful candidate for US Congress on the Bell and Everett ticket. In 1875, he was a member of the convention which revised the Constitution of Missouri. He was a director of Washington University, in St. Louis, and served gratuitously for fifteen years in its Law Department as lecturer. Among his students was Lemma Barkaloo, the first female law student in the United States. After a month's illness, he died at his home in St. Louis, of meningitis, April 30, 1885, in his 73rd year."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "Extract the names of all schools in the text\n\nContext:\nTodd, third son of Ira and Sally (Hmman) Todd, was born in Hartwick, New York., March 4, 1813. He had spent one year at Amherst College, before entering as Sophomore at Yale College, where he graduated in 1836. He taught a high school in Canaan, Conn., until the spring of 1837, when he began law studies with Judge Arphaxad Loomis, of Little Falls, New York. Upon his admission to the bar in 1839, he decided to emigrate to the West. He selected St. Louis and arrived there in November, 1839, beginning practice in March, 1840. He gave special attention to questions affecting real property, and achieved distinguished success in litigated cases of this nature. Through apprehensions with regard to his health, he retired in 1860, at a comparatively early age, from active practice, confining himself thereafter to office consultations. He declined all political nominations until 1854, when he was elected to the Missouri House of Representatives. In 1860 he was an unsuccessful candidate for US Congress on the Bell and Everett ticket. In 1875, he was a member of the convention which revised the Constitution of Missouri. He was a director of Washington University, in St. Louis, and served gratuitously for fifteen years in its Law Department as lecturer. Among his students was Lemma Barkaloo, the first female law student in the United States. After a month's illness, he died at his home in St. Louis, of meningitis, April 30, 1885, in his 73rd year."
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "dolly_14952 public prompt preservation",
+      "vars": {
+        "prompt": "What medicinal plants should I grow in my Mid-Atlantic garden?"
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "What medicinal plants should I grow in my Mid-Atlantic garden?"
+        },
+        {
+          "type": "contains",
+          "value": "## 输出要求"
+        }
+      ]
+    },
+    {
+      "description": "English conflicting length constraints must be surfaced",
+      "vars": {
+        "prompt": "What should I do on a free afternoon in San Francisco?\nOutput at least 500 words and no more than 100 words."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "停止执行并列出冲突"
+        }
+      ]
+    },
+    {
+      "description": "English ambiguity must produce explicit handling",
+      "vars": {
+        "prompt": "What should I do on a free afternoon in San Francisco?\nMake it somewhat appropriate and add related stuff etc."
+      },
+      "assert": [
+        {
+          "type": "contains",
+          "value": "## 歧义处理"
+        }
+      ]
+    }
+  ]
+}

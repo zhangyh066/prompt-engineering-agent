@@ -1,0 +1,19 @@
+{
+  "promptfoo_version": "0.126.0",
+  "provider": "file://pea_provider.py",
+  "external_model_calls": 0,
+  "public_cases": 80,
+  "mutation_cases": 2,
+  "before": {
+    "passed": 80,
+    "failed": 2,
+    "errors": 0
+  },
+  "after": {
+    "passed": 82,
+    "failed": 0,
+    "errors": 0
+  },
+  "scope": "Structural preservation and explicitly defined PEA mutation handling, not open-task model quality",
+  "comparison_warning": "Do not interpret 82/82 as evidence that PEA outperforms Promptfoo or other prompt products"
+}

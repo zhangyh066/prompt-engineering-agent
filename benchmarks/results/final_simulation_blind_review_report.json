@@ -1,0 +1,228 @@
+{
+  "simulation": true,
+  "simulated_human_review": true,
+  "actual_human_review": false,
+  "reviewer_count": 2,
+  "cases": 8,
+  "reviewer_summaries": [
+    {
+      "pea_wins": 2,
+      "original_wins": 0,
+      "ties": 6,
+      "mean_original_score": 4.75,
+      "mean_pea_score": 5,
+      "original_critical_failures": 0,
+      "pea_critical_failures": 0
+    },
+    {
+      "pea_wins": 1,
+      "original_wins": 0,
+      "ties": 7,
+      "mean_original_score": 4.875,
+      "mean_pea_score": 5,
+      "original_critical_failures": 0,
+      "pea_critical_failures": 0
+    }
+  ],
+  "decoded_preference_agreement": 0.875,
+  "decoded_reviews": [
+    [
+      {
+        "pair_id": "dolly_01620",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者均将7家公司全部正确分类，大小写和项目符号差异不影响任务完成。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_01635",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都用短横线列出恰好5种不同蔬菜，表达清晰，无事实或指令遵循问题。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_04998",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者均准确且完整地列出晋升为 Commander 后指挥的 Essex、Glaucus 和 R. R. Cuyler，未混入此前的舰船。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_07622",
+        "left_score": 4,
+        "right_score": 5,
+        "preference": "right",
+        "critical_failure": "none",
+        "rationale": "两者都抓住 Texas Hill Country 及河湖特征；right 还列出 Barton Springs 和 McKinney Falls，信息更完整，left 举例较少但仍正确。",
+        "decoded_preference": "pea",
+        "original_score": 4,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_08229",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都以第一人称给出清晰、积极的理由，涵盖意义、成长和成就，内容切题且表达自然。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_08388",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都平衡说明养育的喜悦与现实负担，明确没有通用子女数量，并给出健康、经济、支持等实际考量，也尊重不育儿的选择。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_12145",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都以带孩子就诊的家长口吻写出负面评价，具体描述候诊室污渍、灰尘或垃圾，并明确表达卫生担忧和不愿再来。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_14862",
+        "left_score": 4,
+        "right_score": 5,
+        "preference": "right",
+        "critical_failure": "none",
+        "rationale": "两者均准确说明英超地位、20队、38场比赛、赛季和升降级；right 补充周末下午为主的赛程信息，摘要略更完整。",
+        "decoded_preference": "pea",
+        "original_score": 4,
+        "pea_score": 5,
+        "critical_sources": []
+      }
+    ],
+    [
+      {
+        "pair_id": "dolly_01620",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都将七家公司正确分类，与参考一致；仅排版和公司名大小写不同，无实质质量差异。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_01635",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者均用短横线列出五种不同蔬菜，完全满足数量、格式和内容要求。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_04998",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都准确列出晋升 Commander 后指挥的 Essex、Glaucus 和 R. R. Cuyler，且未加入晋升前舰艇。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_07622",
+        "left_score": 4,
+        "right_score": 5,
+        "preference": "right",
+        "critical_failure": "none",
+        "rationale": "两者都依据上下文指出 Texas Hill Country 及丰富水系；right 还纳入 Barton Springs 和 McKinney Falls，地理特征覆盖更完整。",
+        "decoded_preference": "pea",
+        "original_score": 4,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_08229",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都以第一人称直接解释努力工作的动力，涵盖意义、成长和成就；right 虽多列纪律与机会，但整体表达质量相当。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_08388",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都平衡描述育儿的喜悦与压力，并说明孩子数量没有统一答案，给出健康、经济和支持系统等实用考量，也尊重不生育的选择。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_12145",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都以母亲口吻写出明确的负面评价，用具体污渍或垃圾细节描写脏乱的候诊室，并合理表达对儿童卫生安全的担忧。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      },
+      {
+        "pair_id": "dolly_14862",
+        "left_score": 5,
+        "right_score": 5,
+        "preference": "tie",
+        "critical_failure": "none",
+        "rationale": "两者都准确定义英超，并涵盖20队、38场、主客场、赛季月份和升降级；right 补充周末赛程，但 left 的简洁概括已充分回答问题。",
+        "decoded_preference": "tie",
+        "original_score": 5,
+        "pea_score": 5,
+        "critical_sources": []
+      }
+    ]
+  ],
+  "quality_claim_allowed": false,
+  "interpretation": "Two independent LLM subagents simulated blind reviewers. These are not human judgments or real product superiority evidence."
+}

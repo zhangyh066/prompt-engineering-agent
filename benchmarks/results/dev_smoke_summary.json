@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "cases": 8,
+  "completed_cases": 8,
+  "categories": 8,
+  "selection": "stratified",
+  "seed": 20261126,
+  "external_model_calls": 0,
+  "quality_claim_allowed": false,
+  "paired_comparison": {
+    "samples": 8,
+    "wins": 0,
+    "ties": 8,
+    "losses": 0,
+    "mean_difference": 0.0,
+    "confidence": 0.95,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0,
+    "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+  },
+  "interpretation": "Mock pipeline validation only; identical outputs are not task quality evidence"
+}

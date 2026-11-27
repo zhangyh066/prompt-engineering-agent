@@ -1,0 +1,66 @@
+[
+  {
+    "pair_id": "dolly_01620",
+    "category": "classification",
+    "task_prompt": "Classify each of the following as a ridesharing or food delivery company: Doordash, Lyft, Wolt, Deliveroo, Bolt, Didi, Rappi",
+    "reference_response": "Doordash: Food Delivery\nLyft: Ridesharing\nWolt: Food Delivery\nDeliveroo: Food Delivery\nBolt: Ridesharing\nDidi: Ridesharing\nRappi: Food Delivery",
+    "left_output": "Doordash: Food delivery\nLyft: Ridesharing\nWolt: Food delivery\nDeliveroo: Food delivery\nBolt: Ridesharing\nDidi: Ridesharing\nRappi: Food delivery",
+    "right_output": "- DoorDash: Food delivery\n- Lyft: Ridesharing\n- Wolt: Food delivery\n- Deliveroo: Food delivery\n- Bolt: Ridesharing\n- Didi: Ridesharing\n- Rappi: Food delivery"
+  },
+  {
+    "pair_id": "dolly_01635",
+    "category": "general_qa",
+    "task_prompt": "Name 5 different vegetables. List them with dashes",
+    "reference_response": null,
+    "left_output": "- Carrots\n- Broccoli\n- Spinach\n- Bell peppers\n- Zucchini",
+    "right_output": "- Carrot\n- Broccoli\n- Spinach\n- Potato\n- Cauliflower"
+  },
+  {
+    "pair_id": "dolly_04998",
+    "category": "closed_qa",
+    "task_prompt": "Given this reference text about the career of Charles Henry Bromedge Caldwell, name the ships he commanded after his promotion to the rank of Commander.\n\nContext:\nCharles Henry Bromedge Caldwell was born in Hingham, Massachusetts on February 24, 1823. He entered the navy as midshipman February 27, 1838, and became lieutenant September 4, 1852. He commanded the USS Vandalia in the US Navy's second Fiji expedition, an 1859 punitive expedition against Waya Island warriors who had cannibalized two American traders. In 1862, he commanded the gun-boat Itasca, of the western gulf blockading squadron, and took part in the bombardment of Forts Jackson and St. Philip. On the night of April 20, his gun-boat, with the Pinola, was sent on an expedition under the command of Fleet-Capt. Bell, to make a passage for the fleet through the chain obstructions near the forts. Lieut. Caldwell and his party boarded one of the hulks that held the chains, and succeeded in detaching the latter, in spite of the heavy fire to which they were subjected. The Itasca was then swept on shore by the current, in full sight of the forts, and it was half an hour before she was afloat again. She was unable to pass the forts with the rest of the fleet, owing to a shot that penetrated her boiler. Lieut. Caldwell was in the action at Grand Gulf, June 9, 1862, and was promoted to commander on July 16 1862.\n\nHe commanded the iron-clad Essex, of the Mississippi squadron in 1862–63, and took part in the operations at Port Hudson, from March to July 1863, in command of the Essex and the mortar flotilla.\n\nHe commanded the Glaucus of the North Atlantic blockading squadron from 1863 till 1864, and the R. R. Cuyler, of the same squadron, from 1864 till 1865. He became captain, December 12, 1867, chief of staff of the North Atlantic fleet in 1870, and commodore on June 14, 1874.\n\nHe died on November 30, 1877.",
+    "reference_response": "Essex\nGlaucus\nR. R. Cuyler",
+    "left_output": "After his promotion to Commander, he commanded the Essex, the Glaucus, and the R. R. Cuyler.",
+    "right_output": "After his promotion to Commander, Caldwell commanded the ironclad Essex, the Glaucus, and the R. R. Cuyler."
+  },
+  {
+    "pair_id": "dolly_07622",
+    "category": "information_extraction",
+    "task_prompt": "What is a topographical unique feature of the area around Austin Texas.\n\nContext:\nAs of 2021, Austin had an estimated population of 964,177, up from 961,855 at the 2020 census. The city is the cultural and economic center of the Austin–Round Rock metropolitan statistical area, which had an estimated population of 2,295,303 as of July 1, 2020, a roughly 84% increase from the year 2000. Located in Central Texas within the greater Texas Hill Country, it is home to numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis on the Colorado River, Barton Springs, McKinney Falls, and Lake Walter E. Long.",
+    "reference_response": "Austin is located in Central Texas within the greater Texas Hill Country, it is home to numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis on the Colorado River, Barton Springs, McKinney Falls, and Lake Walter E. Long.",
+    "left_output": "The area around Austin lies within the Texas Hill Country and features numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis.",
+    "right_output": "The Austin area is distinguished by its location in the Texas Hill Country, with numerous lakes, rivers, and waterways, including Lady Bird Lake, Lake Travis, Barton Springs, and McKinney Falls."
+  },
+  {
+    "pair_id": "dolly_08229",
+    "category": "brainstorming",
+    "task_prompt": "Why do you love to work hard",
+    "reference_response": null,
+    "left_output": "I love working hard because it gives me a sense of purpose, helps me grow, and turns challenging goals into meaningful accomplishments. Seeing my progress and making a positive impact keeps me motivated.",
+    "right_output": "I love working hard because it gives me a sense of purpose, helps me grow, and allows me to achieve results I can be proud of. It also builds discipline, creates new opportunities, and lets me make a meaningful contribution."
+  },
+  {
+    "pair_id": "dolly_08388",
+    "category": "open_qa",
+    "task_prompt": "What is it like to have children and how many should I have?",
+    "reference_response": null,
+    "left_output": "Having children can be deeply joyful and meaningful, but it also brings exhaustion, financial pressure, and major changes to your time, relationships, and priorities. There is no universally right number to have. Consider your health, finances, support network, partnership, lifestyle, and how much time and energy you can offer each child; for some people that means none, for others one, two, or more. Choose what supports a loving, stable family life rather than following outside expectations.",
+    "right_output": "Having children can bring love, joy, and a strong sense of purpose, but it also involves sleep deprivation, financial pressure, less personal time, and years of responsibility. The experience varies greatly depending on your children, support network, and circumstances.\n\nThere is no universally right number to have. Consider your desire to parent, health, finances, time, relationship, and available support. Choosing not to have children is also valid. Decide based on the life you want and the number of children you can lovingly care for, rather than outside pressure."
+  },
+  {
+    "pair_id": "dolly_12145",
+    "category": "creative_writing",
+    "task_prompt": "Write a mother’s negative review for a dentist office with a dirty waiting room.",
+    "reference_response": null,
+    "left_output": "I took my children to this dentist’s office and was appalled by the waiting room. The floors were grimy, the chairs had visible stains, and there was dust and trash around the room. A healthcare facility should feel clean and safe, especially for children. The dirty environment made our visit uncomfortable and left me unwilling to return.",
+    "right_output": "I was very disappointed with my child's recent visit. The waiting room was dirty, with dusty chairs, crumbs on the floor, and an overflowing trash bin. A dental office should provide a clean, hygienic environment, especially for children. The conditions made us uncomfortable and left me concerned about the practice's overall standards. I hope the office addresses this promptly, but I would hesitate to return."
+  },
+  {
+    "pair_id": "dolly_14862",
+    "category": "summarization",
+    "task_prompt": "What is the Premier League?\n\nContext:\nThe Premier League (legal name: The Football Association Premier League Limited) is the highest level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons typically run from August to May with each team playing 38 matches (playing all other teams both home and away). Most games are played on Saturday and Sunday afternoons, with occasional weekday evening fixtures.",
+    "reference_response": null,
+    "left_output": "The Premier League is the highest level of English football, contested by 20 clubs. Each team plays 38 matches per season, typically from August to May, facing every other team home and away. The league operates on a system of promotion and relegation with the English Football League.",
+    "right_output": "The Premier League is the highest level of English football, contested by 20 clubs with promotion and relegation to and from the English Football League. Its season usually runs from August to May, with each team playing 38 matches—home and away against every other team—and most games taking place on weekend afternoons."
+  }
+]

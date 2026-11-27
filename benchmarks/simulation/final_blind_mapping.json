@@ -1,0 +1,42 @@
+[
+  {
+    "pair_id": "dolly_01620",
+    "left_source": "original",
+    "right_source": "pea"
+  },
+  {
+    "pair_id": "dolly_01635",
+    "left_source": "pea",
+    "right_source": "original"
+  },
+  {
+    "pair_id": "dolly_04998",
+    "left_source": "pea",
+    "right_source": "original"
+  },
+  {
+    "pair_id": "dolly_07622",
+    "left_source": "original",
+    "right_source": "pea"
+  },
+  {
+    "pair_id": "dolly_08229",
+    "left_source": "original",
+    "right_source": "pea"
+  },
+  {
+    "pair_id": "dolly_08388",
+    "left_source": "pea",
+    "right_source": "original"
+  },
+  {
+    "pair_id": "dolly_12145",
+    "left_source": "pea",
+    "right_source": "original"
+  },
+  {
+    "pair_id": "dolly_14862",
+    "left_source": "original",
+    "right_source": "pea"
+  }
+]

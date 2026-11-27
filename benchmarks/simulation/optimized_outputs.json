@@ -1,0 +1,34 @@
+[
+  {
+    "case_id": "dolly_01597",
+    "output": "Good native plants to grow in Ohio include:\n\n- Purple coneflower (Echinacea purpurea): sunny beds and pollinator gardens.\n- Black-eyed Susan (Rudbeckia hirta): sunny areas with well-drained soil.\n- Butterfly weed (Asclepias tuberosa): dry, sunny sites; a monarch butterfly host plant.\n- Swamp milkweed (Asclepias incarnata): moist soil and rain gardens.\n- Wild bergamot (Monarda fistulosa): sunny to partly shaded pollinator gardens.\n- New England aster (Symphyotrichum novae-angliae): sunny sites and late-season color.\n- Wild columbine (Aquilegia canadensis): partial shade and well-drained soil.\n- Christmas fern (Polystichum acrostichoides): shaded woodland gardens.\n- Little bluestem (Schizachyrium scoparium): dry, sunny sites.\n- Serviceberry (Amelanchier spp.): a small native tree with spring flowers and edible fruit.\n- Eastern redbud (Cercis canadensis): a small flowering tree for sun or partial shade.\n- White oak (Quercus alba): a large shade tree that supports many native insects and birds.\n\nChoose plants that match the site's sunlight, soil, and moisture, and use nursery-propagated rather than wild-dug plants."
+  },
+  {
+    "case_id": "dolly_03652",
+    "output": "The first solid-state device was the cat's-whisker detector, first used in the 1900s in radio receivers. It detected radio signals through a contact junction formed by lightly touching a whisker-like wire to a solid crystal, such as germanium.\n\nEvidence and source: The supplied passage, in the paragraph beginning \"The first solid-state device was the 'cat's-whisker detector',\" states its name, period of use, construction, and function.\n\nUncertainty: The passage gives only the broad date of the 1900s and does not identify an inventor or an exact year of invention."
+  },
+  {
+    "case_id": "dolly_07982",
+    "output": "Dabakan: percussion instrument.\nKwitra: string instrument."
+  },
+  {
+    "case_id": "dolly_08678",
+    "output": "Fissures, vents, and plugs are all associated with volcanoes and volcanic activity."
+  },
+  {
+    "case_id": "dolly_11026",
+    "output": "The third limb of yoga is asana, the practice of physical postures."
+  },
+  {
+    "case_id": "dolly_11736",
+    "output": "I’m sorry I worried you. My train was delayed, and my phone had died, so I couldn’t let you know. I should have found another way to call."
+  },
+  {
+    "case_id": "dolly_13730",
+    "output": "The communes in the Barolo DOCG production area are:\n\n- Barolo\n- Castiglione Falletto\n- La Morra\n- Monforte d'Alba\n- Serralunga d'Alba\n- Cherasco\n- Diano d'Alba\n- Grinzane Cavour\n- Novello\n- Roddi\n- Verduno\n\nThe last six are included only in part."
+  },
+  {
+    "case_id": "dolly_14085",
+    "output": "An archipelago is a chain, cluster, or collection of islands. It is sometimes called an island group or island chain, and can also refer to a sea containing scattered islands."
+  }
+]

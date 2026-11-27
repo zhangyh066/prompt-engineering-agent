@@ -1,0 +1,168 @@
+{
+  "request": {
+    "user_request": "请优化这个 Prompt，保留所有要求。",
+    "raw_prompt": "给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟。语气专业点，别超过200字，要有补救措施和邮件主题。"
+  },
+  "result": {
+    "request": {
+      "user_request": "请优化这个 Prompt，保留所有要求。",
+      "raw_prompt": "给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟。语气专业点，别超过200字，要有补救措施和邮件主题。"
+    },
+    "intent": {
+      "goal": "给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟。语气专业点，别超过200字，要有补救措施和邮件主题。",
+      "task_type": "email_office",
+      "complexity": "simple",
+      "output_requirements": [],
+      "constraints": [
+        "语气专业点，别超过200字，要有补救措施和邮件主题"
+      ],
+      "context": [
+        "给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟"
+      ],
+      "examples": [],
+      "missing_information": [],
+      "needs_clarification": false,
+      "requires_tools": false,
+      "analysis_method": "rule_based"
+    },
+    "diagnosis": {
+      "overall_score": 80.0,
+      "priority": "low",
+      "assessments": [
+        {
+          "dimension": "goal_clarity",
+          "score": 5,
+          "findings": [
+            "包含明确的任务动作"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "context_completeness",
+          "score": 5,
+          "findings": [
+            "包含背景、受众或应用场景信息"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "role_setting",
+          "score": 4,
+          "findings": [
+            "简单任务不强制要求角色设定"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "task_decomposition",
+          "score": 5,
+          "findings": [
+            "简单任务无需额外拆解"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "output_format",
+          "score": 1,
+          "findings": [
+            "缺少可验证的输出格式要求"
+          ],
+          "suggestions": [
+            "明确输出结构、格式和必要字段"
+          ]
+        },
+        {
+          "dimension": "constraints",
+          "score": 5,
+          "findings": [
+            "包含明确的约束条件"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "ambiguity_risk",
+          "score": 5,
+          "findings": [
+            "未发现常见模糊表述"
+          ],
+          "suggestions": []
+        },
+        {
+          "dimension": "executability",
+          "score": 2,
+          "findings": [
+            "任务还缺少直接执行所需的信息"
+          ],
+          "suggestions": [
+            "明确输入、处理动作和最终交付物"
+          ]
+        }
+      ],
+      "strengths": [
+        "包含明确的任务动作",
+        "包含背景、受众或应用场景信息",
+        "简单任务不强制要求角色设定",
+        "简单任务无需额外拆解",
+        "包含明确的约束条件",
+        "未发现常见模糊表述"
+      ],
+      "issues": [
+        "缺少可验证的输出格式要求",
+        "任务还缺少直接执行所需的信息"
+      ],
+      "suggestions": [
+        "明确输出结构、格式和必要字段",
+        "明确输入、处理动作和最终交付物"
+      ],
+      "needs_optimization": true
+    },
+    "strategy_plan": {
+      "selected": [
+        {
+          "strategy": "zero_shot",
+          "reason": "以清晰的直接指令作为最小优化基线，不默认添加示例或角色",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "constraint_based",
+          "reason": "保留用户约束；如有冲突则明确要求指出，而不是擅自取舍",
+          "expected_cost": "low"
+        },
+        {
+          "strategy": "structured_output",
+          "reason": "将交付物、输出格式和必要内容转化为可检查要求",
+          "expected_cost": "low"
+        }
+      ],
+      "lightweight": false,
+      "rationale": "选择 3 项策略；依据任务类型、复杂度和诊断缺陷，未机械叠加不适用策略"
+    },
+    "generated_prompt": {
+      "content": "## 任务目标\n给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟。语气专业点，别超过200字，要有补救措施和邮件主题。\n\n## 背景与使用场景\n- 给客户写封邮件，项目要延期到11月30日，原因是第三方接口延迟\n\n## 输出要求\n- 交付可直接使用的邮件主题和正文；完整保留并具体呈现用户提供的事实、日期、原因和补救或行动信息，不得用通用礼貌语替代具体信息",
+      "changes": [
+        {
+          "description": "根据用户需求重构任务目标和指令结构",
+          "reason": "使执行者能够直接识别交付目标，同时保留原始意图",
+          "strategies": [
+            "zero_shot"
+          ]
+        },
+        {
+          "description": "保留并突出用户约束和冲突处理要求",
+          "reason": "保留用户约束；如有冲突则明确要求指出，而不是擅自取舍",
+          "strategies": [
+            "constraint_based"
+          ]
+        },
+        {
+          "description": "明确输出结构、格式和必要交付物",
+          "reason": "将交付物、输出格式和必要内容转化为可检查要求",
+          "strategies": [
+            "structured_output"
+          ]
+        }
+      ],
+      "generation_method": "deterministic"
+    }
+  }
+}

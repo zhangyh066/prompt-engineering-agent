@@ -1,0 +1,66 @@
+[
+  {
+    "pair_id": "dolly_01620",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都将七家公司正确分类，与参考一致；仅排版和公司名大小写不同，无实质质量差异。"
+  },
+  {
+    "pair_id": "dolly_01635",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者均用短横线列出五种不同蔬菜，完全满足数量、格式和内容要求。"
+  },
+  {
+    "pair_id": "dolly_04998",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都准确列出晋升 Commander 后指挥的 Essex、Glaucus 和 R. R. Cuyler，且未加入晋升前舰艇。"
+  },
+  {
+    "pair_id": "dolly_07622",
+    "left_score": 4,
+    "right_score": 5,
+    "preference": "right",
+    "critical_failure": "none",
+    "rationale": "两者都依据上下文指出 Texas Hill Country 及丰富水系；right 还纳入 Barton Springs 和 McKinney Falls，地理特征覆盖更完整。"
+  },
+  {
+    "pair_id": "dolly_08229",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都以第一人称直接解释努力工作的动力，涵盖意义、成长和成就；right 虽多列纪律与机会，但整体表达质量相当。"
+  },
+  {
+    "pair_id": "dolly_08388",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都平衡描述育儿的喜悦与压力，并说明孩子数量没有统一答案，给出健康、经济和支持系统等实用考量，也尊重不生育的选择。"
+  },
+  {
+    "pair_id": "dolly_12145",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都以母亲口吻写出明确的负面评价，用具体污渍或垃圾细节描写脏乱的候诊室，并合理表达对儿童卫生安全的担忧。"
+  },
+  {
+    "pair_id": "dolly_14862",
+    "left_score": 5,
+    "right_score": 5,
+    "preference": "tie",
+    "critical_failure": "none",
+    "rationale": "两者都准确定义英超，并涵盖20队、38场、主客场、赛季月份和升降级；right 补充周末赛程，但 left 的简洁概括已充分回答问题。"
+  }
+]

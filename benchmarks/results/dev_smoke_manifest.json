@@ -1,0 +1,47 @@
+{
+  "split": "dev",
+  "seed": "20261126:dev-smoke",
+  "count": 8,
+  "cases": [
+    {
+      "case_id": "dolly_13730",
+      "category": "brainstorming"
+    },
+    {
+      "case_id": "dolly_07982",
+      "category": "classification"
+    },
+    {
+      "case_id": "dolly_14085",
+      "category": "closed_qa"
+    },
+    {
+      "case_id": "dolly_11736",
+      "category": "creative_writing"
+    },
+    {
+      "case_id": "dolly_01597",
+      "category": "general_qa"
+    },
+    {
+      "case_id": "dolly_03652",
+      "category": "information_extraction"
+    },
+    {
+      "case_id": "dolly_08678",
+      "category": "open_qa"
+    },
+    {
+      "case_id": "dolly_11026",
+      "category": "summarization"
+    }
+  ],
+  "planned_calls_per_case": 2,
+  "planned_total_calls": 16,
+  "requires_explicit_cost_budget": true,
+  "external_model_calls_performed": 0,
+  "reference_self_check": {
+    "passed": 8,
+    "all_primary_scores_one": true
+  }
+}

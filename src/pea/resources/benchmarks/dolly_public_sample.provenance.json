@@ -1,0 +1,22 @@
+{
+  "source": "databricks-dolly-15k",
+  "source_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl",
+  "license": "CC-BY-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "attribution": "Databricks employees; subset selection and schema adaptation by PEA",
+  "raw_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "raw_rows": 15011,
+  "selection_seed": 20261126,
+  "selection_counts": {
+    "creative_writing": 20,
+    "brainstorming": 15,
+    "summarization": 15,
+    "information_extraction": 10,
+    "closed_qa": 10,
+    "classification": 10
+  },
+  "selected_rows": 80,
+  "local_review_status": "not_reviewed",
+  "changes": "Filtered by length, deterministically sampled, combined schema, and retained original text",
+  "known_limitations": "Source may contain typos, factual errors, bias, and non-representative employee interests"
+}

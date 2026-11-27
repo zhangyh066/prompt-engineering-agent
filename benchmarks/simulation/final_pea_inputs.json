@@ -1,0 +1,42 @@
+[
+  {
+    "case_id": "dolly_08229",
+    "category": "brainstorming",
+    "prompt": "## 任务目标\nWhy do you love to work hard\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_01620",
+    "category": "classification",
+    "prompt": "## 任务目标\nClassify each of the following as a ridesharing or food delivery company: Doordash, Lyft, Wolt, Deliveroo, Bolt, Didi, Rappi\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_04998",
+    "category": "closed_qa",
+    "prompt": "## 任务目标\nGiven this reference text about the career of Charles Henry Bromedge Caldwell, name the ships he commanded after his promotion to the rank of Commander.\n\nContext:\nCharles Henry Bromedge Caldwell was born in Hingham, Massachusetts on February 24, 1823. He entered the navy as midshipman February 27, 1838, and became lieutenant September 4, 1852. He commanded the USS Vandalia in the US Navy's second Fiji expedition, an 1859 punitive expedition against Waya Island warriors who had cannibalized two American traders. In 1862, he commanded the gun-boat Itasca, of the western gulf blockading squadron, and took part in the bombardment of Forts Jackson and St. Philip. On the night of April 20, his gun-boat, with the Pinola, was sent on an expedition under the command of Fleet-Capt. Bell, to make a passage for the fleet through the chain obstructions near the forts. Lieut. Caldwell and his party boarded one of the hulks that held the chains, and succeeded in detaching the latter, in spite of the heavy fire to which they were subjected. The Itasca was then swept on shore by the current, in full sight of the forts, and it was half an hour before she was afloat again. She was unable to pass the forts with the rest of the fleet, owing to a shot that penetrated her boiler. Lieut. Caldwell was in the action at Grand Gulf, June 9, 1862, and was promoted to commander on July 16 1862.\n\nHe commanded the iron-clad Essex, of the Mississippi squadron in 1862–63, and took part in the operations at Port Hudson, from March to July 1863, in command of the Essex and the mortar flotilla.\n\nHe commanded the Glaucus of the North Atlantic blockading squadron from 1863 till 1864, and the R. R. Cuyler, of the same squadron, from 1864 till 1865. He became captain, December 12, 1867, chief of staff of the North Atlantic fleet in 1870, and commodore on June 14, 1874.\n\nHe died on November 30, 1877.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_12145",
+    "category": "creative_writing",
+    "prompt": "## 任务目标\nWrite a mother’s negative review for a dentist office with a dirty waiting room.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_01635",
+    "category": "general_qa",
+    "prompt": "## 任务目标\nName 5 different vegetables. List them with dashes\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_07622",
+    "category": "information_extraction",
+    "prompt": "## 任务目标\nWhat is a topographical unique feature of the area around Austin Texas.\n\nContext:\nAs of 2021, Austin had an estimated population of 964,177, up from 961,855 at the 2020 census. The city is the cultural and economic center of the Austin–Round Rock metropolitan statistical area, which had an estimated population of 2,295,303 as of July 1, 2020, a roughly 84% increase from the year 2000. Located in Central Texas within the greater Texas Hill Country, it is home to numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis on the Colorado River, Barton Springs, McKinney Falls, and Lake Walter E. Long.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_08388",
+    "category": "open_qa",
+    "prompt": "## 任务目标\nWhat is it like to have children and how many should I have?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  },
+  {
+    "case_id": "dolly_14862",
+    "category": "summarization",
+    "prompt": "## 任务目标\nWhat is the Premier League?\n\nContext:\nThe Premier League (legal name: The Football Association Premier League Limited) is the highest level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons typically run from August to May with each team playing 38 matches (playing all other teams both home and away). Most games are played on Saturday and Sunday afternoons, with occasional weekday evening fixtures.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身"
+  }
+]

@@ -1,0 +1,1630 @@
+{
+  "split": "train",
+  "selected_candidate": "default",
+  "baseline_cache_enabled": true,
+  "baseline_cache_hits": 8,
+  "objective_scores": {
+    "default": 0.0,
+    "minimal": 0.0
+  },
+  "candidate_reports": {
+    "default": {
+      "status": "completed",
+      "provider": "mock",
+      "model": "mock-local",
+      "temperature": 0.0,
+      "limit": 8,
+      "split": "train",
+      "selection": "stratified",
+      "seed": 20261126,
+      "allow_real_model": false,
+      "selected_case_count": 8,
+      "original_cache_hits": 0,
+      "completed_case_count": 8,
+      "cases": [
+        {
+          "case_id": "dolly_04520",
+          "category": "brainstorming",
+          "split": "train",
+          "original_prompt": "Create a checklist of newborn essentials.",
+          "optimized_prompt": "## 任务目标\nCreate a checklist of newborn essentials.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 6,
+              "completion_tokens": 2,
+              "total_tokens": 8,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00005329999839887023,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 14,
+              "completion_tokens": 2,
+              "total_tokens": 16,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002010000025620684,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_04910",
+          "category": "classification",
+          "split": "train",
+          "original_prompt": "Classify each of the following animal as a carnivore, omnivore or herbivore: tiger, bear, giraffe, wolverine, elephant, monkey",
+          "optimized_prompt": "## 任务目标\nClassify each of the following animal as a carnivore, omnivore or herbivore: tiger, bear, giraffe, wolverine, elephant, monkey\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "exact_match",
+              "primary_score": 0.0,
+              "interpretation": "Classification accuracy uses normalized exact match"
+            },
+            "usage": {
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000013900000340072438,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "exact_match",
+              "primary_score": 0.0,
+              "interpretation": "Classification accuracy uses normalized exact match"
+            },
+            "usage": {
+              "prompt_tokens": 26,
+              "completion_tokens": 2,
+              "total_tokens": 28,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000012799999240087345,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_07600",
+          "category": "closed_qa",
+          "split": "train",
+          "original_prompt": "How many parts did O.J.: Made in America have, and could a documentary with the same length win an Oscar today?\n\nContext:\nThe winners were announced during the awards ceremony on February 26, 2017. Moonlight became the first film with an all-black cast and the first LGBT-themed film to win Best Picture. In an event unprecedented in the history of the Oscars, La La Land was incorrectly announced as the Best Picture, and, a few minutes later, the error was corrected and Moonlight was declared the winner. O.J.: Made in America, at 467 minutes, became the longest film to win an Academy Award, surpassing the 431-minute long War and Peace, which won the Academy Award for Best Foreign Language Film in 1969. Following the five-part documentary's win, new academy rules barred any \"multi-part or limited series\" from being eligible for documentary categories. With Casey Affleck winning the Oscar for Best Actor, he and his older brother, Ben Affleck, became the 16th pair of siblings to win Academy Awards. Mahershala Ali became the first Muslim actor to win an Oscar. Viola Davis became the first black person to achieve the Triple Crown of Acting with her Oscar, Emmy, and Tony wins.",
+          "optimized_prompt": "## 任务目标\nHow many parts did O.J.: Made in America have, and could a documentary with the same length win an Oscar today?\n\nContext:\nThe winners were announced during the awards ceremony on February 26, 2017. Moonlight became the first film with an all-black cast and the first LGBT-themed film to win Best Picture. In an event unprecedented in the history of the Oscars, La La Land was incorrectly announced as the Best Picture, and, a few minutes later, the error was corrected and Moonlight was declared the winner. O.J.: Made in America, at 467 minutes, became the longest film to win an Academy Award, surpassing the 431-minute long War and Peace, which won the Academy Award for Best Foreign Language Film in 1969. Following the five-part documentary's win, new academy rules barred any \"multi-part or limited series\" from being eligible for documentary categories. With Casey Affleck winning the Oscar for Best Actor, he and his older brother, Ben Affleck, became the 16th pair of siblings to win Academy Awards. Mahershala Ali became the first Muslim actor to win an Oscar. Viola Davis became the first black person to achieve the Triple Crown of Acting with her Oscar, Emmy, and Tony wins.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 200,
+              "completion_tokens": 2,
+              "total_tokens": 202,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002849999873433262,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 208,
+              "completion_tokens": 2,
+              "total_tokens": 210,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002600000152597204,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_06432",
+          "category": "creative_writing",
+          "split": "train",
+          "original_prompt": "Write a short message to send to your doctor to ask if you need to make a separate appointment for each of your vaccines for an upcoming vacation to South Africa. The doctor is named Dr. Gupta",
+          "optimized_prompt": "## 任务目标\nWrite a short message to send to your doctor to ask if you need to make a separate appointment for each of your vaccines for an upcoming vacation to South Africa. The doctor is named Dr. Gupta\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 37,
+              "completion_tokens": 2,
+              "total_tokens": 39,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00001179999890155159,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 45,
+              "completion_tokens": 2,
+              "total_tokens": 47,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000012900000001536682,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_04079",
+          "category": "general_qa",
+          "split": "train",
+          "original_prompt": "Why are some places in the world warmer than others?",
+          "optimized_prompt": "## 任务目标\nWhy are some places in the world warmer than others?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 10,
+              "completion_tokens": 2,
+              "total_tokens": 12,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00001089999932446517,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000011100000847363845,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_10038",
+          "category": "information_extraction",
+          "split": "train",
+          "original_prompt": "Who are the  most referred to Devas in the Rigveda as per the passage?\n\nContext:\nIn Vedic literature, Devas and Devis represent the forces of nature and some represent moral values (such as the Adityas, Varuna, and Mitra), each symbolizing the epitome of a specialized knowledge, creative energy, exalted and magical powers (Siddhis).\nVedic era deities evolved over time. Rudra (left) is represented in Vedic literature, is shown as Shiva-Rudra 2nd-century sculpture (middle), and as Shiva (meaning kind) in 13th-century art work (right). The iconography evolved, retaining some symbolic elements such as trident, axe or antelope.The most referred to Devas in the Rigveda are Indra, Agni (fire) and Soma, with \"fire deity\" called the friend of all humanity, it and Soma being the two celebrated in a yajna fire ritual that marks major Hindu ceremonies. Savitr, Vishnu, Rudra (later given the exclusive epithet of Shiva), and Prajapati (later Brahma) are gods and hence Devas.The Vedas describes a number of significant Devis such as Ushas (dawn), Prithvi (earth), Aditi (cosmic moral order), Saraswati (river, knowledge), Vāc (sound), Nirṛti (destruction), Ratri (night), Aranyani (forest), and bounty goddesses such as Dinsana, Raka, Puramdhi, Parendi, Bharati, Mahi among others are mentioned in the Rigveda. Sri, also called Lakshmi, appears in late Vedic texts dated to be pre-Buddhist, but verses dedicated to her do not suggest that her characteristics were fully developed in the Vedic era. All gods and goddesses are distinguished in the Vedic times, but in the post-Vedic texts (~500 BCE to 200 CE), and particularly in the early medieval era literature, they are ultimately seen as aspects or manifestations of one Brahman, the Supreme power.",
+          "optimized_prompt": "## 任务目标\nWho are the  most referred to Devas in the Rigveda as per the passage?\n\nContext:\nIn Vedic literature, Devas and Devis represent the forces of nature and some represent moral values (such as the Adityas, Varuna, and Mitra), each symbolizing the epitome of a specialized knowledge, creative energy, exalted and magical powers (Siddhis).\nVedic era deities evolved over time. Rudra (left) is represented in Vedic literature, is shown as Shiva-Rudra 2nd-century sculpture (middle), and as Shiva (meaning kind) in 13th-century art work (right). The iconography evolved, retaining some symbolic elements such as trident, axe or antelope.The most referred to Devas in the Rigveda are Indra, Agni (fire) and Soma, with \"fire deity\" called the friend of all humanity, it and Soma being the two celebrated in a yajna fire ritual that marks major Hindu ceremonies. Savitr, Vishnu, Rudra (later given the exclusive epithet of Shiva), and Prajapati (later Brahma) are gods and hence Devas.The Vedas describes a number of significant Devis such as Ushas (dawn), Prithvi (earth), Aditi (cosmic moral order), Saraswati (river, knowledge), Vāc (sound), Nirṛti (destruction), Ratri (night), Aranyani (forest), and bounty goddesses such as Dinsana, Raka, Puramdhi, Parendi, Bharati, Mahi among others are mentioned in the Rigveda. Sri, also called Lakshmi, appears in late Vedic texts dated to be pre-Buddhist, but verses dedicated to her do not suggest that her characteristics were fully developed in the Vedic era. All gods and goddesses are distinguished in the Vedic times, but in the post-Vedic texts (~500 BCE to 200 CE), and particularly in the early medieval era literature, they are ultimately seen as aspects or manifestations of one Brahman, the Supreme power.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 273,
+              "completion_tokens": 2,
+              "total_tokens": 275,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00003090000245720148,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 281,
+              "completion_tokens": 2,
+              "total_tokens": 283,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002970000059576705,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_01619",
+          "category": "open_qa",
+          "split": "train",
+          "original_prompt": "How do you throw a cutter in baseball?",
+          "optimized_prompt": "## 任务目标\nHow do you throw a cutter in baseball?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 8,
+              "completion_tokens": 2,
+              "total_tokens": 10,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000010100000508828089,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 16,
+              "completion_tokens": 2,
+              "total_tokens": 18,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000011199997970834374,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_06577",
+          "category": "summarization",
+          "split": "train",
+          "original_prompt": "List all the competitors in the 1997 Italian Open for Mens Singles\n\nContext:\nÁlex Corretja defeated Marcelo Ríos in the final, 7–5, 7–5, 6–3 to win the men's singles tennis title at the 1997 Italian Open.\n\nThomas Muster was the defending champion, but lost in the second round to Scott Draper.\n\nSeeds\nUnited States Pete Sampras (first round)\nUnited States Michael Chang (first round)\nAustria Thomas Muster (second round)\nRussia Yevgeny Kafelnikov (third round)\nNetherlands Richard Krajicek (second round)\nCroatia Goran Ivanišević (semifinals)\nChile Marcelo Ríos (final)\nSpain Carlos Moyà (third round)\nSouth Africa Wayne Ferreira (first round)\nSpain Álex Corretja (champion)\nSpain Álbert Costa (third round)\nGermany Boris Becker (third round)\nSpain Félix Mantilla (first round)\nUnited Kingdom Tim Henman (second round)\nSwitzerland Marc Rosset (third round)\nAustralia Mark Philippoussis (first round)",
+          "optimized_prompt": "## 任务目标\nList all the competitors in the 1997 Italian Open for Mens Singles\n\nContext:\nÁlex Corretja defeated Marcelo Ríos in the final, 7–5, 7–5, 6–3 to win the men's singles tennis title at the 1997 Italian Open.\n\nThomas Muster was the defending champion, but lost in the second round to Scott Draper.\n\nSeeds\nUnited States Pete Sampras (first round)\nUnited States Michael Chang (first round)\nAustria Thomas Muster (second round)\nRussia Yevgeny Kafelnikov (third round)\nNetherlands Richard Krajicek (second round)\nCroatia Goran Ivanišević (semifinals)\nChile Marcelo Ríos (final)\nSpain Carlos Moyà (third round)\nSouth Africa Wayne Ferreira (first round)\nSpain Álex Corretja (champion)\nSpain Álbert Costa (third round)\nGermany Boris Becker (third round)\nSpain Félix Mantilla (first round)\nUnited Kingdom Tim Henman (second round)\nSwitzerland Marc Rosset (third round)\nAustralia Mark Philippoussis (first round)\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 133,
+              "completion_tokens": 2,
+              "total_tokens": 135,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000019499999325489625,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 141,
+              "completion_tokens": 2,
+              "total_tokens": 143,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000019599996448960155,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        }
+      ],
+      "group_summaries": {
+        "original": {
+          "group": "original",
+          "selected_cases": 8,
+          "attempted_calls": 8,
+          "cached_calls": 0,
+          "completed_calls": 8,
+          "scored_calls": 8,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 685,
+          "completion_tokens": 16,
+          "total_tokens": 701,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00017889999799081124,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 8,
+          "attempted_calls": 8,
+          "cached_calls": 0,
+          "completed_calls": 8,
+          "scored_calls": 8,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 749,
+          "completion_tokens": 16,
+          "total_tokens": 765,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00014339999688672833,
+          "errors": []
+        }
+      },
+      "categories": {
+        "brainstorming": {
+          "category": "brainstorming",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 6,
+              "completion_tokens": 2,
+              "total_tokens": 8,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00005329999839887023,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 14,
+              "completion_tokens": 2,
+              "total_tokens": 16,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00002010000025620684,
+              "errors": []
+            }
+          }
+        },
+        "classification": {
+          "category": "classification",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000013900000340072438,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 26,
+              "completion_tokens": 2,
+              "total_tokens": 28,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000012799999240087345,
+              "errors": []
+            }
+          }
+        },
+        "closed_qa": {
+          "category": "closed_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 200,
+              "completion_tokens": 2,
+              "total_tokens": 202,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00002849999873433262,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 208,
+              "completion_tokens": 2,
+              "total_tokens": 210,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00002600000152597204,
+              "errors": []
+            }
+          }
+        },
+        "creative_writing": {
+          "category": "creative_writing",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 37,
+              "completion_tokens": 2,
+              "total_tokens": 39,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00001179999890155159,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 45,
+              "completion_tokens": 2,
+              "total_tokens": 47,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000012900000001536682,
+              "errors": []
+            }
+          }
+        },
+        "general_qa": {
+          "category": "general_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 10,
+              "completion_tokens": 2,
+              "total_tokens": 12,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00001089999932446517,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000011100000847363845,
+              "errors": []
+            }
+          }
+        },
+        "information_extraction": {
+          "category": "information_extraction",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 273,
+              "completion_tokens": 2,
+              "total_tokens": 275,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00003090000245720148,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 281,
+              "completion_tokens": 2,
+              "total_tokens": 283,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00002970000059576705,
+              "errors": []
+            }
+          }
+        },
+        "open_qa": {
+          "category": "open_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 8,
+              "completion_tokens": 2,
+              "total_tokens": 10,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000010100000508828089,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 16,
+              "completion_tokens": 2,
+              "total_tokens": 18,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000011199997970834374,
+              "errors": []
+            }
+          }
+        },
+        "summarization": {
+          "category": "summarization",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 133,
+              "completion_tokens": 2,
+              "total_tokens": 135,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000019499999325489625,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 141,
+              "completion_tokens": 2,
+              "total_tokens": 143,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000019599996448960155,
+              "errors": []
+            }
+          }
+        }
+      },
+      "paired_comparison": {
+        "samples": 8,
+        "wins": 0,
+        "ties": 8,
+        "losses": 0,
+        "mean_difference": 0.0,
+        "confidence": 0.95,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+      },
+      "prompt_tokens": 1434,
+      "completion_tokens": 32,
+      "total_tokens": 1466,
+      "total_cost_usd": "0",
+      "total_latency_seconds": 0.0003222999948775396,
+      "errors": [],
+      "warnings": [
+        "Reference overlap metrics do not measure open-ended semantic quality or establish superiority over competing systems."
+      ],
+      "human_review_required": true,
+      "quality_claim_allowed": false,
+      "semantic_quality_measured": false
+    },
+    "minimal": {
+      "status": "completed",
+      "provider": "mock",
+      "model": "mock-local",
+      "temperature": 0.0,
+      "limit": 8,
+      "split": "train",
+      "selection": "stratified",
+      "seed": 20261126,
+      "allow_real_model": false,
+      "selected_case_count": 8,
+      "original_cache_hits": 8,
+      "completed_case_count": 8,
+      "cases": [
+        {
+          "case_id": "dolly_04520",
+          "category": "brainstorming",
+          "split": "train",
+          "original_prompt": "Create a checklist of newborn essentials.",
+          "optimized_prompt": "## 任务目标\nCreate a checklist of newborn essentials.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 6,
+              "completion_tokens": 2,
+              "total_tokens": 8,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00005329999839887023,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 14,
+              "completion_tokens": 2,
+              "total_tokens": 16,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002609999864944257,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_04910",
+          "category": "classification",
+          "split": "train",
+          "original_prompt": "Classify each of the following animal as a carnivore, omnivore or herbivore: tiger, bear, giraffe, wolverine, elephant, monkey",
+          "optimized_prompt": "## 任务目标\nClassify each of the following animal as a carnivore, omnivore or herbivore: tiger, bear, giraffe, wolverine, elephant, monkey\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "exact_match",
+              "primary_score": 0.0,
+              "interpretation": "Classification accuracy uses normalized exact match"
+            },
+            "usage": {
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000013900000340072438,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "exact_match",
+              "primary_score": 0.0,
+              "interpretation": "Classification accuracy uses normalized exact match"
+            },
+            "usage": {
+              "prompt_tokens": 26,
+              "completion_tokens": 2,
+              "total_tokens": 28,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000013100001524435356,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_07600",
+          "category": "closed_qa",
+          "split": "train",
+          "original_prompt": "How many parts did O.J.: Made in America have, and could a documentary with the same length win an Oscar today?\n\nContext:\nThe winners were announced during the awards ceremony on February 26, 2017. Moonlight became the first film with an all-black cast and the first LGBT-themed film to win Best Picture. In an event unprecedented in the history of the Oscars, La La Land was incorrectly announced as the Best Picture, and, a few minutes later, the error was corrected and Moonlight was declared the winner. O.J.: Made in America, at 467 minutes, became the longest film to win an Academy Award, surpassing the 431-minute long War and Peace, which won the Academy Award for Best Foreign Language Film in 1969. Following the five-part documentary's win, new academy rules barred any \"multi-part or limited series\" from being eligible for documentary categories. With Casey Affleck winning the Oscar for Best Actor, he and his older brother, Ben Affleck, became the 16th pair of siblings to win Academy Awards. Mahershala Ali became the first Muslim actor to win an Oscar. Viola Davis became the first black person to achieve the Triple Crown of Acting with her Oscar, Emmy, and Tony wins.",
+          "optimized_prompt": "## 任务目标\nHow many parts did O.J.: Made in America have, and could a documentary with the same length win an Oscar today?\n\nContext:\nThe winners were announced during the awards ceremony on February 26, 2017. Moonlight became the first film with an all-black cast and the first LGBT-themed film to win Best Picture. In an event unprecedented in the history of the Oscars, La La Land was incorrectly announced as the Best Picture, and, a few minutes later, the error was corrected and Moonlight was declared the winner. O.J.: Made in America, at 467 minutes, became the longest film to win an Academy Award, surpassing the 431-minute long War and Peace, which won the Academy Award for Best Foreign Language Film in 1969. Following the five-part documentary's win, new academy rules barred any \"multi-part or limited series\" from being eligible for documentary categories. With Casey Affleck winning the Oscar for Best Actor, he and his older brother, Ben Affleck, became the 16th pair of siblings to win Academy Awards. Mahershala Ali became the first Muslim actor to win an Oscar. Viola Davis became the first black person to achieve the Triple Crown of Acting with her Oscar, Emmy, and Tony wins.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 200,
+              "completion_tokens": 2,
+              "total_tokens": 202,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00002849999873433262,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 208,
+              "completion_tokens": 2,
+              "total_tokens": 210,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000026699999580159783,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_06432",
+          "category": "creative_writing",
+          "split": "train",
+          "original_prompt": "Write a short message to send to your doctor to ask if you need to make a separate appointment for each of your vaccines for an upcoming vacation to South Africa. The doctor is named Dr. Gupta",
+          "optimized_prompt": "## 任务目标\nWrite a short message to send to your doctor to ask if you need to make a separate appointment for each of your vaccines for an upcoming vacation to South Africa. The doctor is named Dr. Gupta\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 37,
+              "completion_tokens": 2,
+              "total_tokens": 39,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00001179999890155159,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 45,
+              "completion_tokens": 2,
+              "total_tokens": 47,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000012900000001536682,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_04079",
+          "category": "general_qa",
+          "split": "train",
+          "original_prompt": "Why are some places in the world warmer than others?",
+          "optimized_prompt": "## 任务目标\nWhy are some places in the world warmer than others?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 10,
+              "completion_tokens": 2,
+              "total_tokens": 12,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00001089999932446517,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000011200001608813182,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_10038",
+          "category": "information_extraction",
+          "split": "train",
+          "original_prompt": "Who are the  most referred to Devas in the Rigveda as per the passage?\n\nContext:\nIn Vedic literature, Devas and Devis represent the forces of nature and some represent moral values (such as the Adityas, Varuna, and Mitra), each symbolizing the epitome of a specialized knowledge, creative energy, exalted and magical powers (Siddhis).\nVedic era deities evolved over time. Rudra (left) is represented in Vedic literature, is shown as Shiva-Rudra 2nd-century sculpture (middle), and as Shiva (meaning kind) in 13th-century art work (right). The iconography evolved, retaining some symbolic elements such as trident, axe or antelope.The most referred to Devas in the Rigveda are Indra, Agni (fire) and Soma, with \"fire deity\" called the friend of all humanity, it and Soma being the two celebrated in a yajna fire ritual that marks major Hindu ceremonies. Savitr, Vishnu, Rudra (later given the exclusive epithet of Shiva), and Prajapati (later Brahma) are gods and hence Devas.The Vedas describes a number of significant Devis such as Ushas (dawn), Prithvi (earth), Aditi (cosmic moral order), Saraswati (river, knowledge), Vāc (sound), Nirṛti (destruction), Ratri (night), Aranyani (forest), and bounty goddesses such as Dinsana, Raka, Puramdhi, Parendi, Bharati, Mahi among others are mentioned in the Rigveda. Sri, also called Lakshmi, appears in late Vedic texts dated to be pre-Buddhist, but verses dedicated to her do not suggest that her characteristics were fully developed in the Vedic era. All gods and goddesses are distinguished in the Vedic times, but in the post-Vedic texts (~500 BCE to 200 CE), and particularly in the early medieval era literature, they are ultimately seen as aspects or manifestations of one Brahman, the Supreme power.",
+          "optimized_prompt": "## 任务目标\nWho are the  most referred to Devas in the Rigveda as per the passage?\n\nContext:\nIn Vedic literature, Devas and Devis represent the forces of nature and some represent moral values (such as the Adityas, Varuna, and Mitra), each symbolizing the epitome of a specialized knowledge, creative energy, exalted and magical powers (Siddhis).\nVedic era deities evolved over time. Rudra (left) is represented in Vedic literature, is shown as Shiva-Rudra 2nd-century sculpture (middle), and as Shiva (meaning kind) in 13th-century art work (right). The iconography evolved, retaining some symbolic elements such as trident, axe or antelope.The most referred to Devas in the Rigveda are Indra, Agni (fire) and Soma, with \"fire deity\" called the friend of all humanity, it and Soma being the two celebrated in a yajna fire ritual that marks major Hindu ceremonies. Savitr, Vishnu, Rudra (later given the exclusive epithet of Shiva), and Prajapati (later Brahma) are gods and hence Devas.The Vedas describes a number of significant Devis such as Ushas (dawn), Prithvi (earth), Aditi (cosmic moral order), Saraswati (river, knowledge), Vāc (sound), Nirṛti (destruction), Ratri (night), Aranyani (forest), and bounty goddesses such as Dinsana, Raka, Puramdhi, Parendi, Bharati, Mahi among others are mentioned in the Rigveda. Sri, also called Lakshmi, appears in late Vedic texts dated to be pre-Buddhist, but verses dedicated to her do not suggest that her characteristics were fully developed in the Vedic era. All gods and goddesses are distinguished in the Vedic times, but in the post-Vedic texts (~500 BCE to 200 CE), and particularly in the early medieval era literature, they are ultimately seen as aspects or manifestations of one Brahman, the Supreme power.\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 273,
+              "completion_tokens": 2,
+              "total_tokens": 275,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.00003090000245720148,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+            },
+            "usage": {
+              "prompt_tokens": 281,
+              "completion_tokens": 2,
+              "total_tokens": 283,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000030499999411404133,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_01619",
+          "category": "open_qa",
+          "split": "train",
+          "original_prompt": "How do you throw a cutter in baseball?",
+          "optimized_prompt": "## 任务目标\nHow do you throw a cutter in baseball?\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 8,
+              "completion_tokens": 2,
+              "total_tokens": 10,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000010100000508828089,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 16,
+              "completion_tokens": 2,
+              "total_tokens": 18,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000011099997209385037,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        },
+        {
+          "case_id": "dolly_06577",
+          "category": "summarization",
+          "split": "train",
+          "original_prompt": "List all the competitors in the 1997 Italian Open for Mens Singles\n\nContext:\nÁlex Corretja defeated Marcelo Ríos in the final, 7–5, 7–5, 6–3 to win the men's singles tennis title at the 1997 Italian Open.\n\nThomas Muster was the defending champion, but lost in the second round to Scott Draper.\n\nSeeds\nUnited States Pete Sampras (first round)\nUnited States Michael Chang (first round)\nAustria Thomas Muster (second round)\nRussia Yevgeny Kafelnikov (third round)\nNetherlands Richard Krajicek (second round)\nCroatia Goran Ivanišević (semifinals)\nChile Marcelo Ríos (final)\nSpain Carlos Moyà (third round)\nSouth Africa Wayne Ferreira (first round)\nSpain Álex Corretja (champion)\nSpain Álbert Costa (third round)\nGermany Boris Becker (third round)\nSpain Félix Mantilla (first round)\nUnited Kingdom Tim Henman (second round)\nSwitzerland Marc Rosset (third round)\nAustralia Mark Philippoussis (first round)",
+          "optimized_prompt": "## 任务目标\nList all the competitors in the 1997 Italian Open for Mens Singles\n\nContext:\nÁlex Corretja defeated Marcelo Ríos in the final, 7–5, 7–5, 6–3 to win the men's singles tennis title at the 1997 Italian Open.\n\nThomas Muster was the defending champion, but lost in the second round to Scott Draper.\n\nSeeds\nUnited States Pete Sampras (first round)\nUnited States Michael Chang (first round)\nAustria Thomas Muster (second round)\nRussia Yevgeny Kafelnikov (third round)\nNetherlands Richard Krajicek (second round)\nCroatia Goran Ivanišević (semifinals)\nChile Marcelo Ríos (final)\nSpain Carlos Moyà (third round)\nSouth Africa Wayne Ferreira (first round)\nSpain Álex Corretja (champion)\nSpain Álbert Costa (third round)\nGermany Boris Becker (third round)\nSpain Félix Mantilla (first round)\nUnited Kingdom Tim Henman (second round)\nSwitzerland Marc Rosset (third round)\nAustralia Mark Philippoussis (first round)\n\n## 输出要求\n- 直接交付完整任务结果，避免解释 Prompt 本身",
+          "original": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 133,
+              "completion_tokens": 2,
+              "total_tokens": 135,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000019499999325489625,
+            "attempts": 1,
+            "from_cache": true,
+            "error": null
+          },
+          "optimized": {
+            "status": "completed",
+            "output": "Mock response",
+            "score": {
+              "exact_match": 0.0,
+              "token_f1": 0.0,
+              "primary_metric": "auxiliary_token_f1",
+              "primary_score": 0.0,
+              "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+            },
+            "usage": {
+              "prompt_tokens": 141,
+              "completion_tokens": 2,
+              "total_tokens": 143,
+              "source": "mock_estimate"
+            },
+            "cost_usd": "0",
+            "latency_seconds": 0.000020600000425474718,
+            "attempts": 1,
+            "from_cache": false,
+            "error": null
+          }
+        }
+      ],
+      "group_summaries": {
+        "original": {
+          "group": "original",
+          "selected_cases": 8,
+          "attempted_calls": 0,
+          "cached_calls": 8,
+          "completed_calls": 8,
+          "scored_calls": 8,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.0,
+          "errors": []
+        },
+        "optimized": {
+          "group": "optimized",
+          "selected_cases": 8,
+          "attempted_calls": 8,
+          "cached_calls": 0,
+          "completed_calls": 8,
+          "scored_calls": 8,
+          "average_exact_match": 0.0,
+          "average_token_f1": 0.0,
+          "average_primary_score": 0.0,
+          "prompt_tokens": 749,
+          "completion_tokens": 16,
+          "total_tokens": 765,
+          "total_cost_usd": "0",
+          "total_latency_seconds": 0.00015219999841065146,
+          "errors": []
+        }
+      },
+      "categories": {
+        "brainstorming": {
+          "category": "brainstorming",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 14,
+              "completion_tokens": 2,
+              "total_tokens": 16,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.00002609999864944257,
+              "errors": []
+            }
+          }
+        },
+        "classification": {
+          "category": "classification",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 26,
+              "completion_tokens": 2,
+              "total_tokens": 28,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000013100001524435356,
+              "errors": []
+            }
+          }
+        },
+        "closed_qa": {
+          "category": "closed_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 208,
+              "completion_tokens": 2,
+              "total_tokens": 210,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000026699999580159783,
+              "errors": []
+            }
+          }
+        },
+        "creative_writing": {
+          "category": "creative_writing",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 45,
+              "completion_tokens": 2,
+              "total_tokens": 47,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000012900000001536682,
+              "errors": []
+            }
+          }
+        },
+        "general_qa": {
+          "category": "general_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 18,
+              "completion_tokens": 2,
+              "total_tokens": 20,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000011200001608813182,
+              "errors": []
+            }
+          }
+        },
+        "information_extraction": {
+          "category": "information_extraction",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 281,
+              "completion_tokens": 2,
+              "total_tokens": 283,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000030499999411404133,
+              "errors": []
+            }
+          }
+        },
+        "open_qa": {
+          "category": "open_qa",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 16,
+              "completion_tokens": 2,
+              "total_tokens": 18,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000011099997209385037,
+              "errors": []
+            }
+          }
+        },
+        "summarization": {
+          "category": "summarization",
+          "case_count": 1,
+          "groups": {
+            "original": {
+              "group": "original",
+              "selected_cases": 1,
+              "attempted_calls": 0,
+              "cached_calls": 1,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.0,
+              "errors": []
+            },
+            "optimized": {
+              "group": "optimized",
+              "selected_cases": 1,
+              "attempted_calls": 1,
+              "cached_calls": 0,
+              "completed_calls": 1,
+              "scored_calls": 1,
+              "average_exact_match": 0.0,
+              "average_token_f1": 0.0,
+              "average_primary_score": 0.0,
+              "prompt_tokens": 141,
+              "completion_tokens": 2,
+              "total_tokens": 143,
+              "total_cost_usd": "0",
+              "total_latency_seconds": 0.000020600000425474718,
+              "errors": []
+            }
+          }
+        }
+      },
+      "paired_comparison": {
+        "samples": 8,
+        "wins": 0,
+        "ties": 8,
+        "losses": 0,
+        "mean_difference": 0.0,
+        "confidence": 0.95,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "interpretation": "Paired bootstrap interval includes zero; no clear difference is established"
+      },
+      "prompt_tokens": 749,
+      "completion_tokens": 16,
+      "total_tokens": 765,
+      "total_cost_usd": "0",
+      "total_latency_seconds": 0.00015219999841065146,
+      "errors": [],
+      "warnings": [
+        "Reference overlap metrics do not measure open-ended semantic quality or establish superiority over competing systems."
+      ],
+      "human_review_required": true,
+      "quality_claim_allowed": false,
+      "semantic_quality_measured": false
+    }
+  },
+  "cost_penalty": 0.0,
+  "human_review_required": true,
+  "quality_claim_allowed": false,
+  "warnings": [
+    "Search scores use reference overlap and do not establish open-ended semantic quality.",
+    "Original baselines are shared across candidates; cache hits do not count as new calls or costs.",
+    "Only complete candidates with known costs are eligible for selection."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "simulation": true,
+  "mode": "two_independent_llm_subagents",
+  "requested_behavior": "direct concise answers without extended reasoning",
+  "actual_subagent_model": "unspecified",
+  "actual_subagent_strength": "unspecified",
+  "real_openai_compatible_api_used": false,
+  "external_api_calls": 0,
+  "token_cost_latency": "unavailable",
+  "split": "dev",
+  "test_split_used": false,
+  "cases": [
+    {
+      "case_id": "dolly_01597",
+      "category": "general_qa",
+      "original_output": "Good native plants for Ohio include purple coneflower, black-eyed Susan, butterfly milkweed, wild bergamot, wild columbine, cardinal flower, Ohio spiderwort, little bluestem, serviceberry, and eastern redbud. Choose species suited to your site's sunlight, soil, and moisture conditions.",
+      "optimized_output": "Good native plants to grow in Ohio include:\n\n- Purple coneflower (Echinacea purpurea): sunny beds and pollinator gardens.\n- Black-eyed Susan (Rudbeckia hirta): sunny areas with well-drained soil.\n- Butterfly weed (Asclepias tuberosa): dry, sunny sites; a monarch butterfly host plant.\n- Swamp milkweed (Asclepias incarnata): moist soil and rain gardens.\n- Wild bergamot (Monarda fistulosa): sunny to partly shaded pollinator gardens.\n- New England aster (Symphyotrichum novae-angliae): sunny sites and late-season color.\n- Wild columbine (Aquilegia canadensis): partial shade and well-drained soil.\n- Christmas fern (Polystichum acrostichoides): shaded woodland gardens.\n- Little bluestem (Schizachyrium scoparium): dry, sunny sites.\n- Serviceberry (Amelanchier spp.): a small native tree with spring flowers and edible fruit.\n- Eastern redbud (Cercis canadensis): a small flowering tree for sun or partial shade.\n- White oak (Quercus alba): a large shade tree that supports many native insects and birds.\n\nChoose plants that match the site's sunlight, soil, and moisture, and use nursery-propagated rather than wild-dug plants.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.2631578947368421,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.2631578947368421,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.18681318681318684,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.18681318681318684,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_03652",
+      "category": "information_extraction",
+      "original_output": "The first solid-state device was the cat's-whisker detector, first used in radio receivers in the 1900s. It detected radio signals by placing a whisker-like wire lightly in contact with a solid crystal, such as germanium, creating a contact junction.",
+      "optimized_output": "The first solid-state device was the cat's-whisker detector, first used in the 1900s in radio receivers. It detected radio signals through a contact junction formed by lightly touching a whisker-like wire to a solid crystal, such as germanium.\n\nEvidence and source: The supplied passage, in the paragraph beginning \"The first solid-state device was the 'cat's-whisker detector',\" states its name, period of use, construction, and function.\n\nUncertainty: The passage gives only the broad date of the 1900s and does not identify an inventor or an exact year of invention.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.823529411764706,
+        "primary_metric": "token_f1",
+        "primary_score": 0.823529411764706,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.5,
+        "primary_metric": "token_f1",
+        "primary_score": 0.5,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    },
+    {
+      "case_id": "dolly_07982",
+      "category": "classification",
+      "original_output": "Dabakan: percussion\nKwitra: string",
+      "optimized_output": "Dabakan: percussion instrument.\nKwitra: string instrument.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8,
+        "primary_metric": "exact_match",
+        "primary_score": 0.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.6666666666666666,
+        "primary_metric": "exact_match",
+        "primary_score": 0.0,
+        "interpretation": "Classification accuracy uses normalized exact match"
+      }
+    },
+    {
+      "case_id": "dolly_08678",
+      "category": "open_qa",
+      "original_output": "Volcanoes.",
+      "optimized_output": "Fissures, vents, and plugs are all associated with volcanoes and volcanic activity.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.0,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.0,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_11026",
+      "category": "summarization",
+      "original_output": "The third limb of yoga is asana, the practice of physical postures.",
+      "optimized_output": "The third limb of yoga is asana, the practice of physical postures.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.1652892561983471,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.1652892561983471,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.1652892561983471,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.1652892561983471,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_11736",
+      "category": "creative_writing",
+      "original_output": "I'm sorry. I missed my usual train, and my phone had died, so I couldn't let you know. I took the next one and came straight home.",
+      "optimized_output": "I’m sorry I worried you. My train was delayed, and my phone had died, so I couldn’t let you know. I should have found another way to call.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.11999999999999998,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.11999999999999998,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.11881188118811882,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.11881188118811882,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_13730",
+      "category": "brainstorming",
+      "original_output": "The communes in Barolo DOCG are:\n- Barolo\n- Castiglione Falletto\n- Cherasco\n- Diano d'Alba\n- Grinzane Cavour\n- La Morra\n- Monforte d'Alba\n- Novello\n- Roddi\n- Serralunga d'Alba\n- Verduno",
+      "optimized_output": "The communes in the Barolo DOCG production area are:\n\n- Barolo\n- Castiglione Falletto\n- La Morra\n- Monforte d'Alba\n- Serralunga d'Alba\n- Cherasco\n- Diano d'Alba\n- Grinzane Cavour\n- Novello\n- Roddi\n- Verduno\n\nThe last six are included only in part.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.8717948717948718,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.8717948717948718,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.7083333333333333,
+        "primary_metric": "auxiliary_token_f1",
+        "primary_score": 0.7083333333333333,
+        "interpretation": "Open-ended tasks require human usefulness and faithfulness review; token F1 is auxiliary only"
+      }
+    },
+    {
+      "case_id": "dolly_14085",
+      "category": "closed_qa",
+      "original_output": "An archipelago is a chain, cluster, or collection of islands. The term can also refer to a sea containing a small number of scattered islands.",
+      "optimized_output": "An archipelago is a chain, cluster, or collection of islands. It is sometimes called an island group or island chain, and can also refer to a sea containing scattered islands.",
+      "original_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.37037037037037035,
+        "primary_metric": "token_f1",
+        "primary_score": 0.37037037037037035,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      },
+      "optimized_score": {
+        "exact_match": 0.0,
+        "token_f1": 0.30303030303030304,
+        "primary_metric": "token_f1",
+        "primary_score": 0.30303030303030304,
+        "interpretation": "Token F1 is a reference overlap metric, not complete factual correctness"
+      }
+    }
+  ],
+  "original_average_primary_score": 0.32676772560814216,
+  "optimized_average_primary_score": 0.24778474507041112,
+  "paired_comparison": {
+    "samples": 8,
+    "wins": 0,
+    "ties": 3,
+    "losses": 5,
+    "mean_difference": -0.07898298053773103,
+    "confidence": 0.95,
+    "ci_lower": -0.15986533347890752,
+    "ci_upper": -0.016983531686501973,
+    "interpretation": "Paired bootstrap interval supports a negative candidate difference"
+  },
+  "quality_claim_allowed": false,
+  "human_review_required": true,
+  "interpretation": "LLM-subagent simulation for semantic pipeline debugging only. It is not production API correctness, accuracy improvement, cost, latency, or product superiority evidence."
+}

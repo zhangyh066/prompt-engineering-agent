@@ -1,6 +1,5 @@
 # PEA · Prompt Engineering Agent
 
-[![CI](https://github.com/zhangyh066/prompt-engineering-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/zhangyh066/prompt-engineering-agent/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/Code-MIT-green)](LICENSE)
 
@@ -89,7 +88,7 @@ uv run pytest
 uv build
 ```
 
-当前发布基线为 **198 项测试**，另覆盖真实浏览器工作台、偏好提交、历史、评测与系统状态。
+当前发布基线为 **198 项测试**，另覆盖真实浏览器工作台、偏好提交、历史、评测与系统状态。GitHub Actions 配置保存在 `.github/workflows/ci.yml`；首次发布账号还需授予 `workflow` 权限后才能激活远端工作流。
 
 ## 文档
 

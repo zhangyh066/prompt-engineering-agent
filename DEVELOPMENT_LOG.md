@@ -4,7 +4,9 @@
 
 - 完成四工作区产品前端与真实浏览器端到端验收。
 - 完成PRD、路线图、贡献、安全、MIT许可、CHANGELOG和GitHub CI。
-- 版本统一为0.2.0 Beta，198项测试与构建通过，准备私有GitHub发布。
+- 版本统一为0.2.0 Beta，198项测试与构建通过。
+- 私有仓库已创建：https://github.com/zhangyh066/prompt-engineering-agent 。Git HTTPS不可用时通过GitHub官方Git Data API上传源码、测试和文档。
+- 当前token缺少workflow scope，远端Actions文件与CI激活仍是明确待办，未声称CI通过。
 
 ## 产品短板分析与生成偏好增强 — 2026-11-27
 
